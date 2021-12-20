@@ -5,7 +5,7 @@ V {}
 S {}
 E {}
 N 4160 -70 4200 -70 { lab=io_analog[3]_}
-N 4060 30 4090 30 { lab=io_analog[8]}
+N 4060 30 4090 30 { lab=io_analog[8]_}
 N 4060 90 4090 90 { lab=io_analog[7]_}
 N 4230 150 4230 170 { lab=io_analog[6]}
 N 4210 170 4230 170 { lab=io_analog[6]}
@@ -70,8 +70,8 @@ C {devices/opin.sym} 3270 600 0 0 {name=p32 lab=user_irq[2:0]}
 C {devices/ipin.sym} 3290 210 0 0 {name=p28 lab=la_oenb[127:0]}
 C {devices/lab_pin.sym} 4160 -70 0 0 {name=l5 sig_type=std_logic lab=io_analog[3]_}
 C {sscs_pico_chip_4/xschem/top.sym} 4240 60 0 0 {name=x1}
-C {devices/lab_pin.sym} 4060 30 0 0 {name=l1 sig_type=std_logic lab=io_analog[8]}
-C {devices/lab_pin.sym} 4060 90 0 0 {name=l2 sig_type=std_logic lab=io_analog[7]}
+C {devices/lab_pin.sym} 4060 30 0 0 {name=l1 sig_type=std_logic lab=io_analog[8]_}
+C {devices/lab_pin.sym} 4060 90 0 0 {name=l2 sig_type=std_logic lab=io_analog[7]_}
 C {devices/lab_pin.sym} 4270 180 3 0 {name=l3 sig_type=std_logic lab=io_analog[5]}
 C {devices/lab_pin.sym} 4210 180 3 0 {name=l4 sig_type=std_logic lab=io_analog[6]}
 C {devices/lab_pin.sym} 4420 30 0 1 {name=l6 sig_type=std_logic lab=io_analog[9]_}
@@ -118,12 +118,16 @@ C {devices/lab_pin.sym} 4460 -690 2 0 {name=l38 sig_type=std_logic lab=io_analog
 C {devices/lab_pin.sym} 4460 -730 2 0 {name=l39 sig_type=std_logic lab=io_analog[6]}
 C {devices/lab_pin.sym} 4460 -710 2 0 {name=l40 sig_type=std_logic lab=io_analog[9]_}
 C {devices/lab_pin.sym} 4290 -710 0 0 {name=l41 sig_type=std_logic lab=io_analog[9]}
+C {sscs_pico_chip_4/xschem/esd_wide.sym} 4310 -620 0 0 {name=x10}
 C {devices/lab_pin.sym} 4460 -600 2 0 {name=l42 sig_type=std_logic lab=io_analog[5]}
 C {devices/lab_pin.sym} 4460 -640 2 0 {name=l43 sig_type=std_logic lab=io_analog[6]}
-C {devices/lab_pin.sym} 4310 -620 0 0 {name=l45 sig_type=std_logic lab=io_analog[8]}
+C {devices/lab_pin.sym} 4460 -620 2 0 {name=l44 sig_type=std_logic lab=io_analog[8]_}
+C {devices/lab_pin.sym} 4290 -620 0 0 {name=l45 sig_type=std_logic lab=io_analog[8]}
+C {sscs_pico_chip_4/xschem/esd_wide.sym} 4310 -530 0 0 {name=x11}
 C {devices/lab_pin.sym} 4460 -510 2 0 {name=l46 sig_type=std_logic lab=io_analog[5]}
 C {devices/lab_pin.sym} 4460 -550 2 0 {name=l47 sig_type=std_logic lab=io_analog[6]}
-C {devices/lab_pin.sym} 4310 -530 0 0 {name=l49 sig_type=std_logic lab=io_analog[7]}
+C {devices/lab_pin.sym} 4460 -530 2 0 {name=l48 sig_type=std_logic lab=io_analog[7]_}
+C {devices/lab_pin.sym} 4290 -530 0 0 {name=l49 sig_type=std_logic lab=io_analog[7]}
 C {devices/lab_pin.sym} 3640 -300 0 0 {name=l50 sig_type=std_logic lab=io_analog[6]}
 C {devices/lab_pin.sym} 3720 -330 2 0 {name=l51 sig_type=std_logic lab=io_clamp_high[2]}
 C {devices/lab_pin.sym} 3720 -270 2 0 {name=l52 sig_type=std_logic lab=io_clamp_high[1]}
@@ -152,5 +156,3 @@ device=resistor
 m=1}
 C {devices/ngspice_probe.sym} 4270 170 0 0 {name=r8}
 C {devices/ngspice_probe.sym} 4210 170 0 1 {name=r1}
-C {sscs_pico_chip_4/xschem/esd_half.sym} 4310 -620 0 0 {name=x12}
-C {sscs_pico_chip_4/xschem/esd_half.sym} 4310 -530 0 0 {name=x10}

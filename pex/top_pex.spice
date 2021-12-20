@@ -1,0 +1,233 @@
+* SPICE3 file created from top.ext - technology: sky130A
+
+.subckt cmfb_half VDD GND Vout res Vb3 Vin diode
+X0 Vout Vin res GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+07u l=200000u M=15
+X1 GND Vb3 res GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.3e+07u l=500000u M=5
+X2 Vout diode VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.05e+07u l=200000u M=4
+C0 VDD Vout 6.84fF
+C1 res Vout 25.99fF
+C2 Vb3 GND 3.81fF
+C3 Vin GND 8.94fF
+C4 res GND 7.55fF
+C5 VDD GND 6.58fF
+.ends
+
+.subckt cmfb Vb3 Vref VDD Vcmfb Vcm GND
+Xcmfb_half_1 VDD GND Vcmfb cmfb_half_1/res Vb3 Vref cmfb_half_0/Vout cmfb_half
+Xcmfb_half_0 VDD GND cmfb_half_0/Vout cmfb_half_0/res Vb3 Vcm cmfb_half_0/Vout cmfb_half
+X0 cmfb_half_1/res cmfb_half_0/res GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=1.41e+06u
+C0 VDD GND 13.26fF
+C1 Vcm GND 8.94fF
+C2 cmfb_half_0/res GND 9.75fF
+C3 Vb3 GND 7.49fF
+C4 Vref GND 8.94fF
+C5 cmfb_half_1/res GND 8.48fF
+C6 cmfb_half_0/Vout GND 6.87fF
+.ends
+
+.subckt sf_half Vout g_u g_d GND VDD
+X0 VDD g_u Vout GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+07u l=320000u M=26
+X1 Vout g_d GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+07u l=450000u M=26
+C0 g_d Vout 5.11fF
+C1 g_u VDD 3.64fF
+C2 g_u Vout 3.79fF
+C3 Vout VDD 77.94fF
+C4 g_d GND 21.60fF
+C5 VDD GND 5.94fF
+C6 g_u GND 17.46fF
+C7 Vout GND 81.05fF
+.ends
+
+.subckt sf VDD Vin_n Vout_p Vout_n Vb4 Vin_p GND
+Xsf_half_0 Vout_p Vin_p Vb4 GND VDD sf_half
+Xsf_half_1 Vout_n Vin_n Vb4 GND VDD sf_half
+C0 Vb4 GND 47.22fF
+C1 VDD GND 11.88fF
+C2 Vin_n GND 17.48fF
+C3 Vout_n GND 81.30fF
+C4 Vin_p GND 17.47fF
+C5 Vout_p GND 81.24fF
+.ends
+
+.subckt mirror_4 GND Vb4_ Vb4
+X0 a_1900_980# a_5540_1300# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X1 Vb4 GND sky130_fd_pr__cap_mim_m3_1 l=1.58e+07u w=1.58e+07u
+X2 a_1900_2900# a_5540_2580# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X3 GND Vb4 sky130_fd_pr__cap_mim_m3_2 l=1.58e+07u w=1.58e+07u
+X4 Vb4_ GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=450000u
+X5 a_1900_980# a_5540_660# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X6 a_1900_2260# a_5540_1940# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X7 a_1900_1620# a_5540_1300# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X8 a_1900_340# a_5540_20# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X9 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=450000u
+X10 a_1900_2900# Vb4 GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X11 Vb4_ a_5540_20# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X12 Vb4_ Vb4_ GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=450000u
+**devattr d=D
+X13 a_1900_2260# a_5540_2580# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X14 a_1900_1620# a_5540_1940# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X15 a_1900_340# a_5540_660# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+C0 Vb4_ GND 3.76fF
+C1 Vb4 GND 45.14fF
+.ends
+
+.subckt mirror_3 GND Vb3 Vb3_
+X0 a_1900_980# a_5540_1300# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X1 Vb3 GND sky130_fd_pr__cap_mim_m3_1 l=1.58e+07u w=1.58e+07u
+X2 a_1900_2900# a_5540_2580# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X3 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u M=2
+X4 GND Vb3 sky130_fd_pr__cap_mim_m3_2 l=1.58e+07u w=1.58e+07u
+X5 a_1900_980# a_5540_660# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X6 Vb3_ Vb3_ GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5e+06u l=500000u M=2
+X7 a_1900_2260# a_5540_1940# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X8 a_1900_1620# a_5540_1300# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X9 a_1900_340# a_5540_20# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X10 a_1900_2900# Vb3 GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X11 Vb3_ a_5540_20# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X12 a_1900_2260# a_5540_2580# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X13 a_1900_1620# a_5540_1940# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X14 a_1900_340# a_5540_660# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+C0 Vb3_ GND 4.82fF
+C1 Vb3 GND 45.14fF
+.ends
+
+.subckt core_half Vout Vin s VDD Vcmfb Vb2 GND
+X0 VDD Vb2 Vout VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+07u l=180000u M=16
+X1 Vout Vcmfb VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+07u l=180000u M=4
+X2 s Vin Vout GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+07u l=150000u M=6
+C0 VDD Vout 98.16fF
+C1 Vout s 28.32fF
+C2 Vin GND 2.17fF
+C3 s GND 11.89fF
+C4 Vb2 GND 9.14fF
+C5 Vout GND 3.81fF
+C6 Vcmfb GND 2.36fF
+C7 VDD GND 61.16fF
+.ends
+
+.subckt core GND Vb2 Vcmfb Vb1 Vin_n Vout_n core_half_1/s Vin_p Vout_p VDD
+Xcore_half_0 Vout_n Vin_p core_half_1/s VDD Vcmfb Vb2 GND core_half
+Xcore_half_1 Vout_p Vin_n core_half_1/s VDD Vcmfb Vb2 GND core_half
+X0 GND Vb1 core_half_1/s GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.1e+07u l=500000u M=10
+C0 Vb1 core_half_1/s 4.54fF
+C1 Vb1 GND 16.53fF
+C2 Vin_n GND 2.23fF
+C3 Vout_p GND 4.31fF
+C4 Vin_p GND 2.25fF
+C5 core_half_1/s GND 87.36fF
+C6 Vb2 GND 17.75fF
+C7 Vout_n GND 4.31fF
+C8 Vcmfb GND 4.69fF
+C9 VDD GND 105.88fF
+.ends
+
+.subckt mirror_1 Vb1 GND Vb1_
+X0 a_1900_980# a_5540_1300# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X1 Vb1 GND sky130_fd_pr__cap_mim_m3_1 l=1.58e+07u w=1.58e+07u
+X2 Vb1_ Vb1_ GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3.6e+06u l=500000u
+**devattr d=D
+X3 a_1900_2900# a_5540_2580# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X4 Vb1_ GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3.6e+06u l=500000u
+X5 GND Vb1 sky130_fd_pr__cap_mim_m3_2 l=1.58e+07u w=1.58e+07u
+X6 a_1900_980# a_5540_660# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X7 GND GND GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3.6e+06u l=500000u
+X8 a_1900_2260# a_5540_1940# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X9 a_1900_1620# a_5540_1300# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X10 a_1900_340# a_5540_20# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X11 a_1900_2900# Vb1 GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X12 Vb1_ a_5540_20# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X13 a_1900_2260# a_5540_2580# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X14 a_1900_1620# a_5540_1940# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+X15 a_1900_340# a_5540_660# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+C0 Vb1_ GND 3.40fF
+C1 Vb1 GND 45.14fF
+.ends
+
+.subckt top_primitive Iin_p Iin_n Vb1_ Vb2 Vb3_ Vb4_ Vb5 VDD GND Vout_n Vout_p
+Xcmfb_0 cmfb_1/Vb3 Vb5 VDD Vcmfb1 Vcm1 GND cmfb
+Xcmfb_1 cmfb_1/Vb3 Vb5 VDD Vcmfb2 Vcm2 GND cmfb
+Xsf_0 VDD pre_Vout_p Vout_n Vout_p sf_0/Vb4 pre_Vout_n GND sf
+Xmirror_4_0 GND Vb4_ sf_0/Vb4 mirror_4
+Xmirror_3_0 GND cmfb_1/Vb3 Vb3_ mirror_3
+Xcore_0 GND Vb2 Vcmfb1 core_1/Vb1 Vinn Von core_0/core_half_1/s Vinp Vop VDD core
+Xcore_1 GND Vb2 Vcmfb2 core_1/Vb1 Vop pre_Vout_p core_1/core_half_1/s Von pre_Vout_n
++ VDD core
+Xmirror_1_0 core_1/Vb1 GND Vb1_ mirror_1
+X0 pre_Vout_p Vinn GND sky130_fd_pr__res_xhigh_po w=700000u l=5.3e+07u
+X1 Vop a_15650_n4552# GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=1.41e+06u
+X2 Vcmfb2 GND sky130_fd_pr__cap_mim_m3_1 l=3.35e+07u w=3.35e+07u
+X3 GND Vcmfb1 sky130_fd_pr__cap_mim_m3_2 l=3.35e+07u w=3.35e+07u
+X4 Vcm1 Vop GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=3.5e+07u
+X5 Vinp Iin_p sky130_fd_pr__cap_mim_m3_1 l=6.12e+07u w=6.12e+07u
+X6 GND Vcmfb2 sky130_fd_pr__cap_mim_m3_2 l=3.35e+07u w=3.35e+07u
+X7 Vinn Iin_n sky130_fd_pr__cap_mim_m3_1 l=6.12e+07u w=6.12e+07u
+X8 pre_Vout_p Vcm2 GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=3.5e+07u
+X9 Iin_p Vinp sky130_fd_pr__cap_mim_m3_2 l=6.12e+07u w=6.12e+07u
+X10 a_n1350_n4552# Von GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=1.41e+06u
+X11 Iin_n Vinn sky130_fd_pr__cap_mim_m3_2 l=6.12e+07u w=6.12e+07u
+X12 a_15650_n4552# pre_Vout_n sky130_fd_pr__cap_mim_m3_1 l=7.75e+06u w=7.75e+06u
+X13 pre_Vout_n Vinp GND sky130_fd_pr__res_xhigh_po w=700000u l=5.3e+07u
+X14 a_n1350_n4552# pre_Vout_p sky130_fd_pr__cap_mim_m3_1 l=7.75e+06u w=7.75e+06u
+X15 pre_Vout_n a_15650_n4552# sky130_fd_pr__cap_mim_m3_2 l=7.75e+06u w=7.75e+06u
+X16 Von Vcm1 GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=3.5e+07u
+X17 Vcm2 pre_Vout_n GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=3.5e+07u
+X18 pre_Vout_p a_n1350_n4552# sky130_fd_pr__cap_mim_m3_2 l=7.75e+06u w=7.75e+06u
+X19 Vcmfb1 GND sky130_fd_pr__cap_mim_m3_1 l=3.35e+07u w=3.35e+07u
+C0 Vcmfb2 VDD 9.40fF
+C1 Vb2 VDD 3.60fF
+C2 Vop Vinn -5.34fF
+C3 Vop Vinp 3.86fF
+C4 core_0/core_half_1/s Vinn -2.09fF
+C5 cmfb_1/cmfb_half_0/Vout Vcmfb2 3.74fF
+C6 Vinp Iin_p 585.96fF
+C7 core_0/core_half_1/s Von 3.06fF
+C8 Vinn Iin_n 585.96fF
+C9 Vop core_1/core_half_1/s -2.89fF
+C10 pre_Vout_p Vcmfb2 2.39fF
+C11 Vop Vb2 -3.09fF
+C12 Vcmfb1 cmfb_0/cmfb_half_0/Vout 3.58fF
+C13 Vinn VDD -6.94fF
+C14 Vop core_0/core_half_1/s -3.38fF
+C15 Vinn Vinp 3.26fF
+C16 Vcmfb1 Vb5 2.03fF
+C17 Von VDD 6.58fF
+C18 Vinn Von 3.86fF
+C19 pre_Vout_n a_15650_n4552# 12.53fF
+C20 Vcmfb1 VDD 5.60fF
+C21 pre_Vout_n Vcmfb2 2.81fF
+C22 core_0/core_half_1/s Vcm1 8.99fF
+C23 Vop pre_Vout_n -4.78fF
+C24 pre_Vout_p a_n1350_n4552# 12.53fF
+C25 Iin_n GND 70.37fF
+C26 Iin_p GND 70.37fF
+C27 core_1/Vb1 GND 56.44fF
+C28 Vb1_ GND 9.11fF
+C29 Vop GND 16.03fF
+C30 Von GND 9.96fF
+C31 core_1/core_half_1/s GND 84.73fF
+C32 Vb2 GND 51.15fF
+C33 Vcmfb2 GND 212.57fF
+C34 VDD GND 323.86fF
+C35 Vinn GND 16.20fF
+C36 Vinp GND 14.24fF
+C37 core_0/core_half_1/s GND 84.73fF
+C38 Vcmfb1 GND 208.06fF
+C39 Vb3_ GND 10.28fF
+C40 Vb4_ GND 8.97fF
+C41 sf_0/Vb4 GND 57.29fF
+C42 pre_Vout_p GND 32.58fF
+C43 Vout_p GND 85.44fF
+C44 pre_Vout_n GND 29.51fF
+C45 Vout_n GND 81.69fF
+C46 Vcm2 GND 43.00fF
+C47 cmfb_1/cmfb_half_0/res GND 9.70fF
+C48 cmfb_1/Vb3 GND 23.10fF
+C49 Vb5 GND 20.52fF
+C50 cmfb_1/cmfb_half_1/res GND 8.43fF
+C51 cmfb_1/cmfb_half_0/Vout GND 6.87fF
+C52 Vcm1 GND 36.18fF
+C53 cmfb_0/cmfb_half_0/res GND 9.70fF
+C54 cmfb_0/cmfb_half_1/res GND 8.43fF
+C55 cmfb_0/cmfb_half_0/Vout GND 6.87fF
+.ends
+
