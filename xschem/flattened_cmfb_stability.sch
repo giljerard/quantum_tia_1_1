@@ -203,6 +203,8 @@ N -460 -1320 -310 -1320 { lab=#net34}
 N 870 -1040 910 -1040 { lab=#net37}
 N 470 -270 470 -220 { lab=Vinp}
 N 510 -360 510 -310 { lab=Vinn}
+N 2580 -450 2580 -420 {}
+N 2800 -450 2800 -420 {}
 C {devices/vsource.sym} 2190 -1400 0 0 {name=VDD_source value=1.8}
 C {devices/gnd.sym} 2190 -1370 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 2190 -1520 0 1 {name=l5 sig_type=std_logic lab=VDD}
@@ -592,13 +594,13 @@ C {devices/ngspice_probe.sym} 1660 -380 2 0 {name=r53}
 C {devices/lab_pin.sym} -710 -500 0 1 {name=l20 sig_type=std_logic lab=VDD_dummy}
 C {sky130_fd_pr/res_xhigh_po.sym} 1130 -680 1 0 {name=R6
 W=.7
-L=53
+L=159
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po.sym} 1060 -640 3 0 {name=R1
 W=.7
-L=53
+L=159
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
@@ -618,8 +620,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 2800 -450 0 0 {name=l65 sig_type=std_logic lab=GND}
-C {devices/lab_pin.sym} 2580 -450 0 1 {name=l66 sig_type=std_logic lab=GND}
 C {devices/ngspice_probe.sym} 2580 -360 0 0 {name=r57}
 C {devices/gnd.sym} 2580 -190 0 1 {name=l69 lab=GND}
 C {sky130_fd_pr/nfet_01v8.sym} 2780 -280 0 0 {name=M19

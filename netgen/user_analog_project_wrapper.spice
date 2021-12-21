@@ -33,6 +33,16 @@ Xcmfb_half_0 VDD GND cmfb_half_0/Vout cmfb_half_0/res Vb3 Vcm cmfb_half_0/Vout c
 X0 cmfb_half_1/res cmfb_half_0/res GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=1.41e+06u
 .ends
 
+.subckt sf_half Vout g_u g_d GND VDD
+X0 VDD g_u Vout GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+07u l=320000u M=26
+X1 Vout g_d GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+07u l=450000u M=26
+.ends
+
+.subckt sf VDD Vin_n Vout_p Vout_n GND Vb4 Vin_p
+Xsf_half_0 Vout_p Vin_p Vb4 GND VDD sf_half
+Xsf_half_1 Vout_n Vin_n Vb4 GND VDD sf_half
+.ends
+
 .subckt mirror_4 GND Vb4_ Vb4
 X0 a_1900_980# a_5540_1300# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
 X1 Vb4 GND sky130_fd_pr__cap_mim_m3_1 l=1.58e+07u w=1.58e+07u
@@ -51,16 +61,6 @@ X12 Vb4_ Vb4_ GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l
 X13 a_1900_2260# a_5540_2580# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
 X14 a_1900_1620# a_5540_1940# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
 X15 a_1900_340# a_5540_660# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
-.ends
-
-.subckt sf_half Vout g_u g_d GND VDD
-X0 VDD g_u Vout GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+07u l=320000u M=26
-X1 Vout g_d GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+07u l=450000u M=26
-.ends
-
-.subckt sf VDD Vin_n Vout_p Vout_n GND Vb4 Vin_p
-Xsf_half_0 Vout_p Vin_p Vb4 GND VDD sf_half
-Xsf_half_1 Vout_n Vin_n Vb4 GND VDD sf_half
 .ends
 
 .subckt mirror_3 GND Vb3 Vb3_
@@ -116,12 +116,12 @@ X15 a_1900_340# a_5540_660# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
 .subckt top VDD GND Vout_n Vout_p Vb2 Vb5 Vb1_ Vb3_ Vb4_ Iin_p Iin_n
 Xcmfb_0 cmfb_1/Vb3 Vb5 GND VDD Vcmfb1 Vcm1 cmfb
 Xcmfb_1 cmfb_1/Vb3 Vb5 GND VDD Vcmfb2 Vcm2 cmfb
-Xmirror_4_0 GND Vb4_ sf_0/Vb4 mirror_4
 Xsf_0 VDD pre_Vout_p Vout_n Vout_p GND sf_0/Vb4 pre_Vout_n sf
+Xmirror_4_0 GND Vb4_ sf_0/Vb4 mirror_4
 Xmirror_3_0 GND cmfb_1/Vb3 Vb3_ mirror_3
 Xcore_0 GND Vb2 Vcmfb1 core_1/Vb1 Vinn Von Vinp Vop VDD core
-Xmirror_1_0 core_1/Vb1 GND Vb1_ mirror_1
 Xcore_1 GND Vb2 Vcmfb2 core_1/Vb1 Vop pre_Vout_p Von pre_Vout_n VDD core
+Xmirror_1_0 core_1/Vb1 GND Vb1_ mirror_1
 X0 pre_Vout_p Vinn GND sky130_fd_pr__res_xhigh_po w=700000u l=5.3e+07u
 X1 Vop a_15650_n4552# GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=1.41e+06u
 X2 Vcmfb2 GND sky130_fd_pr__cap_mim_m3_1 l=3.35e+07u w=3.35e+07u

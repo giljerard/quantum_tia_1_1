@@ -40,8 +40,8 @@ C {devices/ipin.sym} 170 -500 0 0 {name=p3 lab=Vcmfb}
 C {devices/iopin.sym} 150 -460 0 0 {name=p7 lab=VDD}
 C {devices/iopin.sym} 150 -420 0 0 {name=p8 lab=GND}
 C {devices/opin.sym} 150 -390 0 0 {name=p6 lab=Vout_p}
-C {sscs_pico_chip_4/xschem/core_half.sym} 850 -510 0 0 {name=x1}
-C {sscs_pico_chip_4/xschem/core_half.sym} 480 -510 0 1 {name=x2}
+C {quantum_tia_1_1/xschem/core_half.sym} 850 -510 0 0 {name=x1}
+C {quantum_tia_1_1/xschem/core_half.sym} 480 -510 0 1 {name=x2}
 C {devices/lab_wire.sym} 650 -520 0 1 {name=l3 sig_type=std_logic lab=Vb2}
 C {devices/lab_wire.sym} 1000 -540 0 1 {name=l4 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 330 -540 0 0 {name=l5 sig_type=std_logic lab=VDD}

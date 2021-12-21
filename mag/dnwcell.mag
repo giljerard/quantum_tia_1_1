@@ -1,0 +1,57 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1640048017
+<< checkpaint >>
+rect -3456 -3756 4596 4296
+<< dnwell >>
+rect -50 -30 190 180
+rect 270 -30 870 570
+<< nwell >>
+rect 190 364 950 650
+rect 190 180 476 364
+rect -50 176 476 180
+rect 664 176 950 364
+rect -50 150 950 176
+rect -50 0 0 150
+rect 150 0 950 150
+rect -50 -30 950 0
+rect 190 -110 950 -30
+<< pwell >>
+rect 0 0 150 150
+<< nsubdiff >>
+rect 227 593 913 613
+rect 227 559 307 593
+rect 833 559 913 593
+rect 227 539 913 559
+rect 227 533 301 539
+rect 227 7 247 533
+rect 281 7 301 533
+rect 227 1 301 7
+rect 839 533 913 539
+rect 839 7 859 533
+rect 893 7 913 533
+rect 839 1 913 7
+rect 227 -19 913 1
+rect 227 -53 307 -19
+rect 833 -53 913 -19
+rect 227 -73 913 -53
+<< nsubdiffcont >>
+rect 307 559 833 593
+rect 247 7 281 533
+rect 859 7 893 533
+rect 307 -53 833 -19
+<< locali >>
+rect 247 559 307 593
+rect 833 559 893 593
+rect 247 533 281 559
+rect 247 -19 281 7
+rect 859 533 893 559
+rect 859 -19 893 7
+rect 247 -53 307 -19
+rect 833 -53 893 -19
+use sky130_fd_pr__nfet_01v8_TJ5Z69  sky130_fd_pr__nfet_01v8_TJ5Z69_0
+timestamp 1640048017
+transform 1 0 73 0 1 71
+box -73 -71 73 71
+<< end >>

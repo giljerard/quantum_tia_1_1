@@ -242,6 +242,8 @@ N 480 -430 560 -430 { lab=#net13}
 N 480 -60 560 -60 { lab=#net14}
 N 570 -440 570 -360 { lab=#net13}
 N 570 -70 570 10 { lab=#net14}
+N 2880 -450 2880 -420 { lab=Vout_p}
+N 3100 -450 3100 -420 { lab=Vout_n}
 C {devices/vsource.sym} 2490 -1400 0 0 {name=VDD_source value=1.8}
 C {devices/gnd.sym} 2490 -1370 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 90 -10 0 1 {name=l3 lab=GND}
@@ -331,7 +333,7 @@ descr="vth="}
 C {devices/code_shown.sym} -240 20 0 0 {name=SPICE
 only_toplevel=false
 
-*value=".control
+value=".control
 *tran .001n 10u 5m
 *plot Vout_n
 
@@ -339,7 +341,7 @@ only_toplevel=false
 *plot Vcmfb 
 *plot Vcm1
 
-ac dec 50 1k 10G
+ac dec 50 1k 100meg
 plot vdb(Vout_p)
 *plot vdb(Vcm1)
 *plot vp(Vcm1)*57.296
@@ -348,7 +350,7 @@ plot vdb(Vout_p)
 .endc
 "
 
-value=".control
+*value=".control
 set sqrnoise
 
 noise v(Vout_p) IINN_source dec 10 20k 450meg
@@ -653,13 +655,13 @@ C {devices/ngspice_probe.sym} 1960 -380 2 0 {name=r53}
 C {devices/lab_pin.sym} -710 -500 0 1 {name=l20 sig_type=std_logic lab=VDD_dummy}
 C {sky130_fd_pr/res_xhigh_po.sym} 1430 -680 1 0 {name=R6
 W=.7
-L=53
+L=159
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po.sym} 1360 -640 3 0 {name=R1
 W=.7
-L=53
+L=159
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
@@ -679,8 +681,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 3100 -450 0 0 {name=l65 sig_type=std_logic lab=GND}
-C {devices/lab_pin.sym} 2880 -450 0 1 {name=l66 sig_type=std_logic lab=GND}
 C {devices/ngspice_probe.sym} 2880 -360 0 0 {name=r57}
 C {devices/gnd.sym} 2880 -190 0 1 {name=l69 lab=GND}
 C {sky130_fd_pr/nfet_01v8.sym} 3080 -280 0 0 {name=M19

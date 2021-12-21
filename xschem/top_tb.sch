@@ -227,7 +227,7 @@ value=26k
 ac=26k
 m=1}
 C {devices/lab_wire.sym} 200 -530 3 1 {name=l41 sig_type=std_logic lab=VDD}
-C {sscs_pico_chip_4/xschem/top.sym} 1150 -320 0 0 {name=x1}
+C {quantum_tia_1_1/xschem/top.sym} 1150 -320 0 0 {name=x1}
 C {devices/res_ac.sym} 250 -450 3 0 {name=R1
 value=26k
 ac=26k

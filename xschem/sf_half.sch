@@ -7,6 +7,7 @@ E {}
 N 530 -300 530 -240 { lab=Vout}
 N 530 -270 550 -270 { lab=Vout}
 N 530 -210 530 -180 { lab=GND}
+N 530 -330 530 -300 {}
 C {devices/iopin.sym} 130 -370 0 0 {name=p2 lab=VDD}
 C {devices/iopin.sym} 130 -330 0 0 {name=p3 lab=g_u}
 C {devices/lab_wire.sym} 490 -330 2 1 {name=l3 sig_type=std_logic lab=g_u}
@@ -30,7 +31,6 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {devices/lab_wire.sym} 530 -360 0 0 {name=l8 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 530 -330 2 0 {name=l10 sig_type=std_logic lab=GND}
 C {sky130_fd_pr/nfet_01v8.sym} 510 -210 0 0 {name=M19
 L=.45
 W=650

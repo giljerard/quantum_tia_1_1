@@ -146,9 +146,9 @@ x12 io_analog[6] io_analog[5] io_analog[8] esd_half
 x10 io_analog[6] io_analog[5] io_analog[7] esd_half
 .ends
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/top.sym # of pins=11
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/top.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/top.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/top.sym # of pins=11
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/top.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/top.sch
 .subckt top  Iin_p Iin_n Vb1_ Vb2 Vb3_ Vb4_ Vb5 VDD GND Vout_n Vout_p
 *.iopin VDD
 *.iopin GND
@@ -161,8 +161,8 @@ x10 io_analog[6] io_analog[5] io_analog[7] esd_half
 *.ipin Vb3_
 *.ipin Vb4_
 *.ipin Vb5
-XR6 Vinn pre_Vout_p GND sky130_fd_pr__res_xhigh_po W=.7 L=53 mult=1 m=1
-XR1 pre_Vout_n Vinp GND sky130_fd_pr__res_xhigh_po W=.7 L=53 mult=1 m=1
+XR6 Vinn pre_Vout_p GND sky130_fd_pr__res_xhigh_po W=.7 L=159 mult=1 m=1
+XR1 pre_Vout_n Vinp GND sky130_fd_pr__res_xhigh_po W=.7 L=159 mult=1 m=1
 XR3 Vcm2 pre_Vout_p GND sky130_fd_pr__res_xhigh_po W=1.41 L=35 mult=1 m=1
 XR5 pre_Vout_n Vcm2 GND sky130_fd_pr__res_xhigh_po W=1.41 L=35 mult=1 m=1
 XR4 Vop net1 GND sky130_fd_pr__res_xhigh_po W=1.41 L=1.41 mult=1 m=1
@@ -192,9 +192,9 @@ XC12 GND Vcmfb2 sky130_fd_pr__cap_mim_m3_2 W=33.5 L=33.5 MF=1 m=1
 .ends
 
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/big_cap.sym # of pins=2
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/big_cap.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/big_cap.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/big_cap.sym # of pins=2
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/big_cap.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/big_cap.sch
 .subckt big_cap  VDD GND
 *.iopin VDD
 *.iopin GND
@@ -233,9 +233,9 @@ XC32 GND VDD sky130_fd_pr__cap_mim_m3_2 W=55 L=55 MF=1 m=1
 .ends
 
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/esd.sym # of pins=4
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/esd.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/esd.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/esd.sym # of pins=4
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/esd.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/esd.sch
 .subckt esd  VDD out GND in
 *.iopin VDD
 *.iopin out
@@ -257,9 +257,9 @@ XR1 out in GND sky130_fd_pr__res_high_po W=2.85 L=1.3 mult=1 m=1
 .ends
 
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/esd_wide.sym # of pins=4
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/esd_wide.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/esd_wide.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/esd_wide.sym # of pins=4
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/esd_wide.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/esd_wide.sch
 .subckt esd_wide  VDD out GND in
 *.iopin VDD
 *.iopin out
@@ -281,9 +281,9 @@ XR1 out in GND sky130_fd_pr__res_high_po W=2.85 L=1.3 mult=1 m=1
 .ends
 
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/esd_half.sym # of pins=3
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/esd_half.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/esd_half.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/esd_half.sym # of pins=3
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/esd_half.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/esd_half.sch
 .subckt esd_half  VDD GND inout
 *.iopin VDD
 *.iopin inout
@@ -297,9 +297,9 @@ XM2 inout VDD VDD VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 ad='int((nf+1)/2)
 .ends
 
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/core.sym # of pins=9
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/core.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/core.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/core.sym # of pins=9
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/core.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/core.sch
 .subckt core  Vin_n Vin_p Vb2 Vb1 Vcmfb VDD GND Vout_p Vout_n
 *.ipin Vb2
 *.ipin Vcmfb
@@ -318,9 +318,9 @@ x2 Vin_n Vb2 Vcmfb VDD GND Vout_p net1 core_half
 .ends
 
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/sf.sym # of pins=7
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/sf.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/sf.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/sf.sym # of pins=7
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/sf.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/sf.sch
 .subckt sf  VDD GND Vin_p Vin_n Vout_p Vout_n Vb4
 *.ipin Vin_n
 *.iopin VDD
@@ -334,9 +334,9 @@ X2 VDD Vb4 Vout_n Vin_n GND sf_half
 .ends
 
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/cmfb.sym # of pins=6
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/cmfb.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/cmfb.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/cmfb.sym # of pins=6
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/cmfb.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/cmfb.sch
 .subckt cmfb  Vcm Vref Vb3 VDD GND Vcmfb
 *.iopin VDD
 *.iopin GND
@@ -350,9 +350,9 @@ XR20 net2 net1 GND sky130_fd_pr__res_xhigh_po W=1.41 L=1.41 mult=1 m=1
 .ends
 
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/mirror_1.sym # of pins=3
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/mirror_1.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/mirror_1.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/mirror_1.sym # of pins=3
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/mirror_1.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/mirror_1.sch
 .subckt mirror_1  Vb1 Vb1_ GND
 *.iopin GND
 *.iopin Vb1_
@@ -382,9 +382,9 @@ XM2 GND GND GND GND sky130_fd_pr__nfet_01v8 L=.5 W=3.6 nf=1 ad='int((nf+1)/2) * 
 .ends
 
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/mirror_3.sym # of pins=3
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/mirror_3.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/mirror_3.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/mirror_3.sym # of pins=3
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/mirror_3.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/mirror_3.sch
 .subckt mirror_3  Vb3 Vb3_ GND
 *.iopin GND
 *.iopin Vb3_
@@ -414,9 +414,9 @@ XM2 GND GND GND GND sky130_fd_pr__nfet_01v8 L=.5 W=5 nf=1 ad='int((nf+1)/2) * W/
 .ends
 
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/mirror_4.sym # of pins=3
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/mirror_4.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/mirror_4.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/mirror_4.sym # of pins=3
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/mirror_4.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/mirror_4.sch
 .subckt mirror_4  Vb4 Vb4_ GND
 *.iopin GND
 *.iopin Vb4_
@@ -446,9 +446,9 @@ XM2 GND GND GND GND sky130_fd_pr__nfet_01v8 L=.45 W=4 nf=1 ad='int((nf+1)/2) * W
 .ends
 
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/core_half.sym # of pins=7
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/core_half.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/core_half.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/core_half.sym # of pins=7
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/core_half.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/core_half.sch
 .subckt core_half  Vin Vb2 Vcmfb VDD GND Vout s
 *.ipin Vb2
 *.ipin Vcmfb
@@ -469,16 +469,16 @@ XM25 Vout Vb2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.18 W=448 nf=15 ad='int((nf+1)/
 .ends
 
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/sf_half.sym # of pins=5
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/sf_half.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/sf_half.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/sf_half.sym # of pins=5
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/sf_half.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/sf_half.sch
 .subckt sf_half  VDD g_d Vout g_u GND
 *.iopin VDD
 *.iopin g_u
 *.iopin GND
 *.iopin Vout
 *.iopin g_d
-XM17 VDD g_u Vout GND sky130_fd_pr__nfet_01v8_lvt L=0.32 W=650 nf=26 ad='int((nf+1)/2) * W/nf * 0.29'
+XM17 VDD g_u Vout Vout sky130_fd_pr__nfet_01v8_lvt L=0.32 W=650 nf=26 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
 XM19 Vout g_d GND GND sky130_fd_pr__nfet_01v8 L=.45 W=650 nf=26 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -487,9 +487,9 @@ XM19 Vout g_d GND GND sky130_fd_pr__nfet_01v8 L=.45 W=650 nf=26 ad='int((nf+1)/2
 .ends
 
 
-* expanding   symbol:  sscs_pico_chip_4/xschem/cmfb_half.sym # of pins=7
-* sym_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/cmfb_half.sym
-* sch_path: /home/jared/Documents/GS_Design/sscs_pico_chip_4/xschem/cmfb_half.sch
+* expanding   symbol:  quantum_tia_1_1/xschem/cmfb_half.sym # of pins=7
+* sym_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/cmfb_half.sym
+* sch_path: /home/jared/Documents/GS_Design/quantum_tia_1_1/xschem/cmfb_half.sch
 .subckt cmfb_half  Vin res VDD GND Vb3 diode Vout
 *.iopin VDD
 *.iopin GND

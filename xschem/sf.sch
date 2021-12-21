@@ -17,8 +17,8 @@ C {devices/lab_wire.sym} 540 -230 0 0 {name=l1 sig_type=std_logic lab=Vin_n}
 C {devices/lab_wire.sym} 540 -420 0 0 {name=l2 sig_type=std_logic lab=Vin_p}
 C {devices/opin.sym} 130 -170 0 0 {name=p6 lab=Vout_p}
 C {devices/iopin.sym} 130 -130 0 0 {name=p7 lab=Vb4}
-C {sscs_pico_chip_4/xschem/sf_half.sym} 370 -360 0 0 {name=X1}
-C {sscs_pico_chip_4/xschem/sf_half.sym} 370 -170 0 0 {name=X2}
+C {quantum_tia_1_1/xschem/sf_half.sym} 370 -360 0 0 {name=X1}
+C {quantum_tia_1_1/xschem/sf_half.sym} 370 -170 0 0 {name=X2}
 C {devices/lab_wire.sym} 410 -230 0 0 {name=l3 sig_type=std_logic lab=VDD}
 C {devices/gnd.sym} 650 -110 0 0 {name=l5 lab=GND}
 C {devices/lab_wire.sym} 540 -110 2 1 {name=l6 sig_type=std_logic lab=Vb4}

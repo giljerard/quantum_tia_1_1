@@ -85,13 +85,13 @@ C {devices/lab_wire.sym} 1880 -250 0 1 {name=l14 sig_type=std_logic lab=Vcm2}
 C {devices/ngspice_probe.sym} 1890 -250 2 0 {name=r53}
 C {sky130_fd_pr/res_xhigh_po.sym} 1130 -680 1 0 {name=R6
 W=.7
-L=53
+L=159
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po.sym} 1060 -640 3 0 {name=R1
 W=.7
-L=53
+L=159
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
@@ -154,7 +154,7 @@ spiceprefix=X
 mult=1}
 C {devices/gnd.sym} 850 -230 0 0 {name=l104 lab=GND}
 C {devices/gnd.sym} 940 -230 0 0 {name=l105 lab=GND}
-C {sscs_pico_chip_4/xschem/core.sym} 810 -410 0 0 {name=x1}
+C {quantum_tia_1_1/xschem/core.sym} 810 -410 0 0 {name=x1}
 C {devices/lab_wire.sym} 810 -480 3 1 {name=l44 sig_type=std_logic lab=Vb2}
 C {devices/lab_wire.sym} 850 -480 3 1 {name=l81 sig_type=std_logic lab=VDD}
 C {devices/gnd.sym} 790 -330 0 0 {name=l82 lab=GND}
@@ -162,7 +162,7 @@ C {devices/lab_wire.sym} 1160 -440 0 1 {name=l6 sig_type=std_logic lab=Vop}
 C {devices/lab_wire.sym} 980 -250 0 1 {name=l9 sig_type=std_logic lab=Vop}
 C {devices/lab_wire.sym} 790 -250 0 1 {name=l10 sig_type=std_logic lab=Von}
 C {devices/lab_wire.sym} 1650 -480 3 1 {name=l12 sig_type=std_logic lab=Vb1}
-C {sscs_pico_chip_4/xschem/core.sym} 1670 -410 0 0 {name=x2}
+C {quantum_tia_1_1/xschem/core.sym} 1670 -410 0 0 {name=x2}
 C {devices/lab_wire.sym} 1670 -480 3 1 {name=l23 sig_type=std_logic lab=Vb2}
 C {devices/lab_wire.sym} 1710 -480 3 1 {name=l24 sig_type=std_logic lab=VDD}
 C {devices/gnd.sym} 1650 -330 0 0 {name=l59 lab=GND}
@@ -170,7 +170,7 @@ C {devices/lab_wire.sym} 1980 -250 0 1 {name=l21 sig_type=std_logic lab=pre_Vout
 C {devices/lab_wire.sym} 1790 -250 0 0 {name=l26 sig_type=std_logic lab=pre_Vout_p}
 C {devices/gnd.sym} 1840 -230 0 0 {name=l27 lab=GND}
 C {devices/gnd.sym} 1930 -230 0 0 {name=l28 lab=GND}
-C {sscs_pico_chip_4/xschem/sf.sym} 2480 -430 0 0 {name=X1}
+C {quantum_tia_1_1/xschem/sf.sym} 2480 -430 0 0 {name=X1}
 C {devices/lab_wire.sym} 2930 -450 0 1 {name=l32 sig_type=std_logic lab=Vout_n}
 C {devices/ngspice_probe.sym} 800 -590 0 0 {name=r5}
 C {devices/ngspice_probe.sym} 1660 -600 0 0 {name=r9}
@@ -179,22 +179,22 @@ C {devices/lab_wire.sym} 870 -1180 1 0 {name=l34 sig_type=std_logic lab=Vb3}
 C {devices/lab_wire.sym} 930 -1140 0 1 {name=l35 sig_type=std_logic lab=Vcm1}
 C {devices/gnd.sym} 870 -1030 0 1 {name=l36 lab=GND}
 C {devices/lab_wire.sym} 1660 -700 0 1 {name=l29 sig_type=std_logic lab=Vcmfb2}
-C {sscs_pico_chip_4/xschem/cmfb.sym} 850 -1110 0 1 {name=x3}
+C {quantum_tia_1_1/xschem/cmfb.sym} 850 -1110 0 1 {name=x3}
 C {devices/lab_wire.sym} 1740 -1120 1 0 {name=l47 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1760 -1120 1 0 {name=l52 sig_type=std_logic lab=Vb3}
 C {devices/lab_wire.sym} 1820 -1080 0 1 {name=l53 sig_type=std_logic lab=Vcm2}
 C {devices/gnd.sym} 1760 -970 0 1 {name=l54 lab=GND}
-C {sscs_pico_chip_4/xschem/cmfb.sym} 1740 -1050 0 1 {name=x4}
-C {sscs_pico_chip_4/xschem/mirror_1.sym} 2180 -890 0 0 {name=x5}
+C {quantum_tia_1_1/xschem/cmfb.sym} 1740 -1050 0 1 {name=x4}
+C {quantum_tia_1_1/xschem/mirror_1.sym} 2180 -890 0 0 {name=x5}
 C {devices/lab_wire.sym} 2330 -910 0 1 {name=l55 sig_type=std_logic lab=Vb1}
 C {devices/lab_wire.sym} 1820 -1020 0 1 {name=l7 sig_type=std_logic lab=Vb5}
 C {devices/lab_wire.sym} 930 -1080 0 1 {name=l16 sig_type=std_logic lab=Vb5}
 C {devices/gnd.sym} 2870 -870 0 0 {name=l22 lab=GND}
-C {sscs_pico_chip_4/xschem/mirror_3.sym} 2720 -890 0 0 {name=x6}
+C {quantum_tia_1_1/xschem/mirror_3.sym} 2720 -890 0 0 {name=x6}
 C {devices/lab_wire.sym} 2920 -910 0 1 {name=l40 sig_type=std_logic lab=Vb3}
 C {devices/ngspice_probe.sym} 2880 -910 0 0 {name=r2}
 C {devices/gnd.sym} 3440 -870 0 0 {name=l42 lab=GND}
-C {sscs_pico_chip_4/xschem/mirror_4.sym} 3290 -890 0 0 {name=x7}
+C {quantum_tia_1_1/xschem/mirror_4.sym} 3290 -890 0 0 {name=x7}
 C {devices/lab_wire.sym} 3490 -910 0 1 {name=l43 sig_type=std_logic lab=Vb4}
 C {devices/ngspice_probe.sym} 3450 -910 0 0 {name=r3}
 C {devices/iopin.sym} 90 -320 0 0 {name=p7 lab=VDD}
