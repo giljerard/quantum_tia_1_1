@@ -1,15 +1,15 @@
-timestamp 1637736435
+timestamp 1640246018
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use sf sf_0 1 0 12590 0 1 -29850
 use mirror_3 mirror_3_0 1 0 21140 0 1 -14930
 use mirror_4 mirror_4_0 1 0 20940 0 1 -20790
 use mirror_1 mirror_1_0 1 0 20860 0 1 -9070
 use cmfb cmfb_1 1 0 25700 0 1 -3610
 use cmfb cmfb_0 1 0 25700 0 1 2690
-use sf sf_0 1 0 12590 0 1 -29850
 use core core_0 1 0 7320 0 1 2520
 use core core_1 1 0 7320 0 1 -7060
 parameters sky130_fd_pr__res_xhigh_po l=l w=w
@@ -23,8 +23,8 @@ parameters sky130_fd_pr__cap_mim_m3_2 w=w l=l
 port "Iin_n" 26 20440 21510 20440 21510 m5
 port "Iin_p" 25 -5530 21540 -5530 21540 m5
 port "Vb4_" 23 30660 -22400 30660 -22400 m4
-port "Vout_n" 17 9730 -23610 9730 -23610 m3
-port "Vout_p" 18 5150 -23580 5150 -23580 m3
+port "Vout_n" 17 9750 -23610 9750 -23610 m3
+port "Vout_p" 18 5130 -23580 5130 -23580 m3
 port "Vb3_" 22 30890 -16530 30890 -16530 m4
 port "Vb1_" 21 30970 -10670 30970 -10670 m4
 port "GND" 7 -6360 -23210 -6360 -23210 m5
@@ -35,1068 +35,1086 @@ port "VDD" 1 29100 7420 29100 7420 m5
 port "VDD" 1 -2700 7440 -2700 7440 m5
 node "Iin_n" 2 70365.7 20440 21510 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 159414500 50520 3939200 25260 159414500 50520 0 0
 node "Iin_p" 2 70365.7 -5530 21540 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 159414500 50520 3939200 25260 159414500 50520 0 0
+node "m2_n7150_1740#" 3 2839.76 -7150 1740 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1298400 11300 0 0 0 0 0 0 0 0
 node "Vb4_" 2 5100.72 30660 -22400 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 102400 1280 102400 1280 102400 1280 3059200 19760 0 0 0 0
-node "m1_7210_n18020#" 8 9086.82 7210 -18020 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 193600 1760 193600 1760 193600 1760 2532400 40740 0 0 0 0
-node "Vout_n" 5 4373.75 9730 -23610 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32400 2160 99200 1260 2227200 14560 0 0 0 0 0 0
-node "Vout_p" 5 4373.75 5150 -23580 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32400 2160 99200 1260 2227200 14560 0 0 0 0 0 0
+node "m1_6480_n18170#" 2 13817.1 6480 -18170 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 272800 3000 272800 3000 272800 3000 3786400 61320 0 0 0 0
+node "Vout_n" 5 4373.75 9750 -23610 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32400 2160 99200 1260 2227200 14560 0 0 0 0 0 0
+node "Vout_p" 5 4373.75 5130 -23580 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32400 2160 99200 1260 2227200 14560 0 0 0 0 0 0
 node "Vb3_" 2 5100.72 30890 -16530 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 102400 1280 102400 1280 102400 1280 3059200 19760 0 0 0 0
 node "Vb1_" 2 5528.68 30970 -10670 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 102400 1280 102400 1280 368000 3580 2979200 19900 0 0 0 0
 node "m1_0_n8450#" 2 2152.81 0 -8450 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 102300 1280 102300 1280 102300 1280 400400 6700 0 0 0 0
-node "Vcmfb2" 9 28465.5 7380 -3650 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 86400 5000 14892500 83580 81400 1180 45838200 27800 0 0 0 0
-node "m1_14590_n8540#" 2 12081.1 14590 -8540 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 204600 2560 204600 2560 1089000 7920 2694850 47790 0 0 0 0
-node "m1_0_850#" 1 2153.05 0 850 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 102300 1280 102300 1280 953700 6440 0 0 0 0 0 0
-node "GND" 16 155732 13060 40 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9016000 42740 3302400 32080 103350400 88720 7926400 60940 303639200 320440 0 0
+node "Vcmfb2" 9 28377.4 7380 -3650 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 86400 5000 14892500 83580 81400 1180 45838200 27800 0 0 0 0
+node "m1_14590_n8540#" 12 12172.9 14590 -8540 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 204600 2560 204600 2560 1585650 10930 2480500 44520 0 0 0 0
+node "m1_0_850#" 1 2298.39 0 850 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 102300 1280 102300 1280 1065900 7120 0 0 0 0 0 0
+node "GND" 16 155448 13060 40 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9016000 42740 3302400 32080 103350400 88720 7926400 60940 303639200 320440 0 0
 node "m1_24700_3050#" 2 13344.5 24700 3050 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 217800 2640 217800 2640 217800 2640 4011585 60912 0 0 0 0
-node "Vb2" 3 23513.3 21200 8860 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 158400 2600 158400 2600 158400 2600 9086400 113880 0 0 0 0
+node "Vb2" 3 24218.9 21200 8860 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 158400 2600 158400 2600 158400 2600 9374400 117480 0 0 0 0
 node "Vb5" 4 14250.3 39610 8360 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 861200 7000 532400 5720 532400 5720 7311200 56760 0 0 0 0
 node "Vcmfb1" 9 26804.5 7380 5980 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 86400 5000 14093300 76920 81400 1180 45838200 27800 0 0 0 0
-node "VDD" 21 75726.6 -2700 7440 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3382400 28920 2995200 28240 2995200 28240 3340800 28840 150132200 207000 0 0
+node "VDD" 21 75307.7 -2700 7440 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3382400 28920 2995200 28240 2995200 28240 3340800 28840 144962200 208760 0 0
 node "a_7690_n9900#" 49645 0 7690 -9900 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1974000 14564 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "Vcm2" 87 25627.7 7210 -9900 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 270720 3048 232560 8004 12198600 88660 0 0 0 0 0 0 0 0
 node "a_210_n9900#" 49645 0 210 -9900 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1974000 14564 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "pre_Vout_n" 216 16448.8 14690 -9900 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 405120 5528 299760 9244 492200 5840 10176100 48840 412800 3220 3236100 7240 0 0
+node "a_17160_n6470#" 151429 0 17160 -6470 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1484000 21480 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Vinp" 120 16967.3 17160 4130 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134400 2480 99600 3400 166400 2500 6976600 33740 151683300 50160 0 0 0 0
+node "a_16770_n6950#" 254 1816.06 16770 -6950 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 268800 4960 254400 2020 0 0 0 0 0 0 0 0 0 0
+node "a_16770_n6470#" 151429 0 16770 -6470 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1484000 21480 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "pre_Vout_n" 216 16063.3 14690 -9900 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 405120 5528 299760 9244 492200 5840 9793300 47520 412800 3220 3236100 7240 0 0
 node "a_16380_n6470#" 151429 0 16380 -6470 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1484000 21480 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "pre_Vout_p" 216 16509.1 -1740 -6950 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 405120 5528 299760 9244 492200 5840 10213300 49080 412800 3220 3236100 7240 0 0
+node "pre_Vout_p" 216 16123.7 -1740 -6950 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 405120 5528 299760 9244 492200 5840 9830500 47760 412800 3220 3236100 7240 0 0
 node "a_15650_n4552#" 79 1235.48 15650 -4552 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 270720 3048 135360 1524 96800 1320 96800 1320 2764900 7160 0 0 0 0
 node "a_15368_n4552#" 2000 0 15368 -4552 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79524 1128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_n870_n4552#" 2000 0 -870 -4552 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 79524 1128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_n1350_n4552#" 79 1235.48 -1350 -4552 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 270720 3048 135360 1524 96800 1320 96800 1320 2764900 7160 0 0 0 0
 node "Vop" 189 13724.6 14630 -380 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 540312 6088 431556 6664 459400 5560 7593000 51740 0 0 0 0 0 0
 node "a_7630_n380#" 49645 0 7630 -380 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1974000 14564 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "Vcm1" 87 23563 7150 -380 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 270720 3048 232560 8004 10552800 82140 0 0 0 0 0 0 0 0
+node "Vcm1" 87 20707.2 7150 -380 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 270720 3048 232560 8004 9220800 71040 0 0 0 0 0 0 0 0
 node "a_150_n380#" 49645 0 150 -380 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1974000 14564 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "Von" 192 14135.5 -588 -4552 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 540312 6088 345756 8084 463700 5580 7673400 52340 0 0 0 0 0 0
-node "Vinp" 120 16651.8 16380 4130 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134400 2480 99600 3400 166400 2500 6602200 32180 151683300 50160 0 0 0 0
+node "a_16380_4130#" 254 1816.06 16380 4130 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 268800 4960 254400 2020 0 0 0 0 0 0 0 0 0 0
 node "a_n1740_n6470#" 151429 0 -1740 -6470 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1484000 21480 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "Vinn" 120 17447.6 -1740 4130 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134400 2480 99600 3400 1803800 10720 5019200 25020 151683300 50160 0 0 0 0
-substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n2130_n6470#" 151429 0 -2130 -6470 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1484000 21480 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n2130_4130#" 254 1816.06 -2130 4130 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 268800 4960 254400 2020 0 0 0 0 0 0 0 0 0 0
+node "a_n2520_n6950#" 254 1816.06 -2520 -6950 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 268800 4960 254400 2020 0 0 0 0 0 0 0 0 0 0
+node "a_n2520_n6470#" 151429 0 -2520 -6470 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1484000 21480 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Vinn" 120 17763.1 -2520 4130 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134400 2480 99600 3400 1803800 10720 5393600 26580 151683300 50160 0 0 0 0
+substrate "w_1230_n17330#" 0 0 1230 -17330 pw 49538800 39960 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 cap "Vb2" "Vop" 393.06
-cap "Vb2" "Vinp" 426.2
-cap "Vb2" "Vcm1" 164.8
-cap "m1_24700_3050#" "Vcm2" 134.56
-cap "pre_Vout_p" "VDD" 515.4
-cap "m1_24700_3050#" "Vcm1" 155.62
-cap "Vcmfb2" "VDD" 1717.2
-cap "m1_14590_n8540#" "Vcm2" 183.85
-cap "pre_Vout_p" "GND" 1863
-cap "pre_Vout_p" "pre_Vout_n" 279.071
-cap "Vcmfb2" "GND" 183075
-cap "m1_0_850#" "VDD" 157.55
-cap "Vb5" "Vcm1" 198.8
-cap "Vb2" "Vcmfb2" 369.8
-cap "GND" "Vb3_" 671.2
-cap "Vout_n" "GND" 626
-cap "m1_0_n8450#" "VDD" 189.76
-cap "Von" "VDD" 515.4
-cap "m1_24700_3050#" "Vcmfb2" 326.081
-cap "m1_7210_n18020#" "Vout_n" 359.44
-cap "Vinn" "Vinp" 3332.53
-cap "pre_Vout_p" "a_n1350_n4552#" 12529.2
-cap "Vop" "Vcm1" 464.36
-cap "Von" "GND" 2128.26
-cap "m1_14590_n8540#" "Vcmfb2" 214.75
-cap "Vcmfb1" "VDD" 2046.58
-cap "Vb5" "Vcmfb2" 275.5
-cap "Von" "Vb2" 393.06
-cap "Vcmfb1" "GND" 182223
-cap "GND" "VDD" 12499.5
-cap "pre_Vout_p" "Vcm2" 652.353
-cap "Vb4_" "GND" 671.2
-cap "pre_Vout_n" "VDD" 515.4
-cap "Vb2" "Vcmfb1" 235
-cap "Vb2" "VDD" 897.06
-cap "a_15650_n4552#" "pre_Vout_n" 12529.2
-cap "Vop" "Vcmfb2" 642.005
-cap "m1_7210_n18020#" "GND" 2795.6
-cap "pre_Vout_n" "GND" 1863
-cap "Von" "a_n1350_n4552#" 145.555
-cap "a_15650_n4552#" "Vb2" 169.263
-cap "Vinn" "Iin_n" 585957
-cap "Vb2" "GND" 4710.18
-cap "m1_24700_3050#" "VDD" 590.699
-cap "m1_24700_3050#" "GND" 397.13
-cap "Vcmfb1" "Vb5" 1733.18
-cap "Vb5" "VDD" 1155.16
-cap "m1_14590_n8540#" "GND" 9871.57
-cap "Von" "Vop" 288.153
-cap "Vout_p" "GND" 626
-cap "Von" "Vinp" 244.125
-cap "Von" "Vcm1" 464.36
-cap "Vb5" "GND" 701.572
-cap "Vb1_" "GND" 671.2
-cap "Vinp" "Iin_p" 585957
-cap "m1_14590_n8540#" "Vb2" 635.08
-cap "Vb2" "a_n1350_n4552#" 169.263
-cap "Vcmfb1" "Vinn" 654.36
-cap "Vinn" "VDD" 626
-cap "Vcm2" "VDD" 1076.8
-cap "Vop" "VDD" 515.4
-cap "Vcmfb1" "Vinp" 654.36
-cap "Vinp" "VDD" 626
-cap "Vcm1" "VDD" 1014.4
-cap "Vcm2" "GND" 2397.27
-cap "a_15650_n4552#" "Vop" 145.555
-cap "Vop" "GND" 2128.26
-cap "Von" "pre_Vout_p" 722.295
 cap "m1_24700_3050#" "Vb1_" 1805.17
-cap "pre_Vout_n" "Vcm2" 652.353
-cap "GND" "Vcm1" 1137.48
+cap "Vb2" "m1_14590_n8540#" 1532.77
+cap "VDD" "m1_0_850#" 175.35
+cap "pre_Vout_p" "VDD" 515.4
+cap "Von" "GND" 2128.26
+cap "VDD" "Vinn" 626
 cap "pre_Vout_n" "Vop" 729.511
-cap "Vb2" "Vinn" 421.52
+cap "Vinp" "Vcmfb1" 654.36
+cap "a_15650_n4552#" "Vop" 145.555
+cap "VDD" "Vop" 515.4
+cap "GND" "Vb3_" 671.2
+cap "pre_Vout_p" "a_n1350_n4552#" 12529.2
+cap "VDD" "m1_24700_3050#" 590.699
+cap "Vop" "Vcmfb2" 642.005
+cap "a_15650_n4552#" "Vb2" 169.263
+cap "Vcm1" "Vop" 464.36
+cap "VDD" "m2_n7150_1740#" 946.6
+cap "VDD" "Vb2" 1030.74
+cap "m1_24700_3050#" "Vcmfb2" 326.081
+cap "Vcmfb2" "m1_14590_n8540#" 214.75
+cap "VDD" "Vb5" 1155.16
+cap "Vcm1" "m1_24700_3050#" 155.62
+cap "Vb2" "Vcmfb2" 369.8
+cap "pre_Vout_p" "a_n2520_n6950#" 213.12
+cap "Vcm1" "m2_n7150_1740#" 85.7143
+cap "Vcm1" "Vb2" 164.8
+cap "Vb2" "a_n1350_n4552#" 169.263
+cap "pre_Vout_n" "a_15650_n4552#" 12529.2
+cap "Vcmfb2" "Vb5" 275.5
+cap "pre_Vout_n" "VDD" 515.4
+cap "Vcm1" "Vb5" 198.8
+cap "pre_Vout_p" "Von" 722.295
+cap "Von" "Vop" 288.153
+cap "Vinp" "Vinn" 3332.53
+cap "VDD" "Vcmfb2" 1638.67
+cap "GND" "Vb4_" 671.2
+cap "Von" "Vb2" 393.06
+cap "Vout_n" "m1_6480_n18170#" 359.44
+cap "Vcm2" "GND" 2397.27
+cap "GND" "Vcmfb1" 182223
+cap "Vb2" "Vinp" 426.2
+cap "GND" "Vout_p" 626
+cap "pre_Vout_n" "a_16770_n6950#" 213.12
+cap "VDD" "Von" 515.4
+cap "VDD" "Vinp" 626
 cap "Von" "Vcmfb2" 642.005
-device csubckt sky130_fd_pr__cap_mim_m3_2 14550 -6210 14551 -6209 w=1550 l=1550 "None" "pre_Vout_n" 15360 0 "a_15650_n4552#" 70 0
-device csubckt sky130_fd_pr__cap_mim_m3_2 -1320 -6210 -1319 -6209 w=1550 l=1550 "None" "pre_Vout_p" 15360 0 "a_n1350_n4552#" 70 0
-device csubckt sky130_fd_pr__cap_mim_m3_2 31130 -6420 31131 -6419 w=6700 l=6700 "None" "GND" 384000 0 "Vcmfb2" 70 0
-device csubckt sky130_fd_pr__cap_mim_m3_2 31130 1180 31131 1181 w=6700 l=6700 "None" "GND" 384000 0 "Vcmfb1" 70 0
-device csubckt sky130_fd_pr__cap_mim_m3_2 8170 8720 8171 8721 w=12240 l=12240 "None" "Iin_n" 1244160 0 "Vinn" 70 0
-device csubckt sky130_fd_pr__cap_mim_m3_2 -5510 8720 -5509 8721 w=12240 l=12240 "None" "Iin_p" 1244160 0 "Vinp" 70 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 14550 -6210 14551 -6209 w=1550 l=1550 "None" "a_15650_n4552#" 15360 0 "pre_Vout_n" 70 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -1320 -6210 -1319 -6209 w=1550 l=1550 "None" "a_n1350_n4552#" 15360 0 "pre_Vout_p" 70 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 31130 -6420 31131 -6419 w=6700 l=6700 "None" "Vcmfb2" 384000 0 "GND" 70 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 31130 1180 31131 1181 w=6700 l=6700 "None" "Vcmfb1" 384000 0 "GND" 70 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 8170 8720 8171 8721 w=12240 l=12240 "None" "Vinn" 1244160 0 "Iin_n" 70 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -5510 8720 -5509 8721 w=12240 l=12240 "None" "Vinp" 1244160 0 "Iin_p" 70 0
-device rsubckt sky130_fd_pr__res_xhigh_po 7690 -9900 7691 -9899 l=7000 w=282 "VSUBS" "a_7690_n9900#" 0 0 "Vcm2" 282 0 "pre_Vout_n" 282 0
-device rsubckt sky130_fd_pr__res_xhigh_po 210 -9900 211 -9899 l=7000 w=282 "VSUBS" "a_210_n9900#" 0 0 "pre_Vout_p" 282 0 "Vcm2" 282 0
-device rsubckt sky130_fd_pr__res_xhigh_po 16380 -6470 16381 -6469 l=10600 w=140 "VSUBS" "a_16380_n6470#" 0 0 "pre_Vout_n" 140 0 "Vinp" 140 0
-device rsubckt sky130_fd_pr__res_xhigh_po 15368 -4552 15369 -4551 l=282 w=282 "VSUBS" "a_15368_n4552#" 0 0 "Vop" 282 0 "a_15650_n4552#" 282 0
-device rsubckt sky130_fd_pr__res_xhigh_po -870 -4552 -869 -4551 l=282 w=282 "VSUBS" "a_n870_n4552#" 0 0 "a_n1350_n4552#" 282 0 "Von" 282 0
-device rsubckt sky130_fd_pr__res_xhigh_po 7630 -380 7631 -379 l=7000 w=282 "VSUBS" "a_7630_n380#" 0 0 "Vcm1" 282 0 "Vop" 282 0
-device rsubckt sky130_fd_pr__res_xhigh_po 150 -380 151 -379 l=7000 w=282 "VSUBS" "a_150_n380#" 0 0 "Von" 282 0 "Vcm1" 282 0
-device rsubckt sky130_fd_pr__res_xhigh_po -1740 -6470 -1739 -6469 l=10600 w=140 "VSUBS" "a_n1740_n6470#" 0 0 "pre_Vout_p" 140 0 "Vinn" 140 0
+cap "Von" "Vcm1" 464.36
+cap "Von" "a_n1350_n4552#" 145.555
+cap "pre_Vout_p" "Vcm2" 652.353
+cap "Vcmfb1" "Vinn" 654.36
+cap "pre_Vout_p" "GND" 1863
+cap "a_16380_4130#" "Vinp" 709.32
+cap "GND" "Vop" 2128.26
+cap "a_n2130_4130#" "Vinn" 709.32
+cap "Vcm2" "m1_24700_3050#" 134.56
+cap "Vcm2" "m1_14590_n8540#" 183.85
+cap "GND" "m1_24700_3050#" 397.13
+cap "GND" "m1_14590_n8540#" 9711.21
+cap "Vb2" "Vcmfb1" 235
+cap "GND" "Vb1_" 671.2
+cap "Vb2" "GND" 11469.7
+cap "Vcmfb1" "Vb5" 1733.18
+cap "Von" "Vinp" 244.125
+cap "GND" "Vb5" 701.572
+cap "Vinn" "Iin_n" 585957
+cap "pre_Vout_n" "Vcm2" 652.353
+cap "pre_Vout_n" "GND" 1863
+cap "Iin_p" "Vinp" 585957
+cap "Vcm2" "VDD" 1005.7
+cap "VDD" "Vcmfb1" 1968.05
+cap "VDD" "GND" 12610.6
+cap "GND" "Vout_n" 626
+cap "GND" "Vcmfb2" 183058
+cap "Vcm1" "GND" 1126.92
+cap "GND" "m1_6480_n18170#" 2795.6
+cap "Vb2" "Vinn" 421.52
+cap "Vout_p" "m1_6480_n18170#" 359.44
+device csubckt sky130_fd_pr__cap_mim_m3_2 14550 -6210 14551 -6209 w=1550 l=1550 "None" "pre_Vout_n" 15360 0 "a_15650_n4552#" 5000 0
+device csubckt sky130_fd_pr__cap_mim_m3_2 -1320 -6210 -1319 -6209 w=1550 l=1550 "None" "pre_Vout_p" 15360 0 "a_n1350_n4552#" 5000 0
+device csubckt sky130_fd_pr__cap_mim_m3_2 31130 -6420 31131 -6419 w=6700 l=6700 "None" "GND" 384000 0 "Vcmfb2" 5000 0
+device csubckt sky130_fd_pr__cap_mim_m3_2 31130 1180 31131 1181 w=6700 l=6700 "None" "GND" 384000 0 "Vcmfb1" 5000 0
+device csubckt sky130_fd_pr__cap_mim_m3_2 8170 8720 8171 8721 w=12240 l=12240 "None" "Iin_n" 1244160 0 "Vinn" 5000 0
+device csubckt sky130_fd_pr__cap_mim_m3_2 -5510 8720 -5509 8721 w=12240 l=12240 "None" "Iin_p" 1244160 0 "Vinp" 5000 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 14550 -6210 14551 -6209 w=1550 l=1550 "None" "a_15650_n4552#" 15360 0 "pre_Vout_n" 5000 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -1320 -6210 -1319 -6209 w=1550 l=1550 "None" "a_n1350_n4552#" 15360 0 "pre_Vout_p" 5000 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 31130 -6420 31131 -6419 w=6700 l=6700 "None" "Vcmfb2" 384000 0 "GND" 5000 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 31130 1180 31131 1181 w=6700 l=6700 "None" "Vcmfb1" 384000 0 "GND" 5000 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 8170 8720 8171 8721 w=12240 l=12240 "None" "Vinn" 1244160 0 "Iin_n" 5000 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -5510 8720 -5509 8721 w=12240 l=12240 "None" "Vinp" 1244160 0 "Iin_p" 5000 0
+device rsubckt sky130_fd_pr__res_xhigh_po 7690 -9900 7691 -9899 l=7000 w=282 "w_1230_n17330#" "a_7690_n9900#" 0 0 "Vcm2" 282 0 "pre_Vout_n" 282 0
+device rsubckt sky130_fd_pr__res_xhigh_po 210 -9900 211 -9899 l=7000 w=282 "w_1230_n17330#" "a_210_n9900#" 0 0 "pre_Vout_p" 282 0 "Vcm2" 282 0
+device rsubckt sky130_fd_pr__res_xhigh_po 17160 -6470 17161 -6469 l=10600 w=140 "w_1230_n17330#" "a_17160_n6470#" 0 0 "a_16770_n6950#" 140 0 "Vinp" 140 0
+device rsubckt sky130_fd_pr__res_xhigh_po 16770 -6470 16771 -6469 l=10600 w=140 "w_1230_n17330#" "a_16770_n6470#" 0 0 "a_16770_n6950#" 140 0 "a_16380_4130#" 140 0
+device rsubckt sky130_fd_pr__res_xhigh_po 16380 -6470 16381 -6469 l=10600 w=140 "w_1230_n17330#" "a_16380_n6470#" 0 0 "pre_Vout_n" 140 0 "a_16380_4130#" 140 0
+device rsubckt sky130_fd_pr__res_xhigh_po 15368 -4552 15369 -4551 l=282 w=282 "w_1230_n17330#" "a_15368_n4552#" 0 0 "Vop" 282 0 "a_15650_n4552#" 282 0
+device rsubckt sky130_fd_pr__res_xhigh_po -870 -4552 -869 -4551 l=282 w=282 "w_1230_n17330#" "a_n870_n4552#" 0 0 "a_n1350_n4552#" 282 0 "Von" 282 0
+device rsubckt sky130_fd_pr__res_xhigh_po 7630 -380 7631 -379 l=7000 w=282 "w_1230_n17330#" "a_7630_n380#" 0 0 "Vcm1" 282 0 "Vop" 282 0
+device rsubckt sky130_fd_pr__res_xhigh_po 150 -380 151 -379 l=7000 w=282 "w_1230_n17330#" "a_150_n380#" 0 0 "Von" 282 0 "Vcm1" 282 0
+device rsubckt sky130_fd_pr__res_xhigh_po -1740 -6470 -1739 -6469 l=10600 w=140 "w_1230_n17330#" "a_n1740_n6470#" 0 0 "pre_Vout_p" 140 0 "a_n2130_4130#" 140 0
+device rsubckt sky130_fd_pr__res_xhigh_po -2130 -6470 -2129 -6469 l=10600 w=140 "w_1230_n17330#" "a_n2130_n6470#" 0 0 "a_n2520_n6950#" 140 0 "a_n2130_4130#" 140 0
+device rsubckt sky130_fd_pr__res_xhigh_po -2520 -6470 -2519 -6469 l=10600 w=140 "w_1230_n17330#" "a_n2520_n6470#" 0 0 "a_n2520_n6950#" 140 0 "Vinn" 140 0
+cap "Vout_p" "sf_0/sf_half_1/GND" 139.28
+cap "GND" "sf_0/sf_half_1/GND" 117.84
+cap "GND" "sf_0/sf_half_1/GND" -61.02
+cap "sf_0/sf_half_0/GND" "Vout_n" -454.535
+cap "sf_0/sf_half_0/GND" "GND" 542.22
+cap "sf_0/sf_half_0/GND" "Vout_n" -95.135
+cap "sf_0/sf_half_0/GND" "GND" 118.68
 cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
 cap "sf_0/sf_half_1/g_d" "Vout_p" 85.14
-cap "Vout_p" "sf_0/sf_half_1/Vout" 1262.26
-cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
-cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
-cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
-cap "sf_0/GND" "Vout_p" 554.84
-cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "Vout_n" "sf_0/sf_half_0/g_d" -61.59
-cap "Vout_n" "sf_0/sf_half_0/GND" -176.75
-cap "Vout_n" "sf_0/sf_half_0/GND" -485.79
-cap "Vout_n" "sf_0/sf_half_0/Vout" -899.01
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "Vout_n" "sf_0/sf_half_0/GND" -265.5
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "Vout_n" "sf_0/sf_half_0/GND" -265.5
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "sf_0/sf_half_0/g_d" "Vout_n" 4.25
-cap "Vout_n" "sf_0/sf_half_0/g_d" 4.25
-cap "sf_0/sf_half_0/g_d" "Vout_n" 10.73
-cap "sf_0/sf_half_0/g_d" "Vout_n" 4.25
-cap "sf_0/sf_half_0/GND" "Vout_n" -388.22
-cap "sf_0/sf_half_0/Vout" "Vout_n" -118.92
-cap "sf_0/sf_half_0/g_d" "Vout_n" 4.25
-cap "sf_0/sf_half_0/g_d" "Vout_n" 4.25
-cap "Vout_p" "sf_0/sf_half_1/GND" 126.6
-cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
-cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
-cap "Vout_p" "sf_0/sf_half_1/g_d" 34
-cap "Vout_p" "sf_0/sf_half_1/GND" 126.6
-cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
-cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
-cap "sf_0/sf_half_1/GND" "Vout_p" 45.7
-cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
-cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
-cap "Vout_p" "sf_0/sf_half_1/Vout" 1668.4
-cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
+cap "sf_0/sf_half_1/g_d" "Vout_p" 8.5
 cap "sf_0/sf_half_1/GND" "Vout_p" 126.6
-cap "sf_0/sf_half_0/g_d" "Vout_n" -63.75
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "Vout_n" "sf_0/sf_half_0/GND" -88.75
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "sf_0/sf_half_0/g_d" "Vout_n" -63.75
-cap "Vout_n" "sf_0/sf_half_0/GND" -265.5
-cap "sf_0/sf_half_0/g_d" "Vout_n" -63.75
-cap "sf_0/sf_half_0/g_d" "Vout_n" -63.75
-cap "sf_0/sf_half_0/GND" "Vout_n" -265.5
-cap "Vout_n" "sf_0/sf_half_0/GND" -265.5
-cap "Vout_n" "sf_0/sf_half_0/Vout" -1173
-cap "sf_0/sf_half_0/g_d" "Vout_n" -85
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "sf_0/sf_half_0/g_d" "Vout_n" 4.25
-cap "Vout_n" "sf_0/sf_half_0/Vout" -151.475
-cap "Vout_n" "sf_0/sf_half_0/g_d" 4.25
-cap "sf_0/sf_half_0/g_d" "Vout_n" 4.25
-cap "Vout_n" "sf_0/sf_half_0/g_d" 4.25
-cap "sf_0/sf_half_0/GND" "Vout_n" -36.425
-cap "sf_0/sf_half_0/GND" "Vout_n" -90.45
-cap "Vout_n" "sf_0/sf_half_0/g_d" 4.25
-cap "Vout_n" "sf_0/sf_half_0/GND" -90.45
-cap "sf_0/sf_half_0/GND" "Vout_n" -90.45
-cap "Vout_n" "sf_0/sf_half_0/g_d" -17
-cap "sf_0/sf_half_0/g_d" "Vout_n" 4.25
-cap "sf_0/sf_half_0/g_d" "Vout_n" 4.25
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/Vout" "Vout_p" 1238.76
+cap "sf_0/sf_half_1/GND" "Vout_p" 126.6
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/GND" "Vout_p" 81.46
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/GND" "Vout_p" 126.6
+cap "sf_0/sf_half_0/GND" "Vout_n" -294.9
+cap "sf_0/sf_half_0/Vout" "Vout_n" -1749.72
+cap "sf_0/sf_half_0/GND" "Vout_n" -198.495
+cap "sf_0/sf_half_0/g_d" "Vout_n" -610.38
+cap "sf_0/sf_half_0/GND" "Vout_n" -294.9
+cap "sf_0/sf_half_0/GND" "Vout_n" -294.9
+cap "Vout_n" "sf_0/sf_half_0/g_d" 12.75
+cap "sf_0/sf_half_0/GND" "Vout_n" -61.05
+cap "Vout_n" "sf_0/sf_half_0/g_d" 12.75
+cap "Vout_n" "sf_0/sf_half_0/Vout" 225.78
+cap "Vout_n" "sf_0/sf_half_0/GND" -61.05
+cap "Vout_n" "sf_0/sf_half_0/GND" -31.72
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "Vout_n" "sf_0/sf_half_0/g_d" 12.75
+cap "Vout_n" "sf_0/sf_half_0/GND" -61.05
+cap "Vout_n" "sf_0/sf_half_0/g_d" -21.25
+cap "Vout_n" "sf_0/sf_half_0/g_d" 12.75
+cap "sf_0/sf_half_0/g_d" "Vout_n" 19.77
+cap "Vout_n" "sf_0/sf_half_0/g_d" 12.75
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/GND" "Vout_p" 126.6
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/GND" "Vout_p" 126.6
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/Vout" "Vout_p" 1156.8
+cap "sf_0/sf_half_1/g_d" "Vout_p" 68
+cap "sf_0/sf_half_1/GND" "Vout_p" 126.6
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/GND" "Vout_p" 126.6
+cap "sf_0/sf_half_1/g_d" "Vout_p" 68
+cap "sf_0/sf_half_0/GND" "Vout_n" -294.9
+cap "sf_0/sf_half_0/g_d" "Vout_n" -72.25
+cap "sf_0/sf_half_0/g_d" "Vout_n" -72.25
+cap "Vout_n" "sf_0/sf_half_0/g_d" -76.5
+cap "sf_0/sf_half_0/GND" "Vout_n" -294.9
+cap "sf_0/sf_half_0/g_d" "Vout_n" -76.5
+cap "sf_0/sf_half_0/g_d" "Vout_n" -72.25
+cap "sf_0/sf_half_0/g_d" "Vout_n" -72.25
+cap "sf_0/sf_half_0/g_d" "Vout_n" -72.25
+cap "Vout_n" "sf_0/sf_half_0/GND" -294.9
+cap "sf_0/sf_half_0/g_d" "Vout_n" -72.25
+cap "Vout_n" "sf_0/sf_half_0/Vout" -1311.7
+cap "sf_0/sf_half_0/GND" "Vout_n" -294.9
+cap "sf_0/sf_half_0/GND" "Vout_n" -61.05
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "Vout_n" "sf_0/sf_half_0/g_d" 8.5
+cap "sf_0/sf_half_0/GND" "Vout_n" -61.05
+cap "sf_0/sf_half_0/g_d" "Vout_n" 8.5
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "Vout_n" "sf_0/sf_half_0/GND" -61.05
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "Vout_n" "sf_0/sf_half_0/Vout" 372.45
+cap "sf_0/sf_half_0/GND" "Vout_n" -61.05
 cap "mirror_4_0/Vb4_" "mirror_4_0/GND" 67.5
 cap "mirror_4_0/GND" "mirror_4_0/a_1900_340#" 32.7273
-cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
-cap "Vout_p" "sf_0/sf_half_1/GND" 126.6
-cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
-cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
-cap "Vout_p" "sf_0/sf_half_1/Vout" 1578.7
-cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
-cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
-cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
-cap "Vout_p" "sf_0/sf_half_1/g_d" 42.5
-cap "Vout_p" "sf_0/sf_half_1/GND" 126.6
-cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
-cap "Vout_p" "sf_0/sf_half_1/GND" 126.6
 cap "sf_0/sf_half_1/GND" "Vout_p" 126.6
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "Vout_n" "sf_0/sf_half_0/g_d" -80.75
-cap "sf_0/sf_half_0/Vout" "Vout_n" -868.65
-cap "Vout_n" "sf_0/sf_half_0/GND" -265.5
-cap "Vout_n" "sf_0/sf_half_0/GND" -265.5
-cap "Vout_n" "sf_0/sf_half_0/GND" -265.5
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "Vout_n" "sf_0/sf_half_0/GND" -265.5
-cap "Vout_n" "sf_0/sf_half_0/g_d" -63.75
-cap "Vout_n" "sf_0/sf_half_0/GND" -361.8
-cap "Vout_n" "sf_0/sf_half_0/Vout" -3.71501
-cap "Vout_n" "sf_0/sf_half_0/g_d" 4.25
-cap "Vout_n" "sf_0/sf_half_0/g_d" 4.25
-cap "Vout_n" "sf_0/sf_half_0/g_d" 4.25
-cap "Vout_n" "sf_0/sf_half_0/g_d" -12.75
-cap "Vout_n" "sf_0/sf_half_0/g_d" 4.25
-cap "Vout_n" "sf_0/sf_half_0/g_d" 4.25
-cap "Vout_n" "sf_0/sf_half_0/g_d" 4.25
-cap "Vout_n" "sf_0/sf_half_0/g_d" 4.25
-cap "sf_0/sf_half_1/g_d" "sf_0/Vout_n" 76.5
-cap "sf_0/sf_half_1/g_d" "sf_0/Vout_n" 76.5
-cap "sf_0/sf_half_1/g_d" "sf_0/Vout_n" 76.5
-cap "sf_0/sf_half_1/g_d" "sf_0/Vout_n" 76.5
-cap "sf_0/sf_half_1/g_d" "sf_0/Vout_n" 76.5
-cap "sf_0/sf_half_1/GND" "sf_0/Vout_n" 126.6
-cap "sf_0/sf_half_1/GND" "sf_0/Vout_n" 126.6
-cap "sf_0/sf_half_1/GND" "sf_0/Vout_n" 669.2
-cap "sf_0/sf_half_1/GND" "sf_0/Vout_n" 401
-cap "sf_0/sf_half_1/g_d" "sf_0/sf_half_0/Vout" 196.65
-cap "sf_0/sf_half_1/g_d" "sf_0/sf_half_0/GND" 198.5
-cap "m1_7210_n18020#" "sf_0/sf_half_0/g_d" -60.89
-cap "m1_7210_n18020#" "sf_0/Vout_p" 884.175
-cap "sf_0/sf_half_0/GND" "sf_0/Vout_p" -265.5
-cap "sf_0/sf_half_0/g_d" "sf_0/Vout_p" -63.75
-cap "sf_0/sf_half_0/g_d" "sf_0/Vout_p" -63.75
-cap "sf_0/sf_half_0/g_d" "sf_0/Vout_p" -63.75
-cap "sf_0/sf_half_0/GND" "sf_0/Vout_p" -746.6
-cap "sf_0/sf_half_0/g_d" "sf_0/Vout_p" -63.75
-cap "sf_0/sf_half_0/GND" "m1_7210_n18020#" 437.965
-cap "sf_0/sf_half_0/g_d" "sf_0/Vout_p" -63.75
-cap "sf_0/sf_half_0/GND" "sf_0/Vout_p" -265.5
-cap "sf_0/Vout_p" "sf_0/sf_half_0/g_d" 4.25
-cap "sf_0/Vout_p" "sf_0/sf_half_0/g_d" 4.25
-cap "sf_0/Vout_p" "m1_7210_n18020#" 834.36
-cap "sf_0/Vout_p" "sf_0/sf_half_0/GND" 25.195
-cap "sf_0/Vout_p" "sf_0/sf_half_0/g_d" 4.25
-cap "sf_0/Vout_p" "sf_0/sf_half_0/g_d" 4.25
-cap "sf_0/sf_half_0/g_d" "m1_7210_n18020#" -64.49
-cap "sf_0/sf_half_0/GND" "m1_7210_n18020#" 437.165
-cap "sf_0/Vout_p" "sf_0/sf_half_0/g_d" 4.25
-cap "m1_7210_n18020#" "sf_0/sf_half_0/Vout" 534.895
-cap "sf_0/sf_half_0/GND" "m1_7210_n18020#" 1053.66
-cap "m1_7210_n18020#" "sf_0/sf_half_0/g_d" -75.29
-cap "m1_7210_n18020#" "sf_0/sf_half_0/GND" -15.83
-cap "m1_7210_n18020#" "sf_0/sf_half_0/Vout" 78.285
-cap "m1_7210_n18020#" "sf_0/sf_half_0/g_d" -68.54
-cap "mirror_4_0/a_1900_2900#" "m1_7210_n18020#" 228.2
-cap "mirror_4_0/GND" "mirror_4_0/Vb4" 12.45
-cap "mirror_4_0/GND" "mirror_4_0/Vb4" 6.45
+cap "Vout_p" "sf_0/sf_half_1/g_d" 76.5
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/Vout" "Vout_p" 1283.4
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/GND" "Vout_p" 72.1
+cap "Vout_p" "sf_0/sf_half_1/GND" 126.6
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/GND" "Vout_p" 126.6
+cap "sf_0/sf_half_1/g_d" "Vout_p" 8.5
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "sf_0/sf_half_1/g_d" "Vout_p" 76.5
+cap "Vout_n" "sf_0/sf_half_0/GND" -294.9
+cap "Vout_n" "sf_0/sf_half_0/Vout" -1749.6
+cap "Vout_n" "sf_0/sf_half_0/GND" -294.9
+cap "Vout_n" "sf_0/sf_half_0/GND" -200.25
+cap "Vout_n" "sf_0/sf_half_0/g_d" -612
+cap "sf_0/sf_half_0/GND" "Vout_n" -294.9
+cap "sf_0/sf_half_0/GND" "Vout_n" -61.05
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "sf_0/sf_half_0/GND" "Vout_n" -61.05
+cap "sf_0/sf_half_0/GND" "Vout_n" -39.325
+cap "sf_0/sf_half_0/Vout" "Vout_n" 270.3
+cap "sf_0/sf_half_0/g_d" "Vout_n" -21.25
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "sf_0/sf_half_0/GND" "Vout_n" -61.05
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "sf_0/sf_half_0/g_d" "Vout_n" 12.75
+cap "m1_6480_n18170#" "sf_0/sf_half_1/GND" 755.95
+cap "m1_6480_n18170#" "sf_0/sf_half_1/g_d" 6.75
+cap "m1_6480_n18170#" "sf_0/sf_half_1/Vout" 528.23
+cap "m1_6480_n18170#" "sf_0/sf_half_1/GND" 387.805
+cap "m1_6480_n18170#" "sf_0/sf_half_1/g_d" -63.59
+cap "m1_6480_n18170#" "sf_0/sf_half_1/Vout" 610.145
+cap "sf_0/Vout_n" "sf_0/sf_half_1/GND" 126.6
+cap "sf_0/Vout_n" "sf_0/sf_half_1/g_d" 76.5
+cap "sf_0/Vout_n" "sf_0/sf_half_1/g_d" 76.5
+cap "sf_0/Vout_n" "m1_6480_n18170#" 915.97
+cap "sf_0/sf_half_1/GND" "m1_6480_n18170#" 259
+cap "sf_0/Vout_n" "sf_0/sf_half_1/g_u" 197.3
+cap "sf_0/Vout_n" "sf_0/sf_half_1/g_d" 76.5
+cap "sf_0/Vout_n" "sf_0/sf_half_1/GND" 54.5
+cap "sf_0/Vout_n" "sf_0/sf_half_1/g_d" 76.5
+cap "sf_0/sf_half_1/g_d" "m1_6480_n18170#" -73.04
+cap "sf_0/Vout_n" "sf_0/sf_half_1/GND" 192.9
+cap "sf_0/sf_half_1/GND" "sf_0/sf_half_1/g_d" 183.15
+cap "w_1230_n17330#" "sf_0/sf_half_1/g_d" 265.135
+cap "sf_0/sf_half_0/g_d" "w_1230_n17330#" 274.09
+cap "sf_0/sf_half_0/GND" "sf_0/sf_half_0/g_d" 220.15
+cap "sf_0/sf_half_0/GND" "w_1230_n17330#" -294.9
+cap "sf_0/sf_half_0/GND" "w_1230_n17330#" -543.85
+cap "sf_0/sf_half_0/g_u" "w_1230_n17330#" -88.2
+cap "sf_0/sf_half_0/VDD" "w_1230_n17330#" 8.88178e-16
+cap "sf_0/sf_half_0/GND" "w_1230_n17330#" -209.05
+cap "sf_0/Vout_p" "sf_0/sf_half_0/g_d" 12.75
+cap "sf_0/Vout_p" "sf_0/sf_half_0/GND" -123.075
+cap "sf_0/sf_half_0/GND" "m1_6480_n18170#" 259
+cap "sf_0/Vout_p" "sf_0/sf_half_0/GND" -61.05
+cap "sf_0/Vout_p" "sf_0/sf_half_0/g_d" 12.75
+cap "sf_0/Vout_p" "m1_6480_n18170#" 985.65
+cap "sf_0/Vout_p" "sf_0/sf_half_0/g_d" 12.75
+cap "sf_0/sf_half_0/g_d" "m1_6480_n18170#" -76.19
+cap "sf_0/Vout_p" "sf_0/sf_half_0/g_u" 130.9
+cap "sf_0/Vout_p" "sf_0/sf_half_0/g_d" 12.75
+cap "sf_0/Vout_p" "sf_0/sf_half_0/GND" -48.125
+cap "sf_0/sf_half_0/Vout" "m1_6480_n18170#" 396.85
+cap "sf_0/sf_half_0/g_d" "m1_6480_n18170#" -63.59
+cap "sf_0/sf_half_0/GND" "m1_6480_n18170#" 601.1
+cap "m1_6480_n18170#" "sf_0/sf_half_0/Vout" 266.795
+cap "m1_6480_n18170#" "sf_0/sf_half_0/GND" 505.655
+cap "m1_6480_n18170#" "sf_0/sf_half_0/g_d" -69.44
+cap "mirror_4_0/a_1900_2900#" "m1_6480_n18170#" 424.8
+cap "mirror_4_0/a_5540_2580#" "mirror_4_0/Vb4" -153
+cap "mirror_4_0/Vb4" "mirror_4_0/GND" 6.45
+cap "mirror_4_0/Vb4" "mirror_4_0/GND" 12.45
+cap "mirror_4_0/Vb4" "mirror_4_0/a_5540_2580#" 111.6
 cap "mirror_3_0/Vb3_" "mirror_3_0/GND" 50.625
 cap "mirror_3_0/Vb3_" "mirror_3_0/GND" 5.625
-cap "sf_0/sf_half_1/g_u" "sf_0/sf_half_1/VDD" 135.66
-cap "sf_0/sf_half_1/g_u" "sf_0/sf_half_1/VDD" 199.02
-cap "sf_0/sf_half_1/g_u" "sf_0/sf_half_1/VDD" 443.344
-cap "sf_0/sf_half_1/g_u" "sf_0/sf_half_1/Vout" 1007.79
-cap "sf_0/sf_half_1/g_u" "sf_0/sf_half_1/GND" 410.4
-cap "sf_0/sf_half_0/g_u" "sf_0/sf_half_1/GND" -230.4
-cap "sf_0/sf_half_1/VDD" "sf_0/sf_half_1/g_u" -699.903
-cap "sf_0/sf_half_1/Vout" "sf_0/sf_half_1/g_u" -974.72
-cap "sf_0/sf_half_0/g_u" "sf_0/sf_half_0/VDD" 65.46
-cap "sf_0/sf_half_1/GND" "sf_0/sf_half_1/g_u" -1.42109e-14
-cap "sf_0/sf_half_0/Vout" "sf_0/sf_half_0/g_u" 65.46
-cap "sf_0/sf_half_1/Vout" "sf_0/sf_half_1/g_u" -914.57
-cap "sf_0/sf_half_1/VDD" "sf_0/sf_half_1/g_u" -902.54
-cap "sf_0/sf_half_0/g_u" "sf_0/sf_half_0/Vout" 65.46
-cap "sf_0/sf_half_0/g_u" "sf_0/sf_half_1/g_u" -45
-cap "sf_0/sf_half_0/g_u" "sf_0/sf_half_0/VDD" 175.199
-cap "sf_0/sf_half_0/g_u" "sf_0/sf_half_0/VDD" -48.728
-cap "sf_0/sf_half_0/VDD" "sf_0/sf_half_0/g_u" -303.745
-cap "sf_0/sf_half_0/Vout" "sf_0/sf_half_0/g_u" 298.107
-cap "sf_0/sf_half_0/VDD" "sf_0/sf_half_0/g_u" 135.66
-cap "sf_0/sf_half_0/g_u" "sf_0/sf_half_0/GND" -552.325
-cap "pre_Vout_p" "sf_0/sf_half_1/Vout" 198.767
-cap "pre_Vout_p" "sf_0/sf_half_1/GND" 266.3
-cap "sf_0/sf_half_1/g_u" "pre_Vout_p" 21.984
-cap "sf_0/sf_half_0/GND" "pre_Vout_n" 266.3
-cap "sf_0/sf_half_0/g_u" "pre_Vout_n" 21.984
-cap "pre_Vout_n" "sf_0/sf_half_0/Vout" 198.767
-cap "pre_Vout_p" "core_1/Vb1" 61.1194
-cap "Vcm2" "core_1/a_n6970_n2190#" 350.882
+cap "sf_0/sf_half_1/VDD" "sf_0/sf_half_1/g_u" 128.46
+cap "w_1230_n17330#" "sf_0/sf_half_1/g_u" 463.372
+cap "sf_0/sf_half_1/g_u" "sf_0/sf_half_1/VDD" 128.46
+cap "sf_0/sf_half_1/VDD" "sf_0/sf_half_1/g_u" 139.98
+cap "w_1230_n17330#" "sf_0/sf_half_0/g_u" 463.372
+cap "sf_0/sf_half_0/VDD" "sf_0/sf_half_0/g_u" 139.98
+cap "sf_0/sf_half_0/g_u" "sf_0/sf_half_0/VDD" 128.46
+cap "sf_0/sf_half_0/VDD" "sf_0/sf_half_0/g_u" 128.46
+cap "w_1230_n17330#" "pre_Vout_p" 64.96
+cap "sf_0/sf_half_1/VDD" "pre_Vout_p" 16.74
+cap "pre_Vout_n" "w_1230_n17330#" 64.96
+cap "sf_0/sf_half_0/VDD" "pre_Vout_n" 16.74
 cap "Vcm2" "core_1/Vb1" 647.165
-cap "Vcm2" "core_1/GND" 898.442
-cap "core_1/Vb1" "Vcm2" -82.205
-cap "core_1/a_n6970_n2190#" "Vcm2" -170.525
+cap "core_1/a_n6970_n2190#" "Vcm2" 350.882
+cap "core_1/GND" "Vcm2" 898.442
+cap "pre_Vout_p" "core_1/Vb1" 61.1194
 cap "core_1/GND" "Vcm2" 1903.67
-cap "core_1/Vb1" "Vcm2" -0.00500184
+cap "core_1/a_n6970_n2190#" "Vcm2" -170.525
+cap "core_1/Vb1" "Vcm2" -82.205
 cap "core_1/a_n6970_n2190#" "Vcm2" -60.5825
-cap "Vcm2" "core_1/GND" -218.627
+cap "core_1/Vb1" "Vcm2" -0.00500184
+cap "core_1/GND" "Vcm2" -218.627
+cap "core_1/Vb1" "Vcm2" -12.005
+cap "core_1/a_n6970_n2190#" "Vcm2" 257.717
 cap "core_1/GND" "Vcm2" 262.847
-cap "Vcm2" "core_1/a_n6970_n2190#" 257.717
-cap "Vcm2" "core_1/Vb1" -12.005
-cap "pre_Vout_p" "core_1/GND" 125.1
-cap "pre_Vout_p" "core_1/Vb1" 85
-cap "pre_Vout_p" "core_1/Vb1" 85
-cap "pre_Vout_p" "core_1/Vb1" 85
+cap "core_1/Vb1" "pre_Vout_p" 85
+cap "core_1/a_n6970_n2190#" "Vcm2" 1072.13
+cap "core_1/Vb1" "Vcm2" -80.405
+cap "core_1/GND" "pre_Vout_p" 125.1
+cap "core_1/GND" "pre_Vout_p" 36.15
+cap "core_1/GND" "pre_Vout_p" 204.42
 cap "core_1/Vb1" "pre_Vout_p" 85
 cap "core_1/GND" "Vcm2" 258.002
-cap "Vcm2" "core_1/a_n6970_n2190#" 1072.13
-cap "pre_Vout_p" "core_1/GND" 36.15
-cap "core_1/GND" "pre_Vout_p" 204.42
-cap "pre_Vout_p" "core_1/a_n6970_n2190#" 837.312
-cap "Vcm2" "core_1/Vb1" -80.405
-cap "core_1/GND" "Vcm2" 374.815
+cap "core_1/Vb1" "pre_Vout_p" 85
+cap "core_1/Vb1" "pre_Vout_p" 85
+cap "core_1/a_n6970_n2190#" "pre_Vout_p" 837.312
 cap "core_1/a_n6970_n2190#" "Vcm2" 229.737
 cap "core_1/Vb1" "Vcm2" -8.405
+cap "core_1/GND" "Vcm2" 374.815
+cap "core_1/Vb1" "pre_Vout_n" 85
+cap "core_1/GND" "pre_Vout_n" 125.1
+cap "core_1/GND" "Vcm2" 257.875
+cap "core_1/GND" "pre_Vout_n" 36.15
 cap "core_1/a_n6970_n2190#" "Vcm2" 1073.47
 cap "core_1/Vb1" "pre_Vout_n" 85
-cap "core_1/Vb1" "pre_Vout_n" 85
-cap "core_1/GND" "pre_Vout_n" 204.42
-cap "pre_Vout_n" "core_1/Vb1" 85
 cap "core_1/Vb1" "Vcm2" -82.205
-cap "core_1/GND" "Vcm2" 257.875
-cap "pre_Vout_n" "core_1/GND" 125.1
+cap "core_1/GND" "pre_Vout_n" 204.42
+cap "core_1/Vb1" "pre_Vout_n" 85
+cap "core_1/Vb1" "pre_Vout_n" 85
 cap "core_1/a_n6970_n2190#" "pre_Vout_n" 837.312
-cap "pre_Vout_n" "core_1/Vb1" 85
-cap "pre_Vout_n" "core_1/GND" 36.15
 cap "core_1/a_n6970_n2190#" "Vcm2" -570.717
+cap "core_1/Vb1" "Vcm2" -0.00500184
 cap "core_1/GND" "Vcm2" 263.697
-cap "Vcm2" "core_1/Vb1" -0.00500184
-cap "Vcm2" "core_1/a_n6970_n2190#" -76.6325
-cap "core_1/GND" "Vcm2" 682.407
 cap "Vcm2" "core_1/Vb1" -12.005
-cap "core_1/a_n6970_n2190#" "Vcm2" -168.117
+cap "Vcm2" "core_1/a_n6970_n2190#" -76.6325
+cap "Vcm2" "core_1/GND" 682.407
 cap "core_1/GND" "Vcm2" 1910.64
+cap "core_1/a_n6970_n2190#" "Vcm2" -168.117
 cap "core_1/Vb1" "Vcm2" -80.405
-cap "Vcm2" "core_1/a_n6970_n2190#" -326.05
-cap "core_1/Vb1" "pre_Vout_n" 62.4861
-cap "Vcm2" "core_1/Vb1" 578.345
 cap "Vcm2" "core_1/GND" -165.05
-cap "mirror_1_0/Vb1_" "mirror_1_0/GND" 3.55263
-cap "mirror_1_0/GND" "mirror_1_0/Vb1_" 50
-cap "mirror_1_0/Vb1" "m1_24700_3050#" 101.598
+cap "Vcm2" "core_1/a_n6970_n2190#" -326.05
+cap "Vcm2" "core_1/Vb1" 578.345
+cap "pre_Vout_n" "core_1/Vb1" 62.4861
+cap "mirror_1_0/GND" "mirror_1_0/Vb1_" 3.55263
+cap "mirror_1_0/Vb1_" "mirror_1_0/GND" 50
 cap "mirror_1_0/GND" "m1_24700_3050#" 87.8689
-cap "pre_Vout_p" "core_1/Vb1" 85
-cap "pre_Vout_p" "core_1/GND" 191.4
+cap "mirror_1_0/Vb1" "m1_24700_3050#" 101.598
 cap "core_1/Vb1" "pre_Vout_p" 85
-cap "pre_Vout_p" "core_1/Vb1" 85
-cap "pre_Vout_p" "core_1/Vb1" 85
-cap "pre_Vout_p" "core_1/GND" 125.1
-cap "pre_Vout_p" "core_1/Vb1" 85
+cap "core_1/Vb1" "pre_Vout_p" 85
+cap "core_1/GND" "pre_Vout_p" 125.1
+cap "core_1/core_half_0/s" "pre_Vout_p" 1525.05
+cap "core_1/Vb1" "pre_Vout_p" 85
+cap "core_1/Vb1" "pre_Vout_p" 85
 cap "core_1/GND" "pre_Vout_p" 112.2
-cap "pre_Vout_p" "core_1/core_half_0/s" 1525.05
-cap "pre_Vout_p" "core_1/GND" 125.1
-cap "pre_Vout_p" "core_1/Vb1" 85
+cap "core_1/GND" "pre_Vout_p" 191.4
+cap "core_1/Vb1" "pre_Vout_p" 85
+cap "core_1/Vb1" "pre_Vout_p" 85
+cap "core_1/GND" "pre_Vout_p" 125.1
+cap "core_1/Vb1" "core_1/core_half_1/Vout" 85
+cap "core_1/core_half_1/Vout" "core_1/GND" 125.1
+cap "core_1/GND" "core_1/core_half_1/Vout" 191.4
 cap "core_1/core_half_1/Vout" "core_1/Vb1" 85
 cap "core_1/core_half_1/Vout" "core_1/core_half_1/s" 1525.05
+cap "core_1/core_half_1/Vout" "core_1/GND" 125.1
+cap "core_1/core_half_1/Vout" "core_1/Vb1" 85
+cap "core_1/core_half_1/Vout" "core_1/GND" 112.2
+cap "core_1/core_half_1/Vout" "core_1/Vb1" 85
 cap "core_1/Vb1" "core_1/core_half_1/Vout" 85
-cap "core_1/Vb1" "core_1/core_half_1/Vout" 85
-cap "core_1/GND" "core_1/core_half_1/Vout" 125.1
-cap "core_1/Vb1" "core_1/core_half_1/Vout" 85
-cap "core_1/GND" "core_1/core_half_1/Vout" 125.1
-cap "core_1/core_half_1/Vout" "core_1/GND" 191.4
-cap "core_1/Vb1" "core_1/core_half_1/Vout" 85
-cap "core_1/GND" "core_1/core_half_1/Vout" 112.2
-cap "core_1/Vb1" "core_1/core_half_1/Vout" 85
-cap "mirror_1_0/a_1900_340#" "mirror_1_0/GND" 30.6818
-cap "m1_24700_3050#" "mirror_1_0/Vb1" 384.426
-cap "pre_Vout_p" "core_1/core_half_0/GND" 280.8
-cap "pre_Vout_p" "core_1/core_half_0/s" 125.16
-cap "pre_Vout_p" "core_1/core_half_0/Vout" 355.935
+cap "core_1/core_half_1/Vout" "core_1/Vb1" 85
+cap "mirror_1_0/GND" "mirror_1_0/a_1900_340#" 30.6818
+cap "mirror_1_0/Vb1" "m1_24700_3050#" 384.426
 cap "pre_Vout_p" "core_1/core_half_0/Vin" 8.19
 cap "pre_Vout_p" "core_1/core_half_0/Vout" 209.7
+cap "pre_Vout_p" "core_1/core_half_0/s" 125.16
+cap "pre_Vout_p" "core_1/core_half_0/GND" 280.8
+cap "pre_Vout_p" "core_1/core_half_0/Vout" 355.935
 cap "pre_Vout_p" "core_1/core_half_0/Vin" 8.19
 cap "core_1/core_half_0/Vin" "pre_Vout_p" -163.135
-cap "pre_Vout_p" "core_1/core_half_0/Vout" 564.855
 cap "core_1/core_half_0/Vin" "pre_Vout_p" -163.135
+cap "core_1/core_half_0/Vout" "pre_Vout_p" 564.855
 cap "core_1/core_half_0/s" "pre_Vout_p" -340.59
-cap "core_1/core_half_0/Vout" "core_1/core_half_0/Vin" -156.685
 cap "core_1/core_half_0/Vin" "core_1/core_half_0/Vout" -156.685
 cap "core_1/core_half_0/Vout" "core_1/a_n6970_n2190#" -369.792
+cap "core_1/core_half_0/Vin" "core_1/core_half_0/Vout" -156.685
+cap "core_1/core_half_0/Vin" "core_1/core_half_0/s" 932.605
+cap "pre_Vout_p" "core_1/core_half_0/s" 126.58
+cap "pre_Vout_p" "core_1/core_half_0/Vout" -381.22
+cap "core_1/core_half_0/Vin" "core_1/GND" 129.92
 cap "core_1/core_half_0/Vin" "core_1/core_half_0/Vb2" 9.43
-cap "core_1/core_half_0/Vin" "pre_Vout_p" -289.85
-cap "core_1/core_half_0/Vin" "core_1/core_half_0/Vout" 70.74
-cap "core_1/GND" "core_1/core_half_0/Vin" 129.92
-cap "core_1/core_half_0/Vout" "core_1/core_half_0/Vin" 159.897
-cap "core_1/core_half_0/Vout" "pre_Vout_p" -381.22
-cap "pre_Vout_p" "core_1/core_half_0/Vout" 22.195
-cap "core_1/core_half_0/s" "core_1/core_half_0/Vin" 932.605
-cap "core_1/GND" "pre_Vout_p" 116.9
+cap "pre_Vout_p" "core_1/core_half_0/Vin" -289.85
 cap "core_1/core_half_0/Vin" "core_1/core_half_0/VDD" 222.09
-cap "core_1/core_half_0/s" "pre_Vout_p" 126.58
-cap "core_1/Vin_n" "core_1/core_half_0/VDD" -487.32
-cap "core_1/Vin_p" "core_1/core_half_0/Vout" -938.705
-cap "core_1/a_n6970_n2190#" "core_1/Vin_p" -1452.35
-cap "core_1/Vin_n" "core_1/core_half_0/Vb2" -97.54
-cap "core_1/Vin_n" "core_1/core_half_1/Vout" -237.847
-cap "core_1/Vin_n" "core_1/GND" -268.16
-cap "core_1/Vin_n" "core_1/Vin_p" -71.5385
-cap "core_1/Vin_n" "core_1/a_n6970_n2190#" -1693.37
+cap "pre_Vout_p" "core_1/GND" 116.9
+cap "core_1/core_half_0/Vin" "core_1/core_half_0/Vout" 159.897
+cap "core_1/core_half_0/Vin" "core_1/core_half_0/Vout" 70.74
+cap "pre_Vout_p" "core_1/core_half_0/Vout" 22.195
 cap "core_1/Vin_n" "core_1/core_half_1/Vout" -462.84
+cap "core_1/Vin_n" "core_1/Vin_p" -71.5385
+cap "core_1/Vin_n" "core_1/core_half_0/Vb2" -97.54
+cap "core_1/core_half_0/Vout" "core_1/Vin_p" -938.705
+cap "core_1/Vin_n" "core_1/core_half_0/VDD" -487.32
 cap "core_1/Vin_p" "core_1/core_half_0/Vout" -132.51
-cap "core_1/core_half_1/Vin" "core_1/core_half_1/VDD" -138.14
-cap "core_1/core_half_1/Vout" "core_1/core_half_1/s" 1274.87
-cap "core_1/core_half_1/Vin" "core_1/core_half_1/s" -1200.97
-cap "core_1/core_half_1/Vout" "core_1/core_half_1/Vin" -573.12
-cap "core_1/GND" "core_1/core_half_1/Vout" 116.9
-cap "core_1/core_half_1/Vin" "core_1/core_half_1/Vb2" -24.78
+cap "core_1/a_n6970_n2190#" "core_1/Vin_p" -1452.35
+cap "core_1/Vin_n" "core_1/core_half_1/Vout" -237.847
+cap "core_1/Vin_n" "core_1/a_n6970_n2190#" -1693.37
+cap "core_1/Vin_n" "core_1/GND" -268.16
+cap "core_1/core_half_1/Vb2" "core_1/core_half_1/Vin" -24.78
+cap "core_1/core_half_1/s" "core_1/core_half_1/Vin" -1200.97
+cap "core_1/core_half_1/s" "core_1/core_half_1/Vout" 1274.87
 cap "core_1/GND" "core_1/core_half_1/Vin" -62.12
-cap "core_1/core_half_1/Vin" "core_1/core_half_1/Vout" -156.685
-cap "core_1/core_half_1/Vin" "core_1/core_half_1/Vout" -156.685
-cap "core_1/a_n6970_n2190#" "core_1/core_half_1/Vout" -1899.96
-cap "core_1/core_half_1/Vout" "pre_Vout_n" -88.5675
-cap "pre_Vout_n" "core_1/core_half_1/Vin" -162.505
-cap "pre_Vout_n" "core_1/core_half_1/Vin" -162.505
+cap "core_1/GND" "core_1/core_half_1/Vout" 116.9
+cap "core_1/core_half_1/Vout" "core_1/core_half_1/Vin" -573.12
+cap "core_1/core_half_1/Vin" "core_1/core_half_1/VDD" -138.14
+cap "core_1/core_half_1/Vout" "core_1/core_half_1/Vin" -156.685
+cap "core_1/core_half_1/Vout" "core_1/a_n6970_n2190#" -1899.96
+cap "core_1/core_half_1/Vout" "core_1/core_half_1/Vin" -156.685
+cap "core_1/core_half_1/Vin" "pre_Vout_n" -162.505
+cap "pre_Vout_n" "core_1/core_half_1/Vout" -88.5675
+cap "core_1/core_half_1/s" "pre_Vout_n" -337.23
 cap "pre_Vout_n" "core_1/core_half_1/GND" 133.762
-cap "pre_Vout_n" "core_1/core_half_1/s" -337.23
+cap "core_1/core_half_1/Vin" "pre_Vout_n" -162.505
 cap "core_1/core_half_1/Vout" "pre_Vout_n" -438.92
 cap "core_1/core_half_1/GND" "pre_Vout_n" 4.3625
-cap "core_1/core_half_1/Vin" "pre_Vout_n" -162.865
 cap "core_1/core_half_1/s" "pre_Vout_n" -497.67
+cap "core_1/core_half_1/Vout" "pre_Vout_n" -132.067
 cap "core_1/core_half_1/Vin" "pre_Vout_n" -162.865
-cap "pre_Vout_n" "core_1/core_half_1/Vout" -132.067
-cap "m1_14590_n8540#" "mirror_1_0/a_1900_2900#" 224.95
-cap "mirror_1_0/GND" "mirror_1_0/Vb1" 4.3
-cap "mirror_1_0/GND" "mirror_1_0/Vb1" 8.3
-cap "m1_24700_3050#" "mirror_1_0/Vb1" 384.426
-cap "Von" "core_1/core_half_0/Vout" 95.565
-cap "Von" "core_1/core_half_0/Vb2" 6.372
+cap "core_1/core_half_1/Vin" "pre_Vout_n" -162.865
+cap "mirror_1_0/a_1900_2900#" "m1_14590_n8540#" 224.95
+cap "mirror_1_0/Vb1" "mirror_1_0/GND" 4.3
+cap "mirror_1_0/Vb1" "mirror_1_0/GND" 8.3
+cap "mirror_1_0/Vb1" "m1_24700_3050#" 384.426
+cap "core_1/core_half_0/Vb2" "Von" 6.372
 cap "Von" "core_1/core_half_0/VDD" 1401.82
 cap "core_1/core_half_0/VDD" "Von" 1.476
-cap "core_1/core_half_0/VDD" "Von" 276.8
-cap "Von" "core_1/core_half_0/Vout" 140.517
-cap "core_1/core_half_0/Vb2" "Von" -166.969
-cap "core_1/core_half_0/VDD" "Von" 351.5
+cap "core_1/core_half_0/Vout" "Von" 95.565
+cap "core_1/core_half_0/Vout" "Von" 140.517
+cap "Von" "core_1/core_half_0/VDD" 276.8
+cap "Von" "core_1/core_half_0/Vb2" -166.969
+cap "Von" "core_1/core_half_0/Vb2" -166.213
+cap "Von" "core_1/core_half_0/VDD" 351.5
 cap "core_1/core_half_0/Vout" "Von" 136.064
-cap "core_1/core_half_0/Vb2" "Von" -166.213
+cap "core_1/core_half_0/Vout" "Von" 139.98
 cap "core_1/core_half_0/VDD" "Von" 139.98
-cap "Von" "core_1/core_half_0/VDD" 272.58
-cap "Von" "core_1/core_half_0/Vb2" 188.965
-cap "Von" "core_1/core_half_0/Vout" 139.98
-cap "Von" "core_1/core_half_0/Vout" 139.98
-cap "Von" "core_1/core_half_0/VDD" 139.98
-cap "Von" "core_1/core_half_0/VDD" 139.98
-cap "Von" "core_1/core_half_0/Vout" 139.98
-cap "Von" "core_1/core_half_0/Vout" -98.575
-cap "Von" "core_1/core_half_0/Vout" 139.98
-cap "Von" "core_1/core_half_0/VDD" 139.98
-cap "Von" "core_1/core_half_0/Vout" 139.98
-cap "core_1/Vb2" "Vop" -847.844
+cap "core_1/core_half_0/Vout" "Von" 139.98
+cap "core_1/core_half_0/Vout" "Von" 139.98
+cap "core_1/core_half_0/Vb2" "Von" 188.965
+cap "core_1/core_half_0/Vout" "Von" 139.98
+cap "core_1/core_half_0/Vout" "Von" -98.575
+cap "core_1/core_half_0/Vout" "Von" 139.98
+cap "core_1/core_half_0/VDD" "Von" 139.98
+cap "core_1/core_half_0/VDD" "Von" 139.98
+cap "core_1/core_half_0/VDD" "Von" 272.58
+cap "core_1/core_half_0/VDD" "Von" 139.98
+cap "core_1/core_half_1/VDD" "Vop" -263.64
+cap "core_1/core_half_1/Vout" "Vop" -263.64
 cap "core_1/core_half_1/Vout" "Vop" 9.417
+cap "core_1/core_half_1/Vout" "Vop" -263.64
 cap "core_1/core_half_1/VDD" "Vop" -263.64
+cap "core_1/core_half_1/Vout" "Vop" -263.64
 cap "core_1/core_half_1/VDD" "Vop" -263.64
-cap "core_1/core_half_1/VDD" "Vop" -263.64
-cap "Vop" "core_1/core_half_1/Vout" -263.64
 cap "core_1/core_half_1/VDD" "Vop" -263.64
 cap "core_1/core_half_1/Vout" "Vop" -263.64
 cap "core_1/core_half_1/Vout" "Vop" -263.64
+cap "core_1/Vb2" "Vop" -847.844
 cap "core_1/core_half_1/VDD" "Vop" -52.44
-cap "Vop" "core_1/core_half_1/Vout" -263.64
-cap "core_1/core_half_1/Vout" "Vop" -263.64
+cap "Vop" "core_1/core_half_1/VDD" 501.39
+cap "Vop" "core_1/core_half_1/VDD" -107.58
+cap "Vop" "core_1/core_half_1/VDD" -107.58
+cap "Vop" "core_1/core_half_1/VDD" -107.58
+cap "Vop" "core_1/core_half_1/VDD" -107.58
 cap "core_1/core_half_1/Vb2" "Vop" -138.18
-cap "core_1/core_half_1/Vout" "Vop" -456.56
-cap "core_1/core_half_1/VDD" "Vop" 501.39
-cap "core_1/core_half_1/VDD" "Vop" -107.58
-cap "core_1/core_half_1/VDD" "Vop" -107.58
-cap "core_1/core_half_1/VDD" "Vop" -107.58
-cap "core_1/core_half_1/VDD" "Vop" -107.58
-cap "core_1/core_half_1/VDD" "Vop" 344.6
+cap "Vop" "core_1/core_half_1/Vout" -456.56
 cap "core_1/core_half_1/Vb2" "Vop" -168.373
 cap "core_1/core_half_1/Vout" "Vop" 655.554
+cap "core_1/core_half_1/VDD" "Vop" 344.6
 cap "Vop" "core_1/core_half_1/Vout" -99.893
-cap "core_1/core_half_1/Vb2" "Vop" -166.969
+cap "Vop" "core_1/core_half_1/Vb2" -166.969
 cap "Vop" "core_1/core_half_1/VDD" 627.485
-cap "core_1/core_half_1/Vb2" "Vop" -164.053
-cap "core_1/core_half_1/VDD" "Vop" 261.411
 cap "core_1/core_half_1/Vout" "Vop" -125.95
-cap "mirror_1_0/Vb1" "m1_24700_3050#" 13.7295
-cap "Vcmfb2" "core_1/VDD" 3210.37
-cap "core_1/core_half_0/Vout" "Vcmfb2" 696.427
-cap "Von" "core_1/core_half_0/Vb2" 6.372
-cap "Vb2" "core_1/VDD" 692.188
-cap "Von" "core_1/core_half_0/Vout" 201.135
-cap "core_1/core_half_0/Vcmfb" "Vcmfb2" 9.168
-cap "Vb2" "core_1/core_half_0/Vout" 233.34
+cap "core_1/core_half_1/VDD" "Vop" 261.411
+cap "core_1/core_half_1/Vb2" "Vop" -164.053
+cap "m1_24700_3050#" "mirror_1_0/Vb1" 13.7295
 cap "Vcmfb2" "core_1/core_half_0/Vout" 298.675
-cap "Von" "core_1/VDD" 1443.23
-cap "core_1/core_half_0/Vcmfb" "Vcmfb2" 9.168
+cap "Vb2" "core_1/VDD" 692.188
 cap "Vcmfb2" "core_1/core_half_0/Vcmfb" 9.168
-cap "Vb2" "core_1/core_half_0/Vb2" 4.5
+cap "Vb2" "core_1/core_half_0/Vout" 233.34
+cap "Von" "core_1/core_half_0/Vout" 201.135
+cap "Vcmfb2" "core_1/core_half_0/Vcmfb" 9.168
+cap "Vcmfb2" "core_1/VDD" 3210.37
 cap "Vb2" "core_1/core_half_0/Vb2" 247.2
-cap "Von" "core_1/core_half_0/Vout" -99.292
-cap "Von" "core_1/VDD" 293.974
-cap "Vcmfb2" "core_1/core_half_0/Vout" 1321.24
-cap "core_1/core_half_0/Vcmfb" "Vcmfb2" -75.293
-cap "Vcmfb2" "core_1/VDD" 700.124
-cap "Vb2" "core_1/core_half_0/Vb2" -73.31
-cap "core_1/core_half_0/Vcmfb" "Vcmfb2" -75.293
-cap "Vcmfb2" "core_1/core_half_0/Vcmfb" -75.293
+cap "core_1/core_half_0/Vout" "Vcmfb2" 696.427
+cap "Vcmfb2" "core_1/core_half_0/Vcmfb" 9.168
+cap "Von" "core_1/VDD" 1443.23
+cap "Vb2" "core_1/core_half_0/Vb2" 4.5
+cap "Von" "core_1/core_half_0/Vb2" 6.372
+cap "core_1/VDD" "Vcmfb2" 700.124
 cap "core_1/core_half_0/Vb2" "Vb2" 191.09
-cap "Vb2" "core_1/core_half_0/Vout" 487.227
-cap "Vb2" "core_1/VDD" -424.2
-cap "Von" "core_1/core_half_0/Vb2" -166.969
-cap "Vcmfb2" "core_1/core_half_0/VDD" 548.335
-cap "core_1/core_half_0/VDD" "Von" 344.948
-cap "core_1/core_half_0/Vout" "Vb2" 574.844
-cap "Von" "core_1/core_half_0/Vout" -83.334
-cap "Vcmfb2" "core_1/core_half_0/Vout" 1402.02
-cap "core_1/core_half_0/Vb2" "Vb2" -72.68
-cap "core_1/core_half_0/Vb2" "Vb2" 191.37
+cap "Vcmfb2" "core_1/core_half_0/Vcmfb" -75.293
+cap "core_1/VDD" "Vb2" -424.2
+cap "core_1/core_half_0/Vout" "Von" -99.292
+cap "core_1/core_half_0/Vout" "Vcmfb2" 1321.24
+cap "core_1/core_half_0/Vb2" "Vb2" -73.31
+cap "Vcmfb2" "core_1/core_half_0/Vcmfb" -75.293
+cap "core_1/core_half_0/Vb2" "Von" -166.969
+cap "core_1/core_half_0/Vout" "Vb2" 487.227
+cap "Vcmfb2" "core_1/core_half_0/Vcmfb" -75.293
+cap "core_1/VDD" "Von" 293.974
+cap "Vb2" "core_1/core_half_0/Vb2" -72.68
+cap "core_1/core_half_0/VDD" "Vcmfb2" 548.335
 cap "Von" "core_1/core_half_0/Vb2" -166.213
+cap "Vcmfb2" "core_1/core_half_0/Vcmfb" -73.781
+cap "Vb2" "core_1/core_half_0/Vout" 574.844
+cap "Vcmfb2" "core_1/core_half_0/Vout" 1402.02
+cap "Vb2" "core_1/core_half_0/VDD" -352.335
+cap "Von" "core_1/core_half_0/VDD" 344.948
 cap "core_1/core_half_0/VDD" "Vcmfb2" -270.57
+cap "core_1/core_half_0/Vb2" "Vb2" 191.37
 cap "Vcmfb2" "core_1/core_half_0/Vcmfb" -73.781
-cap "Vcmfb2" "core_1/core_half_0/Vcmfb" -73.781
+cap "Von" "core_1/core_half_0/Vout" -83.334
 cap "core_1/core_half_0/Vcmfb" "Vcmfb2" -73.781
-cap "core_1/core_half_0/VDD" "Vb2" -352.335
-cap "core_1/core_half_0/Vout" "Vb2" 186.559
-cap "core_1/core_half_0/Vb2" "Von" -5.293
-cap "core_1/core_half_0/VDD" "Von" 270.028
-cap "core_1/core_half_0/VDD" "Von" 125.1
-cap "core_1/core_half_0/Vout" "Von" 133.191
-cap "Von" "core_1/core_half_0/VDD" 139.98
-cap "Von" "core_1/core_half_0/Vout" 139.98
 cap "Vcmfb2" "core_1/core_half_0/VDD" -246.825
-cap "core_1/core_half_0/Vout" "Vcmfb2" 393.05
+cap "core_1/core_half_0/VDD" "Vb2" -360.735
+cap "core_1/core_half_0/Vout" "Vb2" 186.559
 cap "core_1/core_half_0/Vb2" "Vb2" 127.79
+cap "core_1/core_half_0/VDD" "Von" 270.028
 cap "core_1/core_half_0/Vout" "Von" 139.98
-cap "core_1/core_half_0/VDD" "Von" 138.073
-cap "core_1/core_half_0/Vout" "Von" 125.1
-cap "Von" "core_1/core_half_0/Vcmfb" 125.748
-cap "Von" "core_1/core_half_0/Vout" -303.21
-cap "core_1/core_half_0/VDD" "Von" 220.23
-cap "Vcmfb2" "core_1/core_half_0/VDD" 542.985
-cap "Vb2" "core_1/core_half_0/VDD" -360.735
+cap "Von" "core_1/core_half_0/VDD" 138.073
+cap "core_1/core_half_0/Vout" "Von" 133.191
+cap "core_1/core_half_0/Vcmfb" "Vcmfb2" -155.895
 cap "Vcmfb2" "core_1/core_half_0/Vout" -246.825
-cap "Vcmfb2" "core_1/core_half_0/Vcmfb" -155.895
-cap "Vop" "core_1/core_half_0/VDD" -487.74
-cap "Vop" "core_1/Vcmfb" -346.044
+cap "Von" "core_1/core_half_0/VDD" 125.1
+cap "core_1/core_half_0/VDD" "Von" 220.23
+cap "core_1/core_half_0/Vout" "Von" -303.21
+cap "core_1/core_half_0/VDD" "Von" 139.98
+cap "core_1/core_half_0/Vout" "Von" 139.98
+cap "core_1/core_half_0/Vb2" "Von" -5.293
+cap "core_1/core_half_0/Vcmfb" "Von" 125.748
+cap "Vcmfb2" "core_1/core_half_0/VDD" 542.985
+cap "Von" "core_1/core_half_0/Vout" 125.1
+cap "core_1/core_half_0/Vout" "Vcmfb2" 393.05
 cap "core_1/Vb2" "core_1/core_half_1/VDD" 45.56
-cap "core_1/Vcmfb" "core_1/core_half_0/Vout" -953.075
-cap "core_1/Vcmfb" "core_1/core_half_0/VDD" 22.382
-cap "core_1/Vb2" "core_1/core_half_0/VDD" -810.155
 cap "core_1/Vcmfb" "core_1/core_half_0/VDD" -140.192
-cap "Vop" "core_1/core_half_1/Vout" -267
-cap "core_1/Vcmfb" "core_1/core_half_1/Vout" 112.33
-cap "core_1/core_half_0/VDD" "core_1/Vcmfb" -816.735
-cap "core_1/Vb2" "core_1/core_half_1/Vout" 63.332
-cap "Vop" "core_1/core_half_1/Vout" 48.993
-cap "core_1/core_half_1/Vout" "Vop" -263.64
-cap "core_1/Vb2" "core_1/core_half_0/VDD" 1.928
-cap "Vop" "core_1/core_half_1/VDD" -158.04
-cap "core_1/Vb2" "Vop" -327.72
-cap "Vop" "core_1/core_half_1/VDD" -267
-cap "core_1/Vcmfb" "core_1/core_half_1/VDD" 112.33
-cap "core_1/Vb2" "core_1/Vcmfb" -43.1336
-cap "Vop" "core_1/core_half_1/VDD" -263.64
 cap "core_1/core_half_1/VDD" "Vop" -264.07
-cap "core_1/core_half_1/VDD" "core_1/Vcmfb" 189.343
+cap "core_1/Vcmfb" "core_1/core_half_0/VDD" -816.735
+cap "core_1/Vcmfb" "core_1/core_half_0/Vout" -953.075
+cap "core_1/core_half_1/VDD" "Vop" -267
+cap "core_1/core_half_1/Vout" "Vop" -267
+cap "core_1/core_half_0/VDD" "Vop" -487.74
+cap "core_1/core_half_1/Vout" "Vop" -265.173
+cap "core_1/core_half_1/Vout" "Vop" 48.993
 cap "core_1/core_half_1/Vout" "Vop" -263.64
+cap "core_1/core_half_0/VDD" "core_1/Vb2" 1.928
 cap "core_1/Vb2" "core_1/core_half_0/Vout" -48.061
-cap "Vop" "core_1/core_half_1/Vout" -265.173
-cap "core_1/Vcmfb" "core_1/core_half_1/Vout" 202.333
+cap "core_1/Vcmfb" "core_1/core_half_1/VDD" 189.343
 cap "core_1/Vcmfb" "core_1/core_half_0/Vout" -525.882
-cap "Vop" "core_1/core_half_1/VDD" -119.1
-cap "Vop" "core_1/core_half_1/Vb2" -62.062
-cap "core_1/core_half_1/Vout" "Vcmfb2" 146.555
-cap "core_1/core_half_1/Vb2" "Vb2" 128.7
-cap "Vcmfb2" "core_1/core_half_1/VDD" 565.095
-cap "Vcmfb2" "core_1/core_half_1/Vcmfb" -155.895
-cap "core_1/core_half_1/VDD" "Vop" -107.58
-cap "core_1/core_half_1/VDD" "Vb2" -358.675
-cap "Vcmfb2" "core_1/core_half_1/VDD" -246.605
-cap "core_1/core_half_1/VDD" "Vop" -139.58
+cap "core_1/Vb2" "Vop" -327.72
+cap "core_1/core_half_1/VDD" "Vop" -158.04
+cap "core_1/Vcmfb" "core_1/core_half_1/VDD" 112.33
+cap "core_1/Vcmfb" "core_1/core_half_1/Vout" 112.33
+cap "core_1/core_half_0/VDD" "core_1/Vcmfb" 22.382
+cap "core_1/Vcmfb" "Vop" -346.044
+cap "core_1/core_half_1/Vout" "Vop" -263.64
+cap "core_1/Vcmfb" "core_1/core_half_1/Vout" 202.333
+cap "core_1/core_half_1/VDD" "Vop" -263.64
+cap "core_1/Vb2" "core_1/core_half_1/Vout" 63.332
+cap "core_1/Vcmfb" "core_1/Vb2" -43.1336
+cap "core_1/Vb2" "core_1/core_half_0/VDD" -810.155
+cap "core_1/core_half_1/VDD" "Vcmfb2" 565.095
 cap "core_1/core_half_1/Vout" "Vop" -371.436
-cap "Vop" "core_1/core_half_1/VDD" -109.056
+cap "core_1/core_half_1/VDD" "Vop" -119.1
+cap "core_1/core_half_1/Vb2" "Vop" -62.062
 cap "core_1/core_half_1/Vcmfb" "Vop" -55.208
-cap "core_1/core_half_1/Vout" "Vb2" 186.671
 cap "Vop" "core_1/core_half_1/VDD" 465.182
-cap "Vb2" "core_1/core_half_1/Vb2" -74.48
+cap "Vb2" "core_1/core_half_1/VDD" -358.675
+cap "core_1/core_half_1/VDD" "Vop" -109.056
+cap "Vb2" "core_1/core_half_1/Vout" 186.671
+cap "Vb2" "core_1/core_half_1/Vb2" 128.7
+cap "core_1/core_half_1/Vout" "Vcmfb2" 146.555
+cap "core_1/core_half_1/VDD" "Vcmfb2" -246.605
+cap "core_1/core_half_1/Vcmfb" "Vcmfb2" -155.895
+cap "core_1/core_half_1/VDD" "Vop" -139.58
+cap "Vop" "core_1/core_half_1/VDD" -107.58
+cap "Vcmfb2" "core_1/core_half_1/Vcmfb" -78.101
+cap "core_1/core_half_1/VDD" "Vb2" -357.935
+cap "core_1/core_half_1/Vcmfb" "Vcmfb2" -78.101
+cap "core_1/core_half_1/Vb2" "Vb2" 190.57
 cap "Vb2" "core_1/core_half_1/Vout" 759.619
-cap "Vop" "core_1/core_half_1/Vb2" -168.373
-cap "Vb2" "core_1/core_half_1/Vb2" 190.57
-cap "core_1/core_half_1/Vcmfb" "Vcmfb2" -78.101
-cap "core_1/core_half_1/Vout" "Vop" 379.881
-cap "core_1/core_half_1/VDD" "Vcmfb2" -287.47
+cap "Vcmfb2" "core_1/core_half_1/Vout" 2301.95
+cap "core_1/core_half_1/Vb2" "Vop" -168.373
 cap "core_1/core_half_1/VDD" "Vcmfb2" 546.345
-cap "core_1/core_half_1/Vout" "Vcmfb2" 2301.95
+cap "core_1/core_half_1/Vb2" "Vb2" -74.48
+cap "core_1/core_half_1/Vcmfb" "Vcmfb2" -78.101
+cap "core_1/core_half_1/VDD" "Vcmfb2" -287.47
+cap "Vop" "core_1/core_half_1/Vout" 379.881
 cap "core_1/core_half_1/VDD" "Vop" 341.408
-cap "Vb2" "core_1/core_half_1/VDD" -357.935
-cap "core_1/core_half_1/Vcmfb" "Vcmfb2" -78.101
-cap "core_1/core_half_1/Vcmfb" "Vcmfb2" -78.101
-cap "Vop" "core_1/core_half_1/Vout" -514.137
-cap "Vcmfb2" "core_1/core_half_1/Vcmfb" -75.293
-cap "Vcmfb2" "core_1/VDD#1" 1677.51
 cap "core_1/core_half_1/Vb2" "Vb2" 191.09
-cap "core_1/VDD#1" "Vb2" -3.395
-cap "Vcmfb2" "core_1/core_half_1/Vout" 209.524
-cap "core_1/core_half_1/Vcmfb" "Vcmfb2" -75.293
+cap "core_1/core_half_1/Vout" "Vcmfb2" 209.524
+cap "Vcmfb2" "core_1/core_half_1/Vcmfb" -75.293
 cap "Vb2" "core_1/core_half_1/Vout" 270.932
 cap "core_1/core_half_1/Vb2" "Vop" -166.969
-cap "core_1/core_half_1/Vcmfb" "Vcmfb2" -75.293
-cap "core_1/VDD#1" "Vop" 841.409
 cap "core_1/core_half_1/Vb2" "Vb2" -73.31
+cap "core_1/VDD#1" "Vop" 841.409
+cap "core_1/VDD#1" "Vcmfb2" 1677.51
+cap "Vcmfb2" "core_1/core_half_1/Vcmfb" -75.293
+cap "Vop" "core_1/core_half_1/Vout" -514.137
+cap "core_1/VDD#1" "Vb2" -3.395
+cap "Vcmfb2" "core_1/core_half_1/Vcmfb" -75.293
+cap "Vcmfb2" "core_1/core_half_1/Vout" -356.85
 cap "core_1/core_half_1/Vcmfb" "Vcmfb2" -73.037
-cap "core_1/core_half_1/Vout" "Vb2" 122.155
-cap "Vb2" "core_1/VDD#1" -251.872
-cap "core_1/core_half_1/Vcmfb" "Vcmfb2" -73.037
-cap "core_1/core_half_1/Vb2" "Vop" -164.053
-cap "core_1/core_half_1/Vout" "Vcmfb2" -356.85
-cap "core_1/VDD#1" "Vcmfb2" 1249.91
 cap "core_1/core_half_1/Vb2" "Vb2" -71.69
-cap "core_1/core_half_1/Vout" "Vcmfb2" 194.447
-cap "core_1/core_half_1/Vout" "Vop" -418.335
-cap "core_1/VDD#1" "Vop" 294.341
-cap "core_1/core_half_1/Vcmfb" "Vcmfb2" -73.037
+cap "core_1/VDD#1" "Vb2" -251.872
+cap "core_1/core_half_1/Vb2" "Vop" -164.053
 cap "core_1/core_half_1/Vb2" "Vb2" 133.01
+cap "core_1/VDD#1" "Vcmfb2" 1249.91
+cap "Vcmfb2" "core_1/core_half_1/Vcmfb" -73.037
+cap "core_1/core_half_1/Vout" "Vb2" 122.155
+cap "core_1/core_half_1/Vout" "Vop" -418.335
+cap "Vcmfb2" "core_1/core_half_1/Vcmfb" -73.037
+cap "core_1/VDD#1" "Vop" 294.341
+cap "core_1/core_half_1/Vout" "Vcmfb2" 194.447
 cap "cmfb_1/cmfb_half_0/res" "cmfb_1/Vb3" 582.74
-cap "m1_24700_3050#" "cmfb_1/GND#1" 251.62
-cap "cmfb_1/cmfb_half_0/res" "m1_24700_3050#" -90.415
+cap "m1_24700_3050#" "cmfb_1/cmfb_half_0/res" -90.415
 cap "cmfb_1/cmfb_half_0/Vb3" "m1_24700_3050#" 198.55
-cap "cmfb_1/cmfb_half_0/Vb3" "m1_24700_3050#" -46.22
+cap "cmfb_1/GND#1" "m1_24700_3050#" 251.62
 cap "m1_24700_3050#" "cmfb_1/cmfb_half_0/res" -464.935
+cap "m1_24700_3050#" "cmfb_1/cmfb_half_0/Vb3" -46.22
 cap "core_1/core_half_0/VDD" "Von" 2.79
 cap "core_1/core_half_0/VDD" "Vop" 0.63
 cap "Vop" "core_1/core_half_1/VDD" 2.16
-cap "Vcmfb2" "cmfb_1/cmfb_half_1/res" 25.4375
-cap "Vcmfb2" "cmfb_1/cmfb_half_1/Vout" 60.4175
-cap "Vcmfb2" "cmfb_1/Vref" 518.155
-cap "cmfb_1/cmfb_half_1/Vin" "cmfb_1/Vcmfb" -148.81
-cap "cmfb_1/cmfb_half_1/res" "cmfb_1/Vcmfb" -226.702
-cap "Vcmfb2" "cmfb_1/cmfb_half_1/res" -465.23
+cap "cmfb_1/cmfb_half_1/res" "Vcmfb2" 25.4375
+cap "cmfb_1/cmfb_half_1/Vout" "Vcmfb2" 60.4175
+cap "cmfb_1/Vref" "Vcmfb2" 518.155
+cap "cmfb_1/Vcmfb" "cmfb_1/cmfb_half_1/res" -226.702
+cap "cmfb_1/Vcmfb" "cmfb_1/cmfb_half_1/Vin" -148.81
 cap "cmfb_1/cmfb_half_1/Vin" "Vcmfb2" -69.265
+cap "cmfb_1/cmfb_half_1/res" "Vcmfb2" -465.23
 cap "cmfb_1/cmfb_half_1/Vout" "Vcmfb2" 186.035
 cap "cmfb_1/cmfb_half_0/res" "Vcmfb2" 523.847
-cap "Vcmfb2" "cmfb_1/cmfb_half_0/Vin" 13.66
+cap "cmfb_1/cmfb_half_0/Vin" "Vcmfb2" 13.66
 cap "cmfb_1/cmfb_half_0/Vout" "Vcmfb2" 431.867
-cap "cmfb_1/Vcm" "Vcmfb2" 67.36
-cap "Vcmfb2" "cmfb_1/cmfb_half_0/res" -208.567
 cap "cmfb_1/cmfb_half_0/Vout" "Vcmfb2" 991.707
+cap "Vcmfb2" "cmfb_1/Vcm" 67.36
+cap "Vcmfb2" "cmfb_1/cmfb_half_0/res" -208.567
 cap "Vcmfb2" "cmfb_1/Vcm" -822.24
 cap "core_0/Vb1" "Von" 35.6707
 cap "core_0/Vb1" "Von" 85
 cap "core_0/Vb1" "Von" 85
-cap "core_0/Vb1" "Von" 85
+cap "core_0/GND" "Von" 125.1
 cap "core_0/GND" "Von" 217.44
+cap "core_0/Vb1" "Von" 85
 cap "core_0/a_n6970_n2190#" "Von" 1125.99
 cap "core_0/GND" "Von" 125.1
-cap "core_0/GND" "Von" 125.1
 cap "core_0/Vb1" "Von" 85
 cap "core_0/Vb1" "Von" 85
-cap "Vop" "core_0/Vb1" -59.5
+cap "core_0/GND" "Vop" -267
+cap "core_0/Vb1" "Vop" -59.5
+cap "core_0/Vb1" "Vop" -59.5
+cap "core_0/GND" "Vop" -488.37
 cap "Vcm1" "core_0/Vb1" 69.8
-cap "Vop" "core_0/a_n6970_n2190#" -791.812
+cap "core_0/a_n6970_n2190#" "Vcm1" 546.64
 cap "Vcm1" "core_0/Vb1" 69.8
-cap "Vop" "core_0/GND" -488.37
-cap "Vop" "core_0/Vb1" -59.5
-cap "Vop" "core_0/GND" -267
-cap "Vop" "core_0/Vb1" -59.5
-cap "Vop" "core_0/Vb1" -59.5
-cap "Vcm1" "core_0/a_n6970_n2190#" 546.64
-cap "Vop" "core_0/GND" -267
-cap "Vcm1" "core_0/GND" 424.153
-cap "core_0/Vb1" "Vcm1" 69.8
+cap "core_0/Vb1" "Vop" -59.5
+cap "Vcm1" "core_0/Vb1" 69.8
+cap "core_0/a_n6970_n2190#" "Vop" -791.812
+cap "core_0/Vb1" "Vop" -59.5
+cap "core_0/Vb1" "Vop" -59.5
+cap "Vcm1" "core_0/GND" 223.96
 cap "Vcm1" "core_0/GND" 223.96
 cap "Vcm1" "core_0/Vb1" 69.8
+cap "core_0/GND" "Vop" -267
 cap "Vcm1" "core_0/Vb1" 69.8
-cap "Vop" "core_0/Vb1" -59.5
-cap "Vcm1" "core_0/GND" 223.96
+cap "core_0/GND" "Vcm1" 424.153
+cap "core_0/GND" "Vop" -77.25
 cap "core_0/Vb1" "Vop" 12.75
-cap "Vop" "core_0/Vb1" 12.75
-cap "Vop" "core_0/Vb1" 12.75
+cap "core_0/Vb1" "Vop" 12.75
+cap "core_0/Vb1" "Vop" 12.75
+cap "core_0/GND" "Vop" -77.25
+cap "core_0/GND" "Vop" -129.965
 cap "Vop" "core_0/a_n6970_n2190#" 95.875
-cap "Vop" "core_0/GND" -77.25
-cap "Vop" "core_0/Vb1" 12.75
-cap "Vop" "core_0/GND" -129.965
-cap "Vop" "core_0/Vb1" 12.75
-cap "Vop" "core_0/GND" -77.25
-cap "Vop" "core_0/Vb1" 65.3722
-cap "Vcmfb2" "cmfb_1/cmfb_half_1/res" 16.39
-cap "cmfb_1/Vcmfb" "cmfb_1/VDD" 287.33
-cap "cmfb_1/Vcmfb" "cmfb_1/cmfb_half_1/res" 17.105
-cap "cmfb_1/Vcmfb" "cmfb_1/cmfb_half_1/diode" 267.76
-cap "Vcmfb2" "cmfb_1/cmfb_half_1/res" -286.99
+cap "core_0/Vb1" "Vop" 12.75
+cap "core_0/Vb1" "Vop" 12.75
+cap "core_0/Vb1" "Vop" 65.3722
+cap "cmfb_1/cmfb_half_1/res" "Vcmfb2" 16.39
+cap "cmfb_1/cmfb_half_1/res" "cmfb_1/Vcmfb" 17.105
+cap "cmfb_1/VDD" "cmfb_1/Vcmfb" 287.33
+cap "cmfb_1/cmfb_half_1/diode" "cmfb_1/Vcmfb" 267.76
+cap "cmfb_1/cmfb_half_1/res" "Vcmfb2" -286.99
+cap "cmfb_1/cmfb_half_0/diode" "Vcmfb2" 684.755
 cap "cmfb_1/VDD" "Vcmfb2" -502.185
-cap "Vcmfb2" "cmfb_1/cmfb_half_0/diode" 684.755
-cap "Vcmfb2" "cmfb_1/cmfb_half_0/Vout" 559.385
+cap "cmfb_1/cmfb_half_0/res" "Vcmfb2" 412.75
 cap "cmfb_1/VDD" "Vcmfb2" 891.472
-cap "Vcmfb2" "cmfb_1/cmfb_half_0/res" 412.75
+cap "cmfb_1/cmfb_half_0/Vout" "Vcmfb2" 559.385
+cap "cmfb_1/cmfb_half_0/res" "Vcmfb2" -69.375
 cap "Vcmfb2" "cmfb_1/cmfb_half_0/diode" 122.075
-cap "Vcmfb2" "cmfb_1/cmfb_half_0/res" -69.375
-cap "cmfb_1/VDD" "Vcmfb2" -347.687
-cap "cmfb_1/cmfb_half_0/Vin" "Vcmfb2" 56.95
-cap "cmfb_1/cmfb_half_0/Vout" "Vcmfb2" 685.2
-cap "Vcm1" "core_0/GND" 659.062
-cap "Vcm1" "core_0/Vb1" 752.54
+cap "Vcmfb2" "cmfb_1/cmfb_half_0/Vout" 685.2
+cap "Vcmfb2" "cmfb_1/VDD" -347.687
+cap "Vcmfb2" "cmfb_1/cmfb_half_0/Vin" 56.95
 cap "Vcm1" "core_0/a_n6970_n2190#" 525.742
-cap "Vcm1" "core_0/a_n6970_n2190#" 370.02
-cap "Vcm1" "core_0/core_half_0/GND" 1394.07
-cap "Vcm1" "core_0/Vb1" -82.205
+cap "Vcm1" "core_0/GND" 659.062
+cap "core_0/Vb1" "Vcm1" 752.54
+cap "core_0/core_half_0/GND" "Vcm1" 1394.07
+cap "core_0/a_n6970_n2190#" "Vcm1" 370.02
+cap "core_0/Vb1" "Vcm1" -82.205
 cap "core_0/Vb1" "Vcm1" -0.00500184
 cap "core_0/core_half_0/GND" "Vcm1" -554.247
 cap "core_0/a_n6970_n2190#" "Vcm1" 427.902
-cap "core_0/GND" "Vcm1" -76.6325
 cap "core_0/Vb1" "Vcm1" -12.005
-cap "Vcm1" "core_0/a_n6970_n2190#" 816.072
-cap "core_0/GND" "Vcm1" -168.117
+cap "core_0/GND" "Vcm1" -76.6325
+cap "core_0/a_n6970_n2190#" "Vcm1" 816.072
 cap "core_0/GND" "Von" 125.1
+cap "core_0/Vb1" "Vcm1" -80.405
+cap "core_0/GND" "Von" 125.1
+cap "core_0/core_half_0/s" "Von" 1514.3
+cap "core_0/Vb1" "Von" 85
+cap "core_0/Vb1" "Von" 85
+cap "core_0/Vb1" "Von" 85
+cap "core_0/GND" "Vcm1" -168.117
+cap "core_0/Vb1" "Von" 85
 cap "core_0/GND" "Von" 308.3
 cap "core_0/Vb1" "Von" 85
-cap "core_0/Vb1" "Von" 85
-cap "Von" "core_0/GND" 125.1
-cap "core_0/Vb1" "Von" 85
-cap "Vcm1" "core_0/core_half_0/s" 2124.4
-cap "core_0/Vb1" "Von" 85
-cap "Vcm1" "core_0/Vb1" -80.405
-cap "Von" "core_0/core_half_0/s" 1514.3
-cap "core_0/Vb1" "Von" 85
-cap "Vop" "core_0/GND" -267
-cap "Vop" "core_0/GND" -267
+cap "core_0/core_half_0/s" "Vcm1" 2124.4
+cap "core_0/Vb1" "Vcm1" 69.8
+cap "core_0/GND" "Vop" -267
 cap "core_0/Vb1" "Vop" -59.5
-cap "Vcm1" "core_0/GND" 223.96
 cap "core_0/GND" "Vcm1" -111.277
+cap "core_0/GND" "Vop" -267
+cap "core_0/a_n6970_n2190#" "Vop" -1063.35
+cap "core_0/Vb1" "Vop" -59.5
+cap "core_0/GND" "Vcm1" 223.96
+cap "core_0/GND" "Vop" -765.35
+cap "core_0/a_n6970_n2190#" "Vcm1" 1079.37
+cap "core_0/Vb1" "Vop" -59.5
+cap "core_0/Vb1" "Vcm1" 69.8
+cap "core_0/Vb1" "Vop" -59.5
 cap "core_0/Vb1" "Vcm1" -8.405
-cap "Vop" "core_0/a_n6970_n2190#" -1063.35
-cap "Vop" "core_0/Vb1" -59.5
-cap "Vcm1" "core_0/a_n6970_n2190#" 1079.37
-cap "Vcm1" "core_0/Vb1" 69.8
-cap "core_0/Vb1" "Vop" -59.5
 cap "core_0/Vb1" "Vop" -59.5
 cap "core_0/Vb1" "Vcm1" 69.8
-cap "core_0/Vb1" "Vcm1" 69.8
-cap "Vop" "core_0/GND" -765.35
-cap "Vop" "core_0/Vb1" -59.5
-cap "core_0/core_half_1/Vout" "core_0/GND" -222.325
-cap "core_0/core_half_1/Vout" "core_0/Vb1" 12.75
-cap "core_0/Vb1" "core_0/core_half_1/Vout" 12.75
-cap "Vcm1" "core_0/Vb1" -82.205
-cap "Vcm1" "core_0/GND" -170.525
-cap "Vcm1" "core_0/core_half_1/s" 2116.95
-cap "core_0/Vb1" "core_0/core_half_1/Vout" 12.75
-cap "core_0/core_half_1/Vout" "core_0/Vb1" 12.75
-cap "core_0/core_half_1/Vout" "core_0/GND" -77.25
 cap "core_0/core_half_1/Vout" "core_0/core_half_1/s" 102.075
-cap "core_0/GND" "core_0/core_half_1/Vout" -77.25
+cap "core_0/core_half_1/Vout" "core_0/GND" -77.25
+cap "core_0/core_half_1/Vout" "core_0/GND" -77.25
+cap "core_0/core_half_1/Vout" "core_0/Vb1" 12.75
+cap "core_0/core_half_1/s" "Vcm1" 2116.95
+cap "core_0/core_half_1/Vout" "core_0/Vb1" 12.75
+cap "core_0/core_half_1/Vout" "core_0/Vb1" 12.75
 cap "core_0/Vb1" "core_0/core_half_1/Vout" 12.75
+cap "core_0/GND" "Vcm1" -170.525
+cap "core_0/GND" "core_0/core_half_1/Vout" -222.325
+cap "core_0/core_half_1/Vout" "core_0/Vb1" 12.75
+cap "core_0/Vb1" "Vcm1" -82.205
+cap "core_0/a_n6970_n2190#" "Vcm1" 164.812
 cap "core_0/Vb1" "Vcm1" -0.00500184
 cap "core_0/GND" "Vcm1" -60.5825
-cap "core_0/a_n6970_n2190#" "Vcm1" 164.812
-cap "Vcm1" "core_0/core_half_1/GND" 319.987
 cap "core_0/Vb1" "Vcm1" -12.005
+cap "core_0/core_half_1/GND" "Vcm1" 319.987
 cap "core_0/a_n6970_n2190#" "Vcm1" 419.452
-cap "core_0/Vb1" "Vcm1" -80.405
+cap "core_0/core_half_1/GND" "Vcm1" 1395.46
 cap "core_0/a_n6970_n2190#" "Vcm1" 371.287
-cap "Vcm1" "core_0/core_half_1/GND" 1395.46
-cap "core_0/a_n6970_n2190#" "Vcm1" 22.495
-cap "Vcm1" "core_0/GND" -326.05
-cap "core_0/Vb1" "Vcm1" 668.535
+cap "core_0/Vb1" "Vcm1" -80.405
+cap "Vcm1" "core_0/a_n6970_n2190#" 22.495
+cap "core_0/GND" "Vcm1" -326.05
+cap "Vcm1" "core_0/Vb1" 668.535
+cap "core_0/Vout_n" "core_0/core_half_0/s" 61.2425
+cap "core_0/core_half_0/Vin" "core_0/Vout_n" 378.1
 cap "core_0/core_half_0/Vin" "core_0/Vout_n" 26.49
-cap "core_0/Vout_n" "core_0/core_half_0/Vin" -67.745
-cap "core_0/Vout_n" "core_0/core_half_0/Vin" 378.1
-cap "core_0/core_half_0/s" "core_0/Vout_n" 61.2425
-cap "core_0/core_half_0/Vout" "core_0/core_half_0/Vin" 141.96
-cap "core_0/core_half_0/Vout" "Von" 301.795
+cap "core_0/core_half_0/Vin" "core_0/Vout_n" -67.745
+cap "core_0/core_half_0/Vin" "core_0/core_half_0/Vout" 70.74
+cap "Von" "core_0/core_half_0/s" 357.48
 cap "core_0/core_half_0/Vb2" "core_0/core_half_0/Vin" 68.112
-cap "core_0/core_half_0/VDD" "core_0/core_half_0/Vin" 79.364
 cap "core_0/GND" "core_0/core_half_0/Vin" 131.84
-cap "core_0/core_half_0/VDD" "core_0/core_half_0/Vin" 224.58
-cap "core_0/core_half_0/Vout" "Von" -355.17
-cap "core_0/core_half_0/s" "Von" 357.48
-cap "core_0/core_half_0/Vout" "core_0/core_half_0/Vin" 70.74
 cap "Von" "core_0/core_half_0/Vin" -43.775
-cap "core_0/core_half_0/s" "core_0/core_half_0/Vin" 660.777
-cap "core_0/core_half_1/VDD" "core_0/Vin_n" -142.186
-cap "core_0/core_half_0/Vb2" "core_0/Vin_n" -66.588
-cap "core_0/core_half_0/Vout" "core_0/Vin_p" -938.705
-cap "core_0/Vin_p" "core_0/Vin_n" -71.5602
-cap "Vop" "core_0/core_half_1/s" 26.8375
+cap "core_0/core_half_0/VDD" "core_0/core_half_0/Vin" 79.364
+cap "core_0/core_half_0/VDD" "core_0/core_half_0/Vin" 224.58
+cap "Von" "core_0/core_half_0/Vout" 301.795
+cap "core_0/core_half_0/Vout" "core_0/core_half_0/Vin" 141.96
+cap "core_0/core_half_0/Vin" "core_0/core_half_0/s" 660.777
+cap "Von" "core_0/core_half_0/Vout" -355.17
+cap "core_0/core_half_1/s" "Vop" 26.8375
 cap "core_0/core_half_1/Vout" "core_0/Vin_n" -201.655
-cap "core_0/core_half_0/VDD" "core_0/Vin_n" -382.582
-cap "core_0/GND" "core_0/Vin_n" -206.69
-cap "core_0/core_half_1/Vout" "core_0/Vin_n" -358.785
-cap "core_0/core_half_1/Vout" "Vop" 49.8
-cap "core_0/core_half_1/s" "core_0/Vin_n" -831.697
 cap "core_0/core_half_1/Vout" "Vop" 51.3
-cap "Vop" "core_0/Vin_n" -63.75
+cap "core_0/GND" "core_0/Vin_n" -206.69
+cap "core_0/core_half_1/VDD" "core_0/Vin_n" -142.186
+cap "core_0/core_half_0/VDD" "core_0/Vin_n" -382.582
+cap "core_0/Vin_n" "Vop" -63.75
+cap "core_0/Vin_p" "core_0/Vin_n" -71.5602
+cap "core_0/core_half_1/Vout" "Vop" 49.8
 cap "core_0/core_half_0/s" "core_0/Vin_p" -1026.14
-cap "core_0/core_half_1/VDD" "core_0/core_half_1/Vin" -252.757
-cap "core_0/GND" "core_0/core_half_1/Vin" -121.39
+cap "core_0/Vin_n" "core_0/core_half_1/Vout" -358.785
+cap "core_0/core_half_0/Vb2" "core_0/Vin_n" -66.588
+cap "core_0/Vin_p" "core_0/core_half_0/Vout" -938.705
+cap "core_0/core_half_1/s" "core_0/Vin_n" -831.697
+cap "core_0/core_half_1/Vin" "core_0/core_half_1/VDD" -114.001
 cap "core_0/core_half_1/Vout" "core_0/core_half_1/s" 646.35
+cap "core_0/core_half_1/Vin" "core_0/GND" -121.39
+cap "core_0/core_half_1/Vin" "core_0/core_half_1/VDD" -252.757
+cap "core_0/core_half_1/Vin" "core_0/core_half_1/s" -1259.82
 cap "core_0/core_half_1/Vin" "core_0/core_half_1/Vb2" -21.268
-cap "core_0/core_half_1/VDD" "core_0/core_half_1/Vin" -114.001
-cap "core_0/core_half_1/s" "core_0/core_half_1/Vin" -1259.82
 cap "core_0/core_half_1/Vout" "core_0/core_half_1/Vin" -213.525
-cap "core_0/core_half_1/Vin" "core_0/Vout_p" 122.675
-cap "core_0/core_half_1/Vin" "core_0/Vout_p" -406.01
-cap "core_0/core_half_1/Vin" "core_0/Vout_p" -143.935
+cap "core_0/Vout_p" "core_0/core_half_1/Vin" 122.675
+cap "core_0/Vout_p" "core_0/core_half_1/Vin" -143.935
+cap "core_0/Vout_p" "core_0/core_half_1/Vin" -406.01
 cap "core_0/Vout_p" "core_0/core_half_1/s" -2395.68
-cap "Vb5" "cmfb_0/GND" 237.77
-cap "cmfb_0/cmfb_half_1/Vb3" "Vb5" 30.05
-cap "cmfb_0/cmfb_half_1/Vb3" "Vb5" 30.05
-cap "cmfb_0/cmfb_half_1/Vb3" "Vb5" 30.05
 cap "cmfb_0/cmfb_half_1/Vb3" "Vb5" 30.05
 cap "cmfb_0/cmfb_half_1/res" "Vb5" 66.66
-cap "cmfb_0/cmfb_half_1/res" "Vb5" 66.66
+cap "cmfb_0/cmfb_half_1/Vb3" "Vb5" 30.05
 cap "cmfb_0/cmfb_half_1/Vb3" "Vb5" 30.05
 cap "cmfb_0/cmfb_half_1/res" "Vb5" 64.37
-cap "cmfb_0/cmfb_half_0/res" "cmfb_0/Vb3" 742.601
-cap "cmfb_0/GND#1" "m1_24700_3050#" 251.62
-cap "cmfb_0/cmfb_half_0/Vb3" "m1_24700_3050#" 202.69
-cap "cmfb_0/cmfb_half_0/res" "m1_24700_3050#" 115.077
-cap "cmfb_0/cmfb_half_0/res" "m1_24700_3050#" -449.624
+cap "cmfb_0/cmfb_half_1/Vb3" "Vb5" 30.05
+cap "cmfb_0/GND" "Vb5" 237.77
+cap "cmfb_0/cmfb_half_1/res" "Vb5" 66.66
+cap "cmfb_0/cmfb_half_1/Vb3" "Vb5" 30.05
+cap "cmfb_0/Vb3" "cmfb_0/cmfb_half_0/res" 742.601
+cap "m1_24700_3050#" "cmfb_0/cmfb_half_0/Vb3" 202.69
+cap "m1_24700_3050#" "cmfb_0/GND#1" 251.62
+cap "m1_24700_3050#" "cmfb_0/cmfb_half_0/res" 115.077
 cap "cmfb_0/cmfb_half_0/Vb3" "m1_24700_3050#" -45.05
+cap "cmfb_0/cmfb_half_0/res" "m1_24700_3050#" -449.624
+cap "core_0/core_half_0/Vout" "Vinn" 650.58
 cap "core_0/core_half_0/Vb2" "Vinn" 6.372
-cap "Vb2" "core_0/core_half_0/Vb2" 246.3
 cap "core_0/core_half_0/VDD" "Vinn" 5.904
 cap "core_0/core_half_0/Vout" "Vinn" 202.2
-cap "core_0/core_half_0/Vout" "Vb2" 134.2
-cap "core_0/core_half_0/VDD" "Vb2" 1.36
+cap "core_0/core_half_0/Vb2" "Vb2" 4.5
 cap "core_0/core_half_0/VDD" "Vinn" 1545.9
 cap "core_0/core_half_0/Vb2" "Vinn" 6.372
-cap "core_0/core_half_0/Vout" "Vinn" 650.58
-cap "Vb2" "core_0/core_half_0/VDD" 1106.05
-cap "core_0/core_half_0/Vb2" "Vb2" 4.5
-cap "core_0/core_half_0/Vb2" "Vinn" 6.372
+cap "core_0/core_half_0/Vb2" "Vb2" 246.3
+cap "core_0/core_half_0/VDD" "Vb2" 1.36
 cap "core_0/core_half_0/Vout" "Vinn" 650.58
 cap "core_0/core_half_0/Vb2" "Vinn" 6.372
-cap "core_0/core_half_0/Vout" "Vb2" -52.395
-cap "core_0/core_half_0/Vb2" "Vb2" 190.13
-cap "Vinn" "core_0/core_half_0/Vb2" -166.969
+cap "core_0/core_half_0/VDD" "Vb2" 1106.05
+cap "core_0/core_half_0/Vb2" "Vinn" 6.372
+cap "core_0/core_half_0/Vout" "Vb2" 134.2
 cap "core_0/core_half_0/Vb2" "Vinn" -166.969
+cap "core_0/core_half_0/Vb2" "Vb2" 190.13
+cap "core_0/core_half_0/Vout" "Vb2" -52.395
 cap "core_0/core_half_0/VDD" "Vinn" -901.9
-cap "core_0/core_half_0/Vout" "Vinn" 1306.57
+cap "core_0/core_half_0/Vb2" "Vinn" -166.969
 cap "core_0/core_half_0/Vb2" "Vb2" -73.31
 cap "core_0/core_half_0/Vb2" "Vinn" -166.969
-cap "core_0/core_half_0/Vb2" "Vinn" -166.969
+cap "core_0/core_half_0/Vout" "Vinn" 1306.57
 cap "core_0/core_half_0/VDD" "Vb2" 570.77
-cap "core_0/core_half_0/Vb2" "Vinn" -166.213
+cap "core_0/core_half_0/Vb2" "Vinn" -166.969
+cap "core_0/core_half_0/VDD" "Vinn" -360.75
+cap "core_0/core_half_0/Vout" "Vb2" -167.44
+cap "core_0/core_half_0/VDD" "Vinn" -360.75
 cap "core_0/core_half_0/VDD" "Vb2" 436.515
 cap "core_0/core_half_0/Vb2" "Vb2" 190.2
 cap "core_0/core_half_0/Vb2" "Vinn" -166.213
-cap "Vinn" "core_0/core_half_0/Vb2" -166.213
-cap "core_0/core_half_0/Vout" "Vinn" 1279.24
-cap "core_0/core_half_0/Vout" "Vb2" -167.44
 cap "core_0/core_half_0/Vb2" "Vinn" -166.213
-cap "core_0/core_half_0/VDD" "Vinn" -360.75
+cap "core_0/core_half_0/Vout" "Vinn" 1279.24
+cap "core_0/core_half_0/Vb2" "Vinn" -166.213
 cap "core_0/core_half_0/Vb2" "Vb2" -72.68
-cap "Vinn" "core_0/core_half_0/VDD" -360.75
-cap "core_0/core_half_0/Vout" "Vb2" -361.015
-cap "core_0/core_half_0/Vout" "Vinp" 141.96
-cap "core_0/core_half_0/VDD" "Vinn" -455.375
-cap "core_0/core_half_0/VDD" "Vb2" 432.965
-cap "Vinp" "core_0/core_half_0/VDD" 58.8
-cap "core_0/core_half_0/VDD" "Vinn" -455.375
-cap "Vinp" "core_0/core_half_0/VDD" 141.96
-cap "core_0/core_half_0/VDD" "Vinp" 62.596
-cap "core_0/core_half_0/VDD" "Vinp" 58.8
-cap "core_0/core_half_0/VDD" "Vinp" 140.948
-cap "Vinn" "core_0/core_half_0/Vout" 608.399
-cap "core_0/core_half_0/Vb2" "Vb2" 124.42
-cap "core_0/core_half_0/Vb2" "Vinn" -838.518
-cap "Vinp" "core_0/core_half_0/Vout" 169.936
+cap "core_0/core_half_0/Vb2" "Vinn" -166.213
+cap "core_0/core_half_0/Vout" "Vinn" 608.399
 cap "core_0/core_half_0/VDD" "Vinp" 141.96
 cap "core_0/core_half_0/Vb2" "Vinp" 265.536
-cap "core_0/core_half_0/Vout" "Vinn" -609.76
-cap "core_0/core_half_0/Vout" "Vinn" 608.399
-cap "Vinp" "core_0/core_half_0/Vout" 69.3
+cap "core_0/core_half_0/VDD" "Vb2" 432.965
+cap "Vinp" "core_0/core_half_0/Vout" 169.936
 cap "core_0/core_half_0/Vout" "Vinp" 141.96
+cap "Vinn" "core_0/core_half_0/VDD" -455.375
+cap "Vinp" "core_0/core_half_0/Vout" 69.3
+cap "core_0/core_half_0/VDD" "Vinp" 140.948
+cap "core_0/core_half_0/Vb2" "Vb2" 124.42
+cap "Vinn" "core_0/core_half_0/VDD" -455.375
 cap "core_0/core_half_0/Vout" "Vinp" 169.936
-cap "Vinp" "core_0/core_half_1/VDD" 57
-cap "Vinn" "core_0/core_half_1/VDD" -161.72
-cap "core_0/core_half_0/VDD" "core_0/Vb2" -112.335
-cap "Vinp" "core_0/core_half_1/Vout" 175.7
-cap "Vinn" "core_0/core_half_1/VDD" -127.881
-cap "Vinp" "core_0/core_half_0/VDD" -562.47
-cap "Vinn" "core_0/core_half_1/Vout" -169.579
-cap "core_0/Vb2" "core_0/core_half_1/Vout" 44.44
-cap "Vinp" "core_0/core_half_0/VDD" -562.47
-cap "core_0/core_half_1/VDD" "core_0/Vb2" 149.55
-cap "Vinn" "core_0/core_half_0/VDD" -560.095
-cap "Vinn" "core_0/core_half_0/VDD" -560.095
-cap "Vinp" "core_0/core_half_0/Vout" -133.815
-cap "Vinn" "core_0/core_half_0/Vout" -139.706
-cap "Vinp" "core_0/Vb2" 520.14
-cap "Vinp" "core_0/core_half_0/Vout" -562.47
-cap "Vinn" "core_0/Vb2" 2068.94
-cap "Vinn" "core_0/core_half_0/Vout" -560.095
-cap "Vinn" "core_0/core_half_1/Vout" -216.12
-cap "Vinn" "core_0/core_half_1/VDD" -216.12
-cap "core_0/core_half_0/Vout" "core_0/Vb2" -810.155
-cap "core_0/core_half_1/Vout" "Vinn" -216.12
+cap "Vinp" "core_0/core_half_0/VDD" 62.596
+cap "core_0/core_half_0/Vb2" "Vinn" -838.518
+cap "core_0/core_half_0/Vout" "Vinp" 141.96
+cap "core_0/core_half_0/VDD" "Vinp" 141.96
+cap "core_0/core_half_0/Vout" "Vb2" -361.015
+cap "Vinn" "core_0/core_half_0/Vout" 608.399
+cap "Vinp" "core_0/core_half_0/VDD" 58.8
+cap "Vinn" "core_0/core_half_0/Vout" -609.76
+cap "Vinp" "core_0/core_half_0/VDD" 58.8
+cap "core_0/core_half_0/VDD" "Vinn" 28.576
 cap "core_0/core_half_1/Vout" "Vinp" 175.7
+cap "core_0/core_half_0/VDD" "Vinp" -562.47
+cap "core_0/core_half_1/VDD" "Vinn" -161.72
+cap "core_0/Vb2" "core_0/core_half_0/VDD" -112.335
+cap "core_0/core_half_1/VDD" "Vinn" -216.12
+cap "core_0/core_half_0/Vout" "Vinn" -139.706
+cap "core_0/core_half_1/VDD" "Vinp" 57
+cap "core_0/core_half_0/Vout" "Vinp" -133.815
+cap "core_0/core_half_1/Vout" "Vinn" -197.999
+cap "core_0/Vb2" "core_0/core_half_0/Vout" -810.155
+cap "core_0/core_half_1/Vout" "Vinn" -216.12
+cap "core_0/Vb2" "Vinp" 520.14
+cap "core_0/core_half_1/Vout" "Vinp" 57
+cap "core_0/core_half_0/VDD" "Vinn" -560.095
 cap "core_0/core_half_0/VDD" "core_0/Vb2" 2.12
-cap "Vinp" "core_0/core_half_0/Vout" -133.815
-cap "Vinn" "core_0/core_half_1/Vout" -197.999
-cap "Vinn" "core_0/core_half_0/Vout" -139.706
-cap "Vinn" "core_0/core_half_1/VDD" -150.818
-cap "Vinn" "core_0/core_half_0/VDD" 28.576
-cap "Vinp" "core_0/core_half_1/Vout" 57
-cap "Vinn" "core_0/core_half_1/Vout" -161.72
-cap "Vinp" "core_0/core_half_1/VDD" 57
-cap "Vinn" "core_0/core_half_1/VDD" -216.596
-cap "Vinn" "core_0/core_half_1/VDD" -161.72
-cap "Vb2" "core_0/core_half_1/Vb2" 125.52
-cap "Vinp" "core_0/core_half_1/Vb2" -630.292
-cap "Vinp" "core_0/core_half_1/VDD" -364.2
-cap "core_0/core_half_1/VDD" "Vinn" -166.32
-cap "core_0/core_half_1/Vout" "Vb2" -357.835
+cap "core_0/core_half_1/VDD" "Vinn" -127.881
+cap "core_0/core_half_1/VDD" "Vinn" -150.818
+cap "core_0/core_half_1/VDD" "Vinn" -216.596
+cap "core_0/core_half_1/VDD" "Vinp" 57
+cap "core_0/core_half_0/Vout" "Vinn" -560.095
+cap "core_0/Vb2" "core_0/core_half_1/VDD" 149.55
+cap "core_0/core_half_1/Vout" "Vinn" -216.12
+cap "core_0/core_half_1/Vout" "Vinn" -169.579
+cap "core_0/core_half_0/Vout" "Vinp" -133.815
+cap "core_0/core_half_0/VDD" "Vinn" -560.095
+cap "core_0/core_half_1/Vout" "Vinp" 175.7
+cap "core_0/Vb2" "core_0/core_half_1/Vout" 44.44
+cap "core_0/core_half_1/VDD" "Vinn" -161.72
+cap "core_0/core_half_0/VDD" "Vinp" -562.47
+cap "core_0/core_half_0/Vout" "Vinn" -139.706
+cap "core_0/Vb2" "Vinn" 2068.94
+cap "core_0/core_half_0/Vout" "Vinp" -562.47
+cap "core_0/core_half_1/Vout" "Vinn" -161.72
+cap "core_0/core_half_1/Vout" "Vinn" -1553.2
+cap "core_0/core_half_1/Vb2" "Vinp" -630.292
+cap "core_0/core_half_1/VDD" "Vinn" -96.5465
 cap "Vinn" "core_0/core_half_1/VDD" -166.856
-cap "core_0/core_half_1/Vout" "Vinp" 716.556
-cap "Vinp" "core_0/core_half_1/VDD" -364.2
+cap "core_0/core_half_1/Vb2" "Vinn" -450.602
+cap "core_0/core_half_1/VDD" "Vinn" -166.32
 cap "Vinn" "core_0/core_half_1/VDD" -124.153
-cap "core_0/core_half_1/VDD" "Vb2" 443.565
-cap "Vinn" "core_0/core_half_1/Vb2" -450.602
+cap "core_0/core_half_1/Vout" "Vb2" -357.835
+cap "core_0/core_half_1/VDD" "Vinp" -364.2
+cap "core_0/core_half_1/VDD" "Vinn" -570.06
+cap "core_0/core_half_1/Vb2" "Vb2" 125.52
+cap "Vb2" "core_0/core_half_1/VDD" 443.565
+cap "Vinp" "core_0/core_half_1/VDD" -364.2
 cap "Vinn" "core_0/core_half_1/VDD" -570.06
-cap "Vinn" "core_0/core_half_1/Vout" -1553.2
-cap "Vinn" "core_0/core_half_1/VDD" -570.06
-cap "Vinn" "core_0/core_half_1/VDD" -96.5465
-cap "Vinp" "core_0/core_half_1/Vb2" -168.373
-cap "Vb2" "core_0/core_half_1/Vb2" -74.48
-cap "Vinp" "core_0/core_half_1/Vb2" -168.373
-cap "Vinp" "core_0/core_half_1/VDD" -370.35
-cap "core_0/core_half_1/Vout" "Vb2" 185.365
-cap "core_0/core_half_1/VDD" "Vb2" 435.515
-cap "Vinp" "core_0/core_half_1/Vb2" -168.373
-cap "Vinp" "core_0/core_half_1/VDD" -370.35
-cap "Vinp" "core_0/core_half_1/Vb2" -168.373
+cap "core_0/core_half_1/Vout" "Vinp" 716.556
+cap "core_0/core_half_1/Vb2" "Vinp" -168.373
+cap "core_0/core_half_1/Vb2" "Vinp" -168.373
+cap "core_0/core_half_1/Vb2" "Vb2" -74.48
+cap "core_0/core_half_1/Vout" "Vinp" 1794.56
+cap "core_0/core_half_1/Vb2" "Vinp" -168.373
+cap "core_0/core_half_1/Vb2" "Vinp" -168.373
 cap "core_0/core_half_1/Vb2" "Vb2" 190
-cap "Vinp" "core_0/core_half_1/Vout" 1794.56
-cap "core_0/core_half_1/Vb2" "Vb2" -73.31
-cap "core_0/core_half_1/Vout" "Vb2" -473.2
+cap "core_0/core_half_1/VDD" "Vinp" -370.35
+cap "core_0/core_half_1/VDD" "Vb2" 435.515
+cap "core_0/core_half_1/Vout" "Vb2" 185.365
+cap "core_0/core_half_1/VDD" "Vinp" -370.35
 cap "core_0/core_half_1/VDD" "Vb2" 787.065
+cap "core_0/core_half_1/Vb2" "Vb2" 190.13
 cap "core_0/core_half_1/Vb2" "Vinp" -166.969
+cap "core_0/core_half_1/Vb2" "Vb2" -73.31
 cap "core_0/core_half_1/Vout" "Vinp" 673.473
-cap "core_0/core_half_1/Vb2" "Vinp" -166.969
-cap "core_0/core_half_1/Vb2" "Vinp" -166.969
 cap "core_0/core_half_1/VDD" "Vinp" 5.87999
 cap "core_0/core_half_1/Vb2" "Vinp" -166.969
-cap "core_0/core_half_1/Vb2" "Vb2" 190.13
+cap "core_0/core_half_1/Vb2" "Vinp" -166.969
+cap "core_0/core_half_1/Vb2" "Vinp" -166.969
+cap "core_0/core_half_1/Vout" "Vb2" -473.2
+cap "core_0/core_half_1/Vb2" "Vinp" -164.053
+cap "core_0/core_half_1/VDD" "Vinp" -600.82
+cap "core_0/core_half_1/Vout" "Vinp" -417.27
+cap "core_0/core_half_1/Vb2" "Vb2" -71.69
 cap "core_0/core_half_1/VDD" "Vinp" 5.904
+cap "core_0/core_half_1/Vb2" "Vinp" -164.053
+cap "core_0/core_half_1/Vb2" "Vb2" 132.11
+cap "core_0/core_half_1/Vout" "Vinp" 341.065
 cap "core_0/core_half_1/VDD" "Vb2" 628.32
 cap "core_0/core_half_1/Vb2" "Vinp" -164.053
-cap "Vinp" "core_0/core_half_1/Vout" 341.065
-cap "Vinp" "core_0/core_half_1/Vb2" -164.053
-cap "Vb2" "core_0/core_half_1/VDD" 1.36
+cap "core_0/core_half_1/VDD" "Vb2" 1.36
+cap "core_0/core_half_1/Vb2" "Vinp" -164.053
 cap "core_0/core_half_1/Vout" "Vb2" -389.055
-cap "core_0/core_half_1/Vout" "Vinp" -417.27
-cap "core_0/core_half_1/VDD" "Vinp" -600.82
-cap "core_0/core_half_1/Vb2" "Vinp" -164.053
-cap "Vb2" "core_0/core_half_1/Vb2" -71.69
 cap "core_0/core_half_1/Vout" "Vinp" 341.065
-cap "core_0/core_half_1/Vb2" "Vb2" 132.11
-cap "core_0/core_half_1/Vb2" "Vinp" -164.053
-cap "Vcmfb1" "core_0/core_half_0/Vout" 298.675
-cap "Vcmfb1" "core_0/core_half_0/Vout" 556.72
-cap "Vcmfb1" "core_0/core_half_0/Vcmfb" 9.168
-cap "Vcmfb1" "core_0/core_half_0/Vcmfb" 266.426
-cap "Vcmfb1" "core_0/core_half_0/Vcmfb" 9.168
-cap "Vcmfb1" "core_0/VDD" 2522.49
-cap "core_0/core_half_0/Vcmfb" "Vcmfb1" 205.179
+cap "core_0/VDD" "Vcmfb1" 2522.49
+cap "core_0/core_half_0/Vcmfb" "Vcmfb1" 9.168
+cap "core_0/core_half_0/Vout" "Vcmfb1" 556.72
+cap "core_0/core_half_0/Vcmfb" "Vcmfb1" 266.426
+cap "core_0/core_half_0/Vcmfb" "Vcmfb1" 9.168
+cap "core_0/core_half_0/Vout" "Vcmfb1" 298.675
 cap "core_0/core_half_0/Vcmfb" "Vcmfb1" -75.293
-cap "Vcmfb1" "core_0/VDD" 152.485
-cap "Vcmfb1" "core_0/core_half_0/Vout" 881.046
-cap "Vcmfb1" "core_0/core_half_0/Vcmfb" -75.293
-cap "Vcmfb1" "core_0/core_half_0/Vcmfb" -73.781
-cap "Vcmfb1" "core_0/core_half_0/Vcmfb" 205.263
-cap "Vcmfb1" "core_0/core_half_0/VDD" -270.57
-cap "Vcmfb1" "core_0/core_half_0/Vcmfb" -73.781
-cap "Vcmfb1" "core_0/core_half_0/Vout" 687.081
-cap "Vinp" "core_0/core_half_0/Vb2" 136.224
-cap "Vinp" "core_0/core_half_0/Vout" 126.984
-cap "Vinp" "core_0/core_half_0/Vout" 126.6
-cap "core_0/core_half_0/Vout" "Vinp" 141.96
-cap "core_0/core_half_0/VDD" "Vcmfb1" -246.825
-cap "Vinp" "core_0/core_half_0/Vout" 141.96
+cap "Vcmfb1" "core_0/core_half_0/Vcmfb" 205.179
+cap "core_0/core_half_0/Vout" "Vcmfb1" 881.046
+cap "core_0/core_half_0/Vcmfb" "Vcmfb1" -75.293
+cap "core_0/VDD" "Vcmfb1" 152.485
+cap "core_0/core_half_0/Vcmfb" "Vcmfb1" -73.781
+cap "core_0/core_half_0/Vcmfb" "Vcmfb1" 205.263
+cap "core_0/core_half_0/Vout" "Vcmfb1" 687.081
+cap "core_0/core_half_0/VDD" "Vcmfb1" -270.57
+cap "core_0/core_half_0/Vcmfb" "Vcmfb1" -73.781
 cap "Vinp" "core_0/core_half_0/VDD" 1.012
-cap "Vcmfb1" "core_0/core_half_0/Vcmfb" 102.545
-cap "Vcmfb1" "core_0/core_half_0/Vout" 37.795
-cap "core_0/core_half_0/VDD" "Vinp" 126.6
-cap "Vinp" "core_0/core_half_0/VDD" 225.54
-cap "Vinp" "core_0/core_half_0/VDD" 141.96
+cap "Vinp" "core_0/core_half_0/Vout" 141.96
+cap "Vinp" "core_0/core_half_0/Vout" 126.6
 cap "Vinp" "core_0/core_half_0/Vcmfb" 129.12
-cap "Vcmfb1" "core_0/core_half_0/Vout" -246.825
+cap "Vinp" "core_0/core_half_0/Vb2" 136.224
+cap "core_0/core_half_0/Vout" "Vcmfb1" -246.825
+cap "Vcmfb1" "core_0/core_half_0/Vcmfb" 102.545
 cap "Vinp" "core_0/core_half_0/VDD" 141.96
-cap "Vinn" "core_0/Vb2" -291.048
-cap "Vinn" "core_0/core_half_0/VDD" -404.88
-cap "Vinn" "core_0/core_half_1/VDD" -216.12
-cap "Vinn" "core_0/core_half_1/VDD" -221.4
-cap "Vinn" "core_0/core_half_1/VDD" -216.12
-cap "core_0/core_half_1/Vout" "Vinn" -221.268
-cap "Vinn" "core_0/Vcmfb" -293.49
-cap "Vinn" "core_0/core_half_1/Vout" -216.12
-cap "core_0/core_half_1/VDD" "Vinn" -42.574
-cap "core_0/core_half_1/Vout" "core_0/Vcmfb" 112.33
-cap "core_0/core_half_1/Vout" "Vinn" -216.12
+cap "Vinp" "core_0/core_half_0/VDD" 225.54
+cap "Vinp" "core_0/core_half_0/Vout" 126.984
+cap "Vinp" "core_0/core_half_0/Vout" 141.96
+cap "Vinp" "core_0/core_half_0/VDD" 126.6
+cap "Vcmfb1" "core_0/core_half_0/Vout" 37.795
+cap "Vinp" "core_0/core_half_0/VDD" 141.96
+cap "core_0/core_half_0/VDD" "Vcmfb1" -246.825
+cap "Vinn" "core_0/core_half_1/VDD" -42.574
+cap "core_0/Vcmfb" "Vinn" -293.49
 cap "core_0/core_half_0/Vout" "core_0/Vcmfb" -788.273
-cap "core_0/core_half_0/Vout" "core_0/Vcmfb" -997.185
-cap "core_0/core_half_0/VDD" "core_0/Vcmfb" 25.536
+cap "core_0/Vcmfb" "core_0/core_half_1/Vout" 112.33
+cap "Vinn" "core_0/core_half_1/Vout" -216.12
+cap "Vinn" "core_0/core_half_1/Vout" -221.4
 cap "core_0/core_half_1/VDD" "core_0/Vcmfb" 112.33
+cap "core_0/core_half_1/VDD" "Vinn" -221.4
+cap "Vinn" "core_0/Vb2" -291.048
 cap "core_0/core_half_1/Vout" "core_0/Vcmfb" 181.452
-cap "core_0/core_half_1/Vout" "Vinn" -221.4
+cap "core_0/core_half_0/VDD" "core_0/Vcmfb" 25.536
+cap "core_0/core_half_1/Vout" "Vinn" -221.268
+cap "core_0/core_half_0/VDD" "Vinn" -404.88
+cap "core_0/core_half_1/VDD" "Vinn" -216.12
+cap "core_0/Vcmfb" "core_0/core_half_0/Vout" -997.185
 cap "core_0/core_half_0/VDD" "core_0/Vcmfb" -560.095
-cap "Vinn" "core_0/core_half_1/VDD" -241.18
-cap "Vinn" "core_0/core_half_1/Vb2" -116.728
-cap "Vinn" "core_0/core_half_1/Vout" -685.188
-cap "Vcmfb1" "core_0/core_half_1/Vout" -208.59
-cap "Vinn" "core_0/core_half_1/Vcmfb" -121.39
-cap "Vinn" "core_0/core_half_1/VDD" -176.4
-cap "Vinn" "core_0/core_half_1/VDD" -22.014
-cap "Vinn" "core_0/core_half_1/VDD" -166.32
+cap "core_0/core_half_1/Vout" "Vinn" -216.12
+cap "Vinn" "core_0/core_half_1/VDD" -216.12
+cap "core_0/core_half_1/Vout" "Vcmfb1" -208.59
+cap "core_0/core_half_1/Vout" "Vinn" -685.188
+cap "core_0/core_half_1/VDD" "Vcmfb1" -246.605
 cap "core_0/core_half_1/Vcmfb" "Vcmfb1" 102.545
-cap "Vinn" "core_0/core_half_1/VDD" -166.32
-cap "Vcmfb1" "core_0/core_half_1/VDD" -246.605
-cap "Vcmfb1" "core_0/core_half_1/Vcmfb" -78.101
-cap "Vcmfb1" "core_0/core_half_1/VDD" -287.47
-cap "Vcmfb1" "core_0/core_half_1/Vcmfb" -78.101
-cap "Vcmfb1" "core_0/core_half_1/Vcmfb" 205.023
-cap "Vcmfb1" "core_0/core_half_1/Vout" 1692.61
-cap "Vcmfb1" "core_0/VDD#1" 1129.87
-cap "core_0/core_half_1/Vcmfb" "Vcmfb1" 205.179
-cap "core_0/core_half_1/Vcmfb" "Vcmfb1" -75.293
-cap "core_0/core_half_1/Vcmfb" "Vcmfb1" -75.293
+cap "core_0/core_half_1/VDD" "Vinn" -176.4
+cap "core_0/core_half_1/Vcmfb" "Vinn" -121.39
+cap "core_0/core_half_1/VDD" "Vinn" -166.32
+cap "core_0/core_half_1/VDD" "Vinn" -22.014
+cap "core_0/core_half_1/VDD" "Vinn" -166.32
+cap "core_0/core_half_1/VDD" "Vinn" -241.18
+cap "core_0/core_half_1/Vb2" "Vinn" -116.728
+cap "core_0/core_half_1/Vcmfb" "Vcmfb1" -78.101
+cap "core_0/core_half_1/Vcmfb" "Vcmfb1" -78.101
+cap "core_0/core_half_1/VDD" "Vcmfb1" -287.47
+cap "core_0/core_half_1/Vcmfb" "Vcmfb1" 205.023
+cap "core_0/core_half_1/Vout" "Vcmfb1" 1692.61
 cap "core_0/core_half_1/Vout" "Vcmfb1" -438.739
-cap "core_0/core_half_1/Vcmfb" "Vcmfb1" -73.037
-cap "core_0/VDD#1" "Vcmfb1" 889.576
+cap "core_0/core_half_1/Vcmfb" "Vcmfb1" -75.293
+cap "core_0/VDD#1" "Vcmfb1" 1129.87
+cap "core_0/core_half_1/Vcmfb" "Vcmfb1" -75.293
+cap "Vcmfb1" "core_0/core_half_1/Vcmfb" 205.179
 cap "core_0/core_half_1/Vout" "Vcmfb1" -356.85
-cap "core_0/core_half_1/Vcmfb" "Vcmfb1" 143.221
+cap "core_0/VDD#1" "Vcmfb1" 889.576
+cap "core_0/core_half_1/Vcmfb" "Vcmfb1" -73.037
 cap "core_0/core_half_1/Vout" "Vcmfb1" -139.805
+cap "core_0/core_half_1/Vcmfb" "Vcmfb1" 143.221
 cap "core_0/core_half_1/Vcmfb" "Vcmfb1" -73.037
 cap "cmfb_0/cmfb_half_1/Vout" "Vcmfb1" 60.4175
+cap "cmfb_0/cmfb_half_1/res" "Vcmfb1" 41.8275
 cap "cmfb_0/cmfb_half_1/Vin" "Vcmfb1" 518.155
-cap "Vcmfb1" "cmfb_0/cmfb_half_1/res" 41.8275
-cap "cmfb_0/Vcmfb" "cmfb_0/cmfb_half_1/diode" 267.76
+cap "cmfb_0/VDD" "cmfb_0/Vcmfb" 287.33
 cap "cmfb_0/Vcmfb" "cmfb_0/cmfb_half_1/Vin" -148.81
-cap "cmfb_0/Vcmfb" "cmfb_0/cmfb_half_1/res" -209.597
-cap "cmfb_0/Vcmfb" "cmfb_0/VDD" 287.33
-cap "cmfb_0/VDD" "Vcmfb1" -502.185
-cap "cmfb_0/cmfb_half_1/Vout" "Vcmfb1" 186.035
-cap "cmfb_0/cmfb_half_0/diode" "Vcmfb1" 684.755
+cap "cmfb_0/cmfb_half_1/res" "cmfb_0/Vcmfb" -209.597
+cap "cmfb_0/Vcmfb" "cmfb_0/cmfb_half_1/diode" 267.76
 cap "cmfb_0/cmfb_half_1/res" "Vcmfb1" -752.22
-cap "Vcmfb1" "cmfb_0/cmfb_half_1/Vin" -69.265
-cap "Vcmfb1" "cmfb_0/cmfb_half_0/res" 775.797
-cap "Vcmfb1" "cmfb_0/cmfb_half_0/Vin" 13.66
+cap "cmfb_0/cmfb_half_1/Vin" "Vcmfb1" -69.265
+cap "Vcmfb1" "cmfb_0/cmfb_half_0/diode" 684.755
+cap "cmfb_0/VDD" "Vcmfb1" -502.185
+cap "Vcmfb1" "cmfb_0/cmfb_half_1/Vout" 186.035
 cap "Vcmfb1" "cmfb_0/VDD" 891.472
+cap "Vcmfb1" "cmfb_0/cmfb_half_0/Vin" 13.66
+cap "cmfb_0/cmfb_half_0/res" "Vcmfb1" 775.797
 cap "Vcmfb1" "cmfb_0/cmfb_half_0/Vout" 991.252
+cap "Vcmfb1" "cmfb_0/cmfb_half_0/res" -277.942
+cap "cmfb_0/cmfb_half_0/Vout" "Vcmfb1" 1516.11
+cap "cmfb_0/cmfb_half_0/diode" "Vcmfb1" 122.075
 cap "cmfb_0/VDD" "Vcmfb1" -347.687
-cap "cmfb_0/cmfb_half_0/res" "Vcmfb1" -277.942
-cap "Vcmfb1" "cmfb_0/cmfb_half_0/Vout" 1516.11
-cap "Vcmfb1" "cmfb_0/cmfb_half_0/diode" 122.075
-cap "cmfb_0/cmfb_half_0/Vin" "Vcmfb1" 67.36
+cap "Vcmfb1" "cmfb_0/cmfb_half_0/Vin" 67.36
 cap "Vcmfb1" "cmfb_0/cmfb_half_0/Vin" -822.24
 merge "cmfb_0/Vb3" "cmfb_1/Vb3" -9257.46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -268700 -3300 0 0 0 0 -241434 -21600 0 0 0 0
 merge "cmfb_1/Vb3" "mirror_3_0/Vb3"
@@ -1105,7 +1123,7 @@ merge "cmfb_0/Vref" "cmfb_0/cmfb_half_1/Vin" -12545.4 0 0 0 0 0 0 0 0 0 0 0 0 0 
 merge "cmfb_0/cmfb_half_1/Vin" "cmfb_1/cmfb_half_1/Vin"
 merge "cmfb_1/cmfb_half_1/Vin" "cmfb_1/Vref"
 merge "cmfb_1/Vref" "Vb5"
-merge "cmfb_0/VDD" "core_0/VDD#1" -14526.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 733700 -23220 -813800 0 -813800 0 -1305600 0 -4308723 -45839 0 0
+merge "cmfb_0/VDD" "core_0/VDD#1" -14622.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 908900 -23220 -718800 0 -718800 0 -1178600 0 -4371443 -47352 0 0
 merge "core_0/VDD#1" "core_0/VDD"
 merge "core_0/VDD" "core_0/core_half_0/VDD"
 merge "core_0/core_half_0/VDD" "cmfb_1/VDD"
@@ -1114,7 +1132,22 @@ merge "core_1/VDD#1" "core_1/VDD"
 merge "core_1/VDD" "core_1/core_half_0/VDD"
 merge "core_1/core_half_0/VDD" "sf_0/VDD"
 merge "sf_0/VDD" "VDD"
-merge "cmfb_0/GND#1" "cmfb_0/VSUBS" -23200.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1045790 -24782 0 0 0 0 0 0 -6297514 -81310 0 0
+merge "mirror_1_0/Vb1_" "Vb1_" -539.872 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62600 -780 0 0 0 0 0 0 0 0 0 0
+merge "core_0/Vb1" "m1_0_850#" -5929.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -619400 -4170 -937400 -1610 -430480 -2011 365095 -10874 0 0 0 0
+merge "m1_0_850#" "mirror_1_0/Vb1"
+merge "mirror_1_0/Vb1" "core_1/Vb1"
+merge "core_1/Vb1" "m1_14590_n8540#"
+merge "m1_14590_n8540#" "m1_0_n8450#"
+merge "mirror_4_0/Vb4" "sf_0/sf_half_0/g_d" -7469.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 771600 -3000 0 0 0 0 -1780260 -30626 0 0 0 0
+merge "sf_0/sf_half_0/g_d" "sf_0/sf_half_1/g_d"
+merge "sf_0/sf_half_1/g_d" "m1_6480_n18170#"
+merge "core_0/core_half_1/Vin" "core_0/Vin_n" -3092.31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32400 -2160 -1216400 -6060 -3762320 -18462 0 0 0 0 0 0
+merge "core_0/Vin_n" "Vinn"
+merge "core_1/core_half_0/Vout" "sf_0/sf_half_1/g_u" -12855 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -502320 -3048 -1288760 -8004 475400 -2780 130330 -36345 216980 -1622 -305090 -3891 0 0
+merge "sf_0/sf_half_1/g_u" "pre_Vout_p"
+merge "mirror_3_0/Vb3_" "Vb3_" -376.515 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22400 -780 0 0 0 0 0 0 0 0 0 0
+merge "mirror_4_0/Vb4_" "Vb4_" -628.88 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22400 -780 0 0 0 0 0 0 0 0 0 0
+merge "cmfb_0/GND#1" "cmfb_0/VSUBS" -44454.1 -75438400 -74740 0 0 0 0 0 0 530580 -54678 334100 -15460 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 824680 -54788 -6574210 -40442 -811500 -430 -727500 -1420 -71100 0 -11605957 -109208 0 0
 merge "cmfb_0/VSUBS" "cmfb_0/GND"
 merge "cmfb_0/GND" "core_0/GND"
 merge "core_0/GND" "cmfb_1/GND#1"
@@ -1123,23 +1156,18 @@ merge "cmfb_1/VSUBS" "cmfb_1/GND"
 merge "cmfb_1/GND" "core_1/GND"
 merge "core_1/GND" "mirror_1_0/GND"
 merge "mirror_1_0/GND" "mirror_3_0/GND"
-merge "mirror_3_0/GND" "mirror_4_0/GND"
-merge "mirror_4_0/GND" "sf_0/GND"
-merge "sf_0/GND" "GND"
-merge "GND" "sf_0/VSUBS"
-merge "sf_0/VSUBS" "VSUBS"
-merge "mirror_1_0/Vb1_" "Vb1_" -539.872 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62600 -780 0 0 0 0 0 0 0 0 0 0
-merge "core_0/Vb1" "m1_0_850#" -5929.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -619400 -4170 -937400 -1610 -430480 -2011 365095 -10874 0 0 0 0
-merge "m1_0_850#" "mirror_1_0/Vb1"
-merge "mirror_1_0/Vb1" "core_1/Vb1"
-merge "core_1/Vb1" "m1_14590_n8540#"
-merge "m1_14590_n8540#" "m1_0_n8450#"
-merge "core_0/core_half_1/Vin" "core_0/Vin_n" -3092.31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32400 -2160 -1216400 -6060 -3762320 -18462 0 0 0 0 0 0
-merge "core_0/Vin_n" "Vinn"
-merge "core_1/core_half_0/Vout" "sf_0/sf_half_1/g_u" -9073.04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -502320 -3048 -1217160 -8004 502700 -2780 465730 -36345 216980 -1622 -305090 -3891 0 0
-merge "sf_0/sf_half_1/g_u" "pre_Vout_p"
-merge "mirror_3_0/Vb3_" "Vb3_" -376.515 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22400 -780 0 0 0 0 0 0 0 0 0 0
-merge "mirror_4_0/Vb4_" "Vb4_" -628.88 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22400 -780 0 0 0 0 0 0 0 0 0 0
+merge "mirror_3_0/GND" "sf_0/Vout_p"
+merge "sf_0/Vout_p" "sf_0/sf_half_0/Vout"
+merge "sf_0/sf_half_0/Vout" "Vout_n"
+merge "Vout_n" "sf_0/Vout_n"
+merge "sf_0/Vout_n" "Vout_p"
+merge "Vout_p" "sf_0/sf_half_1/Vout"
+merge "sf_0/sf_half_1/Vout" "mirror_4_0/GND"
+merge "mirror_4_0/GND" "sf_0/w_n11360_12520#"
+merge "sf_0/w_n11360_12520#" "w_1230_n17330#"
+merge "w_1230_n17330#" "sf_0/GND"
+merge "sf_0/GND" "sf_0/sf_half_1/GND"
+merge "sf_0/sf_half_1/GND" "GND"
 merge "core_0/Vin_p" "core_0/core_half_0/Vin" -4726.31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -144000 -2160 0 0 -3682770 -22842 0 0 0 0 0 0
 merge "core_0/core_half_0/Vin" "Vinp"
 merge "core_0/Vout_n" "core_0/core_half_0/Vout" -13454.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -97440 -3736 -188760 -6908 597520 -1742 -3417390 -42084 0 0 0 0 0 0
@@ -1159,9 +1187,5 @@ merge "core_1/Vcmfb" "Vcmfb2"
 merge "cmfb_0/Vcm" "cmfb_0/cmfb_half_0/Vin" -856.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -200000 -6480 642400 -2800 0 0 0 0 0 0 0 0
 merge "cmfb_0/cmfb_half_0/Vin" "Vcm1"
 merge "cmfb_1/Vcm" "Vcm2" -391.63 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 109600 -6660 0 0 0 0 0 0 0 0 0 0
-merge "mirror_4_0/Vb4" "sf_0/sf_half_1/g_d" -6990.98 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8600 -1760 0 0 0 0 -1270440 -21984 0 0 0 0
-merge "sf_0/sf_half_1/g_d" "m1_7210_n18020#"
-merge "core_1/core_half_1/Vout" "sf_0/sf_half_0/g_u" -10738.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -683200 -3048 -1703300 -8004 -524000 -2780 219930 -36545 351680 -1862 -618190 -4331 0 0
+merge "core_1/core_half_1/Vout" "sf_0/sf_half_0/g_u" -12543.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -683200 -3048 -1906700 -8004 -395300 -2780 -37470 -36545 351680 -1862 -618190 -4331 0 0
 merge "sf_0/sf_half_0/g_u" "pre_Vout_n"
-merge "sf_0/Vout_p" "Vout_n" 898.71 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1735200 -2160 0 0 0 0 0 0 0 0 0 0
-merge "sf_0/Vout_n" "Vout_p" -3673.64 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1402200 -2160 0 0 0 0 0 0 0 0 0 0

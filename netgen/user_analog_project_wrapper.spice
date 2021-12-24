@@ -33,16 +33,6 @@ Xcmfb_half_0 VDD GND cmfb_half_0/Vout cmfb_half_0/res Vb3 Vcm cmfb_half_0/Vout c
 X0 cmfb_half_1/res cmfb_half_0/res GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=1.41e+06u
 .ends
 
-.subckt sf_half Vout g_u g_d GND VDD
-X0 VDD g_u Vout GND sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+07u l=320000u M=26
-X1 Vout g_d GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+07u l=450000u M=26
-.ends
-
-.subckt sf VDD Vin_n Vout_p Vout_n GND Vb4 Vin_p
-Xsf_half_0 Vout_p Vin_p Vb4 GND VDD sf_half
-Xsf_half_1 Vout_n Vin_n Vb4 GND VDD sf_half
-.ends
-
 .subckt mirror_4 GND Vb4_ Vb4
 X0 a_1900_980# a_5540_1300# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
 X1 Vb4 GND sky130_fd_pr__cap_mim_m3_1 l=1.58e+07u w=1.58e+07u
@@ -61,6 +51,16 @@ X12 Vb4_ Vb4_ GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l
 X13 a_1900_2260# a_5540_2580# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
 X14 a_1900_1620# a_5540_1940# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
 X15 a_1900_340# a_5540_660# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
+.ends
+
+.subckt sf_half Vout g_u g_d GND VDD
+X0 Vout g_u VDD Vout sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+07u l=320000u M=26
+X1 Vout g_d GND VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+07u l=450000u M=26
+.ends
+
+.subckt sf VDD Vin_n Vout_p GND sf_half_0/g_d sf_half_1/g_d Vin_p
+Xsf_half_0 Vout_p Vin_p sf_half_0/g_d GND VDD sf_half
+Xsf_half_1 Vout_p Vin_n sf_half_1/g_d GND VDD sf_half
 .ends
 
 .subckt mirror_3 GND Vb3 Vb3_
@@ -113,35 +113,39 @@ X14 a_1900_1620# a_5540_1940# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07
 X15 a_1900_340# a_5540_660# GND sky130_fd_pr__res_xhigh_po w=350000u l=1.6e+07u
 .ends
 
-.subckt top VDD GND Vout_n Vout_p Vb2 Vb5 Vb1_ Vb3_ Vb4_ Iin_p Iin_n
+.subckt top VDD GND Vb2 Vb5 Vb1_ Vb3_ Vb4_ Iin_p Iin_n
 Xcmfb_0 cmfb_1/Vb3 Vb5 GND VDD Vcmfb1 Vcm1 cmfb
 Xcmfb_1 cmfb_1/Vb3 Vb5 GND VDD Vcmfb2 Vcm2 cmfb
-Xsf_0 VDD pre_Vout_p Vout_n Vout_p GND sf_0/Vb4 pre_Vout_n sf
-Xmirror_4_0 GND Vb4_ sf_0/Vb4 mirror_4
+Xmirror_4_0 GND Vb4_ mirror_4_0/Vb4 mirror_4
+Xsf_0 VDD pre_Vout_p GND GND mirror_4_0/Vb4 mirror_4_0/Vb4 pre_Vout_n sf
 Xmirror_3_0 GND cmfb_1/Vb3 Vb3_ mirror_3
 Xcore_0 GND Vb2 Vcmfb1 core_1/Vb1 Vinn Von Vinp Vop VDD core
 Xcore_1 GND Vb2 Vcmfb2 core_1/Vb1 Vop pre_Vout_p Von pre_Vout_n VDD core
 Xmirror_1_0 core_1/Vb1 GND Vb1_ mirror_1
-X0 pre_Vout_p Vinn GND sky130_fd_pr__res_xhigh_po w=700000u l=5.3e+07u
+X0 pre_Vout_p a_n2130_4130# GND sky130_fd_pr__res_xhigh_po w=700000u l=5.3e+07u
 X1 Vop a_15650_n4552# GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=1.41e+06u
 X2 Vcmfb2 GND sky130_fd_pr__cap_mim_m3_1 l=3.35e+07u w=3.35e+07u
 X3 GND Vcmfb1 sky130_fd_pr__cap_mim_m3_2 l=3.35e+07u w=3.35e+07u
 X4 Vcm1 Vop GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=3.5e+07u
 X5 Vinp Iin_p sky130_fd_pr__cap_mim_m3_1 l=6.12e+07u w=6.12e+07u
-X6 GND Vcmfb2 sky130_fd_pr__cap_mim_m3_2 l=3.35e+07u w=3.35e+07u
-X7 Vinn Iin_n sky130_fd_pr__cap_mim_m3_1 l=6.12e+07u w=6.12e+07u
-X8 pre_Vout_p Vcm2 GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=3.5e+07u
-X9 Iin_p Vinp sky130_fd_pr__cap_mim_m3_2 l=6.12e+07u w=6.12e+07u
-X10 a_n1350_n4552# Von GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=1.41e+06u
-X11 Iin_n Vinn sky130_fd_pr__cap_mim_m3_2 l=6.12e+07u w=6.12e+07u
-X12 a_15650_n4552# pre_Vout_n sky130_fd_pr__cap_mim_m3_1 l=7.75e+06u w=7.75e+06u
-X13 pre_Vout_n Vinp GND sky130_fd_pr__res_xhigh_po w=700000u l=5.3e+07u
-X14 a_n1350_n4552# pre_Vout_p sky130_fd_pr__cap_mim_m3_1 l=7.75e+06u w=7.75e+06u
-X15 pre_Vout_n a_15650_n4552# sky130_fd_pr__cap_mim_m3_2 l=7.75e+06u w=7.75e+06u
-X16 Von Vcm1 GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=3.5e+07u
-X17 Vcm2 pre_Vout_n GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=3.5e+07u
-X18 pre_Vout_p a_n1350_n4552# sky130_fd_pr__cap_mim_m3_2 l=7.75e+06u w=7.75e+06u
-X19 Vcmfb1 GND sky130_fd_pr__cap_mim_m3_1 l=3.35e+07u w=3.35e+07u
+X6 a_16770_n6950# Vinp GND sky130_fd_pr__res_xhigh_po w=700000u l=5.3e+07u
+X7 GND Vcmfb2 sky130_fd_pr__cap_mim_m3_2 l=3.35e+07u w=3.35e+07u
+X8 Vinn Iin_n sky130_fd_pr__cap_mim_m3_1 l=6.12e+07u w=6.12e+07u
+X9 pre_Vout_p Vcm2 GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=3.5e+07u
+X10 Iin_p Vinp sky130_fd_pr__cap_mim_m3_2 l=6.12e+07u w=6.12e+07u
+X11 a_16770_n6950# a_16380_4130# GND sky130_fd_pr__res_xhigh_po w=700000u l=5.3e+07u
+X12 a_n1350_n4552# Von GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=1.41e+06u
+X13 Iin_n Vinn sky130_fd_pr__cap_mim_m3_2 l=6.12e+07u w=6.12e+07u
+X14 a_15650_n4552# pre_Vout_n sky130_fd_pr__cap_mim_m3_1 l=7.75e+06u w=7.75e+06u
+X15 pre_Vout_n a_16380_4130# GND sky130_fd_pr__res_xhigh_po w=700000u l=5.3e+07u
+X16 a_n1350_n4552# pre_Vout_p sky130_fd_pr__cap_mim_m3_1 l=7.75e+06u w=7.75e+06u
+X17 a_n2520_n6950# Vinn GND sky130_fd_pr__res_xhigh_po w=700000u l=5.3e+07u
+X18 pre_Vout_n a_15650_n4552# sky130_fd_pr__cap_mim_m3_2 l=7.75e+06u w=7.75e+06u
+X19 Von Vcm1 GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=3.5e+07u
+X20 a_n2520_n6950# a_n2130_4130# GND sky130_fd_pr__res_xhigh_po w=700000u l=5.3e+07u
+X21 Vcm2 pre_Vout_n GND sky130_fd_pr__res_xhigh_po w=1.41e+06u l=3.5e+07u
+X22 pre_Vout_p a_n1350_n4552# sky130_fd_pr__cap_mim_m3_2 l=7.75e+06u w=7.75e+06u
+X23 Vcmfb1 GND sky130_fd_pr__cap_mim_m3_1 l=3.35e+07u w=3.35e+07u
 .ends
 
 .subckt big_cap VDD GND
@@ -290,12 +294,12 @@ Xesd_1 top_0/Vb5 io_analog[3] io_analog[6] io_analog[5] esd
 Xesd_2 esd_2/out io_analog[2] io_analog[6] io_analog[5] esd
 Xesd_3 esd_3/out io_analog[1] io_analog[6] io_analog[5] esd
 Xesd_4 esd_4/out io_analog[0] io_analog[6] io_analog[5] esd
-Xesd_wide_2 top_0/Vout_p io_analog[9] io_analog[6] io_analog[5] esd_wide
-Xesd_wide_3 top_0/Vout_n io_analog[10] io_analog[6] io_analog[5] esd_wide
+Xesd_wide_2 io_analog[5] io_analog[9] io_analog[6] io_analog[5] esd_wide
+Xesd_wide_3 io_analog[5] io_analog[10] io_analog[6] io_analog[5] esd_wide
 Xesd_half_0 io_analog[6] io_analog[5] io_analog[8] esd_half
 Xesd_half_1 io_analog[6] io_analog[5] io_analog[7] esd_half
-Xtop_0 io_analog[6] io_analog[5] top_0/Vout_n top_0/Vout_p top_0/Vb2 top_0/Vb5 esd_2/out
-+ esd_3/out esd_4/out io_analog[8] io_analog[7] top
+Xtop_0 io_analog[6] io_analog[5] top_0/Vb2 top_0/Vb5 esd_2/out esd_3/out esd_4/out
++ io_analog[8] io_analog[7] top
 Xbig_cap_0 io_analog[6] io_analog[5] big_cap
 R0 io_analog[6] io_clamp_high[1] 0.000000
 R1 io_clamp_high[2] io_analog[6] 0.000000

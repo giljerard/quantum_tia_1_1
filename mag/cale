@@ -1,0 +1,7 @@
+* NGSPICE file created from dnwcell.ext - technology: sky130A
+
+.subckt dnwcell Source Gate Drain Gate2 Drain2 Source2
+X0 Source a_540_390# Drain Source sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X1 Source2 a_340_n830# Drain2 VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+.ends
+
