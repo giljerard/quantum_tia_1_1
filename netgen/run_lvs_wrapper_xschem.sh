@@ -20,4 +20,5 @@
 #
 #--------------------------------------------------------------------------------
 #netgen -batch lvs "user_analog_project_wrapper.spice user_analog_project_wrapper" "../xschem/user_analog_project_wrapper_sch.spice user_analog_project_wrapper" /usr/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl comp.out
-netgen -batch lvs "user_analog_project_wrapper.spice user_analog_project_wrapper" "../xschem/user_analog_project_wrapper_sch.spice user_analog_project_wrapper" /home/jared/open_pdks/sky130/sky130A/libs.tech/netgen/sky130A_setup.tcl comp.out
+netgen -batch lvs "user_analog_project_wrapper.spice user_analog_project_wrapper" "../xschem/user_analog_project_wrapper_sch.spice user_analog_project_wrapper" /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl comp.out
+#netgen -batch lvs "sf_half_mag.spice sf_half" "sf_half_sch.spice sf_half" /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl

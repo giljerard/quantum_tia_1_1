@@ -1,42 +1,43 @@
 magic
 tech sky130A
-timestamp 1640248126
+timestamp 1640986451
 << metal1 >>
-rect -5520 8475 -4720 8650
-rect -420 8475 380 8650
-rect -3135 7395 -2970 7455
-rect -2170 7395 -2005 7455
-rect -4440 6170 -3640 6310
-rect -1500 6170 -700 6310
-rect -3055 5700 -2915 6060
-rect -3055 5595 -2900 5700
-rect -3055 3815 -2915 5595
-rect -2240 3815 -2085 6060
-rect -5520 3630 -4720 3680
-rect -420 3630 380 3680
-use sf_half  sf_half_0
-timestamp 1640248126
-transform 1 0 -2170 0 1 6260
-box -85 -2810 2795 2385
+rect -5540 8475 -4740 8650
+rect -400 8475 400 8650
+rect -3155 7395 -2990 7455
+rect -2150 7395 -1985 7455
+rect -4460 6170 -3660 6310
+rect -1480 6170 -680 6310
+rect -3075 6010 -2920 6060
+rect -3075 5700 -2935 6010
+rect -3075 5595 -2920 5700
+rect -3075 3815 -2935 5595
+rect -2220 3815 -2065 6060
+rect -5540 3630 -4740 3680
+rect -400 3630 400 3680
 use sf_half  sf_half_1
-timestamp 1640248126
-transform -1 0 -2970 0 1 6260
-box -85 -2810 2795 2385
+timestamp 1640983407
+transform -1 0 -2990 0 1 6260
+box -145 -2760 2855 2430
+use sf_half  sf_half_0
+timestamp 1640983407
+transform 1 0 -2150 0 1 6260
+box -145 -2760 2855 2430
 << labels >>
-rlabel metal1 0 3645 0 3645 1 GND
+rlabel metal1 20 3645 20 3645 1 GND
 port 9 n
-rlabel metal1 -10 8635 -10 8635 1 VDD
+rlabel metal1 10 8635 10 8635 1 VDD
 port 2 n
-rlabel metal1 -2155 7425 -2155 7425 1 Vin_p
+rlabel metal1 -2135 7425 -2135 7425 1 Vin_p
 port 4 n
-rlabel metal1 -1095 6275 -1095 6275 1 Vout_p
+rlabel metal1 -1075 6275 -1075 6275 1 Vout_p
 port 5 n
-rlabel metal1 -5120 8635 -5120 8635 1 VDD
+rlabel metal1 -5140 8635 -5140 8635 1 VDD
 port 2 n
-rlabel metal1 -4055 6275 -4055 6275 1 Vout_n
+rlabel metal1 -4075 6275 -4075 6275 1 Vout_n
 port 6 n
-rlabel metal1 -2985 7425 -2985 7425 1 Vin_n
+rlabel metal1 -3005 7425 -3005 7425 1 Vin_n
 port 3 n
-rlabel metal1 -5115 3650 -5115 3650 1 GND
+rlabel metal1 -5135 3650 -5135 3650 1 GND
 port 9 n
 << end >>

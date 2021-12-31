@@ -1,0 +1,9 @@
+* NGSPICE file created from sf_flat.ext - technology: sky130A
+
+.subckt sf_flat VDD Vin_n Vb4 Vin_p Vout_p Vout_n GND
+X0 Vout_n Vb4 GND GND sky130_fd_pr__nfet_01v8 ad=3.3575e+14p pd=1.37686e+09u as=3.45e+14p ps=1.4276e+09u w=2.5e+07u l=450000u M=26
+X1 Vout_p Vin_p VDD Vout_p sky130_fd_pr__nfet_01v8_lvt ad=3.3575e+14p pd=1.37686e+09u as=4.289e+14p ps=1.7416e+09u w=2.5e+07u l=320000u M=26
+X2 Vout_n Vin_n VDD Vout_n sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2.5e+07u l=320000u M=26
+X3 GND Vb4 Vout_p GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.5e+07u l=450000u M=26
+.ends
+
